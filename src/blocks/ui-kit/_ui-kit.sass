@@ -1,0 +1,63 @@
+/*
+ * ========================
+ * UI-KIT
+ * ========================
+ */
+.ui-kit
+
+	&__header
+		padding: 200px 0
+		background-color: $color-primary
+		color: $white
+
+		&-info
+			max-width: 800px
+			margin: 0 auto
+
+		&-title
+			font-size: 45px	
+			margin-bottom: 15px
+
+		&-descr
+			font-size: 16px
+
+	
+	&__block
+		padding: 60px 0
+		border-bottom: 1px solid #f2f2f2
+
+		&--dark
+			background-color: #313131
+
+			.ui-kit__block-title
+				color: #eeeeee
+	
+		&-title
+			display: inline-block
+			padding-bottom: 10px
+			margin-bottom: 35px
+			font-size: 30px
+			text-transform: uppercase
+			letter-spacing: 3px
+			border-bottom: 2px solid $color-primary
+
+	&__svg-icon
+		display: inline-block
+		margin: 10px
+
+		svg 
+			width: 40px
+			height: 40px
+
+	.header
+		position: relative
+
+	+width-sm()
+
+		&__header
+			padding: 100px 0
+
+			&-title 
+				font-size: 26px
+
+

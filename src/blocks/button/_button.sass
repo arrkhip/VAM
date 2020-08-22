@@ -1,0 +1,44 @@
+/*
+ * ========================
+ * BUTTON 
+ * ========================
+ */
+.btn
+	position: relative
+	display: inline-flex
+	align-items: center
+	height: 60px
+	padding: 0 45px
+	border: none
+	font: 600 20px/1 $font-main
+	color: $white
+	background-color: $color-primary
+	+trs()
+
+	&:hover
+		cursor: pointer
+		opacity: .8
+
+	&--white
+		background-color: $white
+		color: $color-text
+
+
+	+width-sm
+		
+		&__text
+			font-size: 20px
+
+		&__icon
+			width: 40px
+			height: 22px
+			margin-left: 18px		
+
+
+	+width-xs
+		
+		&__text
+			font-size: 16px
+
+		&__icon
+			width: 35px

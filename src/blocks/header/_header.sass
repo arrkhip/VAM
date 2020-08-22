@@ -1,0 +1,307 @@
+/*
+ * ========================
+ * HEADER 
+ * ========================
+ */
+.header 
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 11
+	color: $white
+	+trs()
+
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		width: 100%
+		height: 50px
+		background-color: fade-out($color-text, .5)
+
+	&--fixed
+		position: fixed
+		top: 0
+		left: 0
+		height: 78px
+		background-color: rgba(0, 0, 0, .9)
+
+		&::before
+			display: none
+
+		.header 
+
+			&__logo
+				width: 121px
+				height: 61px
+
+			&__info
+				height: 0
+				visibility: hidden
+				opacity: 0
+
+			&__inner
+				height: 78px
+				align-items: center
+
+			&__nav-item
+				margin-top: 0
+
+
+	&__city-mob,
+	&__phone-mob,
+	&__mail-mob,
+	&__switch
+		display: none
+	
+	&__inner
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+
+	&__logo
+		width: 229px
+		height: 115px
+		// margin-right: 50px
+
+	&__nav
+		margin-left: auto
+
+		&-list
+			display: flex
+			align-items: center
+
+		&-item
+			position: relative
+			margin-top: 20px
+
+			&:not(:last-child)
+				margin-right: 87px
+	
+		&-link
+			font-size: 20px
+			line-height: 1.3em
+			+trs()
+
+			&.active
+				opacity: .5
+
+			&:hover:not(.active)
+				opacity: .8
+
+	&__info
+		position: relative
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		height: 50px
+		font-size: 16px
+
+		&-separator
+			padding: 0 15px
+
+	&__phone
+		
+		&-icon
+			width: 16px
+			height: 16px
+			margin-right: 3px
+			fill: $white
+
+
+	+width-xlg()
+
+		&__logo
+			width: 180px
+			height: auto
+
+		&__nav
+
+			&-item:not(:last-child)
+				margin-right: 60px
+
+
+	+width-lg
+
+		&__logo
+			width: 150px
+			margin-right: 0
+
+		&__nav
+
+			&-item:not(:last-child)
+				margin-right: 20px
+	
+
+	+width-md()
+
+		&__nav
+
+			&-item
+				margin-top: 10px
+
+			&-link
+				font-size: 18px
+
+
+	+width-sm()
+		height: 50px
+		padding: 15px 0
+		background-color: rgba(0, 0, 0, .3)
+
+		&::before
+			display: none
+
+		&--fixed
+			background-color: rgba(0, 0, 0, .9)
+
+		&__content
+			display: flex
+			align-items: center
+			justify-content: space-between
+			width: 62%
+			margin-left: auto
+
+		&__logo
+			display: none
+
+		&__switch
+			position: relative
+			display: block
+			cursor: pointer
+			z-index: 11
+
+			&-icon
+				position: relative
+				width: 32px
+				height: 19px
+				padding: 0
+				margin: 0
+				overflow: hidden
+
+			span
+				position: absolute
+				top: calc(50% - 2px)
+				left: 0
+				display: block
+				width: 100%
+				height: 2px
+				background-color: $white
+	
+				&::before, 
+				&::after 
+					content: ''
+					position: absolute
+					display: block
+					left: 0
+					width: 100%
+					height: 2px
+					background-color: $white
+					transition-duration: 0.3s, 0.3s
+
+				&::before 
+					top: -8px
+					transition-property: top, transform
+
+				&::after 
+					bottom: -8px
+					transition-property: bottom, transform
+				
+			&--open 
+				.header__switch-title
+					opacity: 0
+
+				span 
+					background: none
+			
+					&::before, 
+					&::after 
+						transition-delay: 0s, 0.3s
+						background-color: $white
+			
+					&::before 
+						top: 0
+						transform: rotate(45deg)
+				
+					&::after 
+						bottom: 0
+						transform: rotate(-45deg)
+
+		&__inner
+			position: fixed
+			top: 0
+			left: 0
+			display: flex
+			flex-wrap: nowrap
+			flex-direction: column
+			justify-content: center
+			width: 100%
+			height: 100%
+			padding: 30px
+			overflow-y: auto
+
+			opacity: 0
+			visibility: hidden
+			+trs()
+
+			&--open
+				height: 100% !important
+				opacity: 1
+				visibility: visible
+
+		&__nav
+			order: 0
+			width: 100%
+			margin-bottom: 44px
+			margin-right: auto
+
+			&-list
+				flex-direction: column
+				align-items: flex-start
+
+			&-item
+				padding: 0
+
+				&:not(:last-child)
+					margin-bottom: 10px
+
+			&-link
+				font-size: 20px
+
+		&__info
+			display: none
+
+		&__city-mob,
+		&__phone-mob,
+		&__mail-mob
+			display: block
+
+		&__city-mob 
+			font-size: 16px
+			color: $white
+
+		&__phone-mob svg
+			width: 16px
+			height: 16px
+			fill: $white
+
+		&__mail-mob svg
+			width: 20px
+			height: 14px
+
+
+	@media screen and (max-width: 578px)
+
+		&__switch
+			right: 15px
+
+
+	+width-xs()
+
+		&__content
+			width: 100%
+			margin-left: 0
+
+

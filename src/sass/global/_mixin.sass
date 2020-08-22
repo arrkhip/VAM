@@ -1,0 +1,56 @@
+//@media
+=width-xlg 
+  @media (max-width: #{$width-xlg}) 
+    @content
+
+=width-lg 
+  @media (max-width: #{$width-lg}) 
+    @content
+ 
+=width-md 
+  @media (max-width: #{$width-md}) 
+    @content
+ 
+=width-sm 
+  @media (max-width: #{$width-sm}) 
+    @content
+
+=width-xs 
+  @media (max-width: #{$width-xs}) 
+    @content
+
+=width-xxs 
+  @media (max-width: #{$width-xxs}) 
+    @content
+
+
+=m-max($max)
+	@media (max-width: #{$max})  
+    @content
+
+
+=m-min($min)
+	@media (min-width: #{$min})  
+    @content
+
+
+// transition
+=trs($property: all, $time: .3s, $timingFunction: ease) 
+	transition: $property $time $timingFunction
+
+
+// placeholder
+=input-placeholder 
+	&::-webkit-input-placeholder 
+		@content
+	
+	&:-moz-placeholder 
+		@content
+	
+	&::-moz-placeholder 
+		@content
+	
+	&:-ms-input-placeholder 
+		@content
+	
+	

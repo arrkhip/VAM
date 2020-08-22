@@ -1,0 +1,355 @@
+/*
+ * ========================
+ * PROMO 
+ * ========================
+ */
+.promo 
+	overflow-x: hidden
+
+	&__inner
+		position: relative
+		padding: 251px 0 519px
+
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			right: 1086px
+			width: 32vw
+			height: 100%
+			background-position: right top
+			background-repeat: no-repeat
+			background-size: cover
+			background-image: url('../img/promo-banner-1.png')
+
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 273px
+			width: 80vw
+			height: 100%
+			background-position: right top
+			background-repeat: no-repeat
+			background-size: cover
+			background-image: url('../img/promo-banner-2.png')
+
+	&__info
+		position: relative
+		max-width: 918px
+		color: $white
+		z-index: 1
+
+	&__logo-xs
+		display: none
+
+	&__h1 
+		position: relative
+
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			left: 272px
+			height: 83px
+			z-index: -1
+
+		&::before
+			top: 2px
+			width: 486px
+
+		&::after
+			top: 185px
+			width: 646px
+
+		span 
+			display: inline-block
+			color: $color-text
+			padding-left: 20px
+
+	&__btn
+		display: flex
+		height: 83px
+		max-width: 355px
+		margin-top: 5px
+		background-color: $white
+
+		&-text
+			display: inline-flex
+			justify-content: center
+			align-items: center
+			width: calc(100% - 83px)
+			font: 600 22px/1 $font-main
+			color: $color-text
+
+		&-icon
+			display: inline-flex
+			justify-content: center
+			align-items: center
+			width: 83px
+			background-color: $color-primary
+
+			svg
+				width: 13px
+				height: 20px
+				fill: $white
+
+
+	+m-max(1445px)
+
+		&__inner
+			// padding: 251px 0 519px
+			padding: 190px 0 460px
+
+			&::before
+				right: 1047px
+
+
+	+width-xlg()
+
+		&__inner
+			// padding: 251px 0 519px
+
+			&::before
+				right: auto
+				left: -40px
+				width: 280px
+				background-position: right top
+
+			&::after
+				left: auto
+				right: -40px
+				width: calc(100% - 200px)
+				background-position: right top
+
+		&__info
+			max-width: 800px
+
+		&__h1 
+
+			&::before,
+			&::after
+				left: 240px
+				height: 70px
+
+			&::before
+				top: 2px
+				width: 400px
+
+			&::after
+				top: 151px
+				width: 560px
+
+		&__btn
+			max-width: 304px
+			height: 65px
+
+			&-text
+				width: calc(100% - 65px)
+
+			&-icon
+				width: 65px
+
+			
+	+width-lg()
+
+		&__inner
+			// padding: 251px 0 519px
+
+			&::before
+				left: -30px
+				width: 230px
+
+			&::after
+				right: -30px
+				width: calc(100% - 170px)
+
+		&__info
+			max-width: 665px
+
+		&__h1 
+
+			&::before,
+			&::after
+				left: 200px
+				height: 55px
+
+			&::before
+				top: 4px
+				width: 340px
+
+			&::after
+				top: 130px
+				width: 465px
+
+		&__btn
+			max-width: 254px
+			height: 55px
+
+			&-text
+				width: calc(100% - 55px)
+				font-size: 20px
+
+			&-icon
+				width: 55px
+
+			
+	+width-md()
+
+		&__inner
+			// padding: 251px 0 519px
+
+			&::before
+				width: 210px
+
+			&::after
+				width: calc(100% - 150px)
+
+		&__info
+			max-width: 600px
+
+		&__h1 
+
+			&::before,
+			&::after
+				left: 180px
+				height: 50px
+
+			&::before
+				top: 4px
+				width: 310px
+
+			&::after
+				top: 117px
+				width: 425px
+
+		&__btn
+			max-width: 229px
+			height: 50px
+
+			&-text
+				width: calc(100% - 50px)
+
+			&-icon
+				width: 50px
+
+			
+	+width-sm()
+
+		&__inner
+			// padding: 251px 0 519px
+
+			&::before
+				width: 180px
+
+			&::after
+				width: calc(100% - 120px)
+
+		&__info
+			max-width: 490px
+
+		&__h1 
+
+			&::before,
+			&::after
+				left: 150px
+				height: 42px
+
+			&::before
+				top: 2px
+				width: 240px
+
+			&::after
+				top: 92px
+				width: 330px
+
+		&__btn
+			max-width: 194px
+			height: 45px
+
+			&-text
+				width: calc(100% - 45px)
+				font-size: 18px
+
+			&-icon
+				width: 45px
+
+
+	+width-xs()	
+		position: relative
+		height: 617px
+
+		.wrapper,
+		&__inner,
+		&__info
+			height: 100%
+
+		&__inner
+			padding: 70px 0 0
+
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				right: 0
+				width: calc(100% + 60px)
+				height: 340px
+				background-position: center top
+				background-image: url('../img/promo-banner-1-xs.png')
+
+			&::after
+				content: ''
+				position: absolute
+				top: 340px
+				left: -30px
+				width: calc(100% + 60px)
+				height: 277px
+				background-position: center
+				background-image: url('../img/promo-banner-2-01-xs.png')
+
+		&__info
+			// max-width: 269px
+			// margin: 0 auto
+			display: flex
+			flex-direction: column
+			margin-top: 0
+
+		&__logo-xs
+			display: block
+			width: 167px
+			height: auto
+			margin: 0 auto 30px
+			line-height: 0
+
+		&__h1 
+			position: relative
+
+			&::before,
+			&::after
+				display: none
+
+			span 
+				color: $white
+				padding-left: 0
+
+		&__btn
+			display: flex
+			height: 60px
+			width: 100%
+			max-width: 260px
+			margin: auto auto 0
+
+			&-text
+				width: calc(100% - 60px)
+
+			&-icon
+				width: 60px
+
+				svg
+					width: 10px
+					height: 15px
+
+
+			
+
+
