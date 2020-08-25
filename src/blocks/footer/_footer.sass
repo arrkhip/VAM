@@ -4,10 +4,222 @@
  * ========================
  */
 .footer 
+	
+	&__top
+		position: relative
+		background: url('../img/footer-bg.png') center no-repeat
+		background-size: cover
+		color: $white
 
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: linear-gradient(0deg, rgba(29, 29, 27, 0.85), rgba(29, 29, 27, 0.85))
+	
+	&__inner
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding: 74px 0 23px
+	
+	&__info
+		width: 100%
+		max-width: 379px
+		margin-right: 50px
 
+	&__logo
+		margin-bottom: 30px
+
+	&__contacts
+		margin-bottom: 23px
+	
+	&__address,
+	&__email,
+	&__phone-link
+		font-weight: 700
+		line-height: 28px	
+
+	&__address
+		font-size: 14px
+
+	&__email
+		font-size: 15px
+
+	&__phone
+		display: flex
+		align-items: center
+
+		&-link
+			font-size: 18px
+			+trs()
+
+			&:hover
+				color: $color-primary
+	
+	&__partners
+
+		&-title
+			font: 700 15px/1 $font-main
+			text-transform: uppercase
+			color: #CECECE
+	
+		&-item
+			margin-top: 9px
+			line-height: 0
+	
+	&__menu
+		display: flex 
+		justify-content: space-between
+		align-items: flex-start
+		flex-wrap: wrap
+		width: 100%
+		max-width: 563px
+		margin-right: 50px
+	
+		&-list
+			margin-top: 54px
+			width: calc(50% - 13px)
+	
+		&-title,
+		&-link
+			+trs()
+
+			&:hover
+				color: $color-primary
+
+		&-title
+			font: 700 15px/24px $font-main
+			text-transform: uppercase
+
+		&-item
+			position: relative
+			padding-left: 12px
+
+			&::before
+				content: ''
+				position: absolute
+				top: 12px
+				left: 0
+				width: 4px
+				height: 4px
+				border-radius: 50%
+				background-color: $white
+
+	
+		&-link
+			font-size: 14px
+			line-height: 24px
+
+	
+	&__form
+		width: 100%
+		max-width: 658px
+		padding: 41px 30px 63px
+	
+		&-title
+			font: normal 20px/24px $font-second
+			letter-spacing: 0.05em
+			text-align: center 
+			margin-bottom: 60px
+
+		&-box
+			display: flex
+			flex-wrap: wrap
+			align-items: flex-start
+			justify-content: space-between
+
+		&-input,
+		&-upload-file,
+		&-btn
+			width: calc(50% - 15px)
+
+		&-input
+	
+	&__bottom
+		color: $white
+		background-color: $color-text
+
+		&-inner
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 10px 0
+	
+	&__copyright,
+	&__author
+		font-size: 14px
+
+	&__copyright,
+	&__social,
+	&__author
+		width: 33%
+
+	&__social
+		text-align: center
+	
+		&-item
+			&:not(:last-child)
+				margin-right: 38px
+
+		&-icon
+			width: 19px
+			height: 19px
+			fill: $white
+			+trs()
+
+			&:hover
+				fill: $color-primary
+	
+	&__author
+		display: flex
+		align-items: center
+
+		&-descr
+			margin-right: 17px
+
+			a 
+				vertical-align: middle
+
+		&-logo 
+			line-height: 0
 
 
 	+width-lg()
+
+
+	+width-md()
+
+		&__inner
+			flex-wrap: wrap
+
+		&__info,
+		&__menu
+			width: calc(50% - 30px)
+			margin-right: 0
+
+		&__form
+			width: 100%
+
+	
+	+width-sm()
+
+		&__inner
+			flex-direction: column
+
+		&__info
+			width: 100%
+			max-width: 100%
+			margin-bottom: 50px
+
+		&__menu
+			display: none
+
+		&__form
+			width: 100%
 
 	
