@@ -1,0 +1,47 @@
+/*
+ * ========================
+ * OFFICIAL-BADGE
+ * ========================
+ */
+.official-badge 
+	display: flex
+	align-items: center 
+	max-width: 316px
+	padding: 12px 16px
+	background-color: fade-out($color-text, .5)
+
+	&__icon
+		flex-shrink: 0
+		margin-right: 6px
+		line-height: 0
+
+	&__text
+		font-size: 15px
+		line-height: 21px
+		color: $white
+
+
+	+width-xlg()
+		max-width: 272px
+		padding: 12px 19px
+
+		&__icon
+			margin-right: 6px
+
+		&__text
+			font-size: 13px
+			line-height: 18px
+
+
+	+width-md()
+		max-width: 268px
+		padding: 8px 30px 8px 14px
+
+		&__icon
+			width: 40px
+			height: 36px
+			margin-right: 7px
+
+		&__text
+			font-size: 12px
+			line-height: 17px
