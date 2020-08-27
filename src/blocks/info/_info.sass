@@ -1,0 +1,124 @@
+/*
+ * ========================
+ * INFO 
+ * ========================
+ */
+.info 
+	padding: 110px 0
+
+	&__inner
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	
+	&__col
+		width: calc(50% - 20px)
+	
+	&__header
+		display: flex
+		align-items: center
+		margin-bottom: 28px
+	
+	&__body
+	
+	&__events
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+		&-card
+			position: relative
+			min-height: 365px
+			width: calc(50% - 20px)
+			padding: 0 50px 50px 50px
+			overflow: hidden
+			background-position: center
+			background-repeat: no-repeat
+			background-size: cover
+			+trs()
+
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background: linear-gradient(180deg, rgba(29, 29, 27, 0.8) 0%, rgba(29, 29, 27, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
+
+			&:nth-child(-n+2)
+				margin-bottom: 40px
+
+			&:hover
+				transform: scale(1.02)
+
+			&-date,
+			&-descr
+				position: relative
+				z-index: 1
+
+			&-date
+				display: inline-block
+				padding: 13px 20px
+				margin-bottom: 30px
+				background-color: $white
+				font-size: 12px
+				line-height: 14px
+			
+			&-descr
+				display: block
+				font-weight: 700
+				font-size: 16px
+				line-height: 27px
+				color: $white
+				+trs()
+
+				&:hover
+					color: $color-primary
+
+	&__media
+		position: relative
+		background: url('../img/media-banner.png') center no-repeat
+		background-size: cover
+		padding: 0 50px
+
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%)
+		
+		&-list
+			position: relative
+			z-index: 1
+		
+		&-item
+			display: flex
+			align-items: center
+
+			&:not(:last-child)
+				margin-bottom: 50px
+
+			&:hover
+				.info__media-icon
+					fill: $color-primary
+
+				.info__media-descr
+					color: $color-primary
+		
+		&-icon
+			flex-shrink: 0
+			width: 55px
+			height: 55px
+			fill: $white
+			margin-right: 30px
+			+trs()
+		
+		&-descr
+			font-size: 21px
+			line-height: 1.2em
+			color: $white
+			+trs()
