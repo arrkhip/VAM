@@ -55,6 +55,7 @@
 		align-items: center
 
 		&-link
+			margin-right: 14px
 			font-size: 18px
 			+trs()
 
@@ -93,6 +94,7 @@
 				color: $color-primary
 
 		&-title
+			margin-bottom: 2px
 			font: 700 15px/24px $font-main
 			text-transform: uppercase
 
@@ -109,17 +111,21 @@
 				height: 4px
 				border-radius: 50%
 				background-color: $white
+				+trs()
 
-	
+			&:hover::before
+				background-color: $color-primary
+
 		&-link
 			font-size: 14px
-			line-height: 24px
+			line-height: 18px
 
 	
 	&__form
 		width: 100%
 		max-width: 658px
 		padding: 41px 30px 63px
+		border: 1px solid $white
 	
 		&-title
 			font: normal 20px/24px $font-second
@@ -139,7 +145,16 @@
 			width: calc(50% - 15px)
 
 		&-input
-	
+			margin-bottom: 30px
+
+		&-controls
+			display: flex
+			align-items: center
+			margin-top: 20px
+
+		&-btn
+			flex-shrink: 0
+
 	&__bottom
 		color: $white
 		background-color: $color-text
