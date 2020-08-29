@@ -3,6 +3,7 @@ $(document).ready(function() {
   //= ../blocks/header/header.js
   //= ../blocks/upload-file/upload-file.js
   //= ../blocks/btn-up/btn-up.js
+  //= ../blocks/instagram/instagram.js
 	
 
 	// scroll to block
