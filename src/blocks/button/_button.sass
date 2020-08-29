@@ -7,38 +7,34 @@
 	position: relative
 	display: inline-flex
 	align-items: center
-	height: 60px
-	padding: 0 45px
+	height: 57px
+	padding: 0 50px
 	border: none
-	font: 600 20px/1 $font-main
+	font: 700 16px/1 $font-main
+	text-transform: uppercase
 	color: $white
-	background-color: $color-primary
+	background: linear-gradient(180deg, #CCD60A 0%, #B1BA00 100%)
 	+trs()
 
 	&:hover
 		cursor: pointer
 		opacity: .8
 
-	&--white
-		background-color: $white
+	&--dashed
+		height: 47px
+		padding: 0 28px
+		font-size: 13px
 		color: $color-text
+		border: 1px dashed #1D1D1B
+		background: none
 
 
-	+width-sm
-		
-		&__text
-			font-size: 20px
+	+width-xlg()
+		height: 40px
+		padding: 0 32px
+		font-size: 12px
 
-		&__icon
-			width: 40px
-			height: 22px
-			margin-left: 18px		
-
-
-	+width-xs
-		
-		&__text
-			font-size: 16px
-
-		&__icon
-			width: 35px
+		&--dashed
+			height: 34px
+			padding: 0 18px
+			font-size: 10px

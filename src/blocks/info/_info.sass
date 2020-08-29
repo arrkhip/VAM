@@ -8,7 +8,6 @@
 
 	&__inner
 		display: flex
-		align-items: flex-start
 		justify-content: space-between
 	
 	&__col
@@ -18,8 +17,12 @@
 		display: flex
 		align-items: center
 		margin-bottom: 28px
+
+		&-h2
+			margin-right: 30px
 	
 	&__body
+		height: 100%
 	
 	&__events
 		display: flex
@@ -77,10 +80,13 @@
 					color: $color-primary
 
 	&__media
+		display: flex
+		flex-direction: column
 		position: relative
+		height: calc(100% - 76px)
+		padding: 0 50px
 		background: url('../img/media-banner.png') center no-repeat
 		background-size: cover
-		padding: 0 50px
 
 		&::after
 			content: ''
@@ -94,6 +100,7 @@
 		&-list
 			position: relative
 			z-index: 1
+			margin: auto 0
 		
 		&-item
 			display: flex
@@ -122,3 +129,119 @@
 			line-height: 1.2em
 			color: $white
 			+trs()
+
+
+	+width-xlg()
+		padding: 60px 0
+
+		&__col
+			width: calc(50% - 15px)
+
+		&__header
+			margin-bottom: 20px
+
+		&__events-card
+			width: calc(50% - 15px)
+			min-height: 261px
+			padding: 0 22px 20px 35px
+
+			&-date
+				padding: 9px 11px
+				margin-bottom: 22px
+				font-size: 9px
+
+			&-descr
+				font-size: 13px
+				line-height: 22px
+
+		&__media
+			height: calc(100% - 54px)
+			padding: 0 35px
+
+			&-item
+				&:not(:last-child)
+					margin-bottom: 37px
+
+			&-icon
+				width: 39px
+				height: 39px
+				margin-right: 22px
+
+			&-descr
+				font-size: 15px
+
+
+	+width-md()
+		padding: 56px 0 50px
+
+		&__inner
+			flex-direction: column
+
+		&__col
+			width: 100%
+
+			&:not(:last-child)
+				margin-bottom: 50px
+
+		&__header
+			margin-bottom: 18px
+
+		&__h2
+			margin-right: 22px
+
+		&__events-card
+			min-height: 324px
+			padding: 0 28px 20px 41px
+
+			&:nth-child(-n+2) 
+				margin-bottom: 30px
+
+			&-date
+				padding: 11px 12px
+				margin-bottom: 25px
+				font-size: 10px
+
+			&-descr
+				font-size: 14px
+				line-height: 24px
+
+		&__media
+			height: calc(100% - 54px)
+			padding: 105px 35px
+
+
+	+width-xs()
+		padding: 34px 0 50px
+
+		&__header
+			justify-content: space-between
+			margin-bottom: 16px
+
+		&__h2
+			margin-right: 0
+
+		&__events-card
+			width: 100%
+			min-height: 261px
+			padding: 0 28px 20px 35px
+
+			&:nth-child(-n+2) 
+				margin-bottom: 0
+
+			&-date
+				padding: 9px 11px
+				margin-bottom: 22px
+				font-size: 9px
+
+			&-descr
+				font-size: 13px
+				line-height: 22px
+
+		&__media
+			height: 100%
+			padding: 56px 20px 38px 36px
+
+			&-descr
+				font-size: 14px
+
+
