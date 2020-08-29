@@ -62,6 +62,7 @@
 		&__slider
 			position: relative
 			margin-top: 20px
+			overflow: hidden
 
 			.swiper-slide
 				width: 185px	
@@ -75,7 +76,22 @@
 
 		&__btn-next
 			width: 114px
+
+			&:focus
+				outline: none
 			
 			&-icon
 				width: 15px
 				height: 28px
+
+
+	+width-md()
+
+		&__headline
+			justify-content: flex-start
+
+
+	+width-xs()
+
+		&__btn-next
+			display: none
