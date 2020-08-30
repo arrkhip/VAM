@@ -4,62 +4,7 @@
  * ========================
  */
 .headline 
-	text-align: center
-	color: $color-text
-
-	&__title
-		position: relative
-		display: inline-block
-		padding: 0 52px
-		// font: 400 40px/1 $font-second
-		text-transform: uppercase
-
-		&::before,
-		&::after
-			content: ''
-			position: absolute
-			top: 50%
-			width: 41px
-			height: 14px
-			background: url('../img/decor-sm-black.png') center no-repeat
-
-		&::before
-			left: 0
-			transform: translateY(-50%)
-
-		&::after
-			right: 0
-			transform: translateY(-50%) scale(-1, 1)
-
+	
 	&--center
 		text-align: center
 		
-	&--white 
-		color: $white
-
-		.headline__title
-
-			&::before,
-			&::after
-				background-image: url('../img/decor-sm-white.png')
-
-
-	+width-md
-
-		&__title
-			font-size: 35px
-
-			&::before,
-			&::after
-				width: 39px
-				height: 12px
-
-
-	+width-md
-
-		&__title
-			font-size: 25px
-
-			&::before,
-			&::after
-				display: none

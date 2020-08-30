@@ -29,55 +29,11 @@
 		flex-wrap: wrap
 		justify-content: space-between
 
-		&-card
-			position: relative
-			min-height: 365px
-			width: calc(50% - 20px)
-			padding: 0 50px 50px 50px
-			overflow: hidden
-			background-position: center
-			background-repeat: no-repeat
-			background-size: cover
-			+trs()
+	&__card-info
+		width: calc(50% - 20px)
 
-			&::after
-				content: ''
-				position: absolute
-				top: 0
-				left: 0
-				width: 100%
-				height: 100%
-				background: linear-gradient(180deg, rgba(29, 29, 27, 0.8) 0%, rgba(29, 29, 27, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
-
-			&:nth-child(-n+2)
-				margin-bottom: 40px
-
-			&:hover
-				transform: scale(1.02)
-
-			&-date,
-			&-descr
-				position: relative
-				z-index: 1
-
-			&-date
-				display: inline-block
-				padding: 13px 20px
-				margin-bottom: 30px
-				background-color: $white
-				font-size: 12px
-				line-height: 14px
-			
-			&-descr
-				display: block
-				font-weight: 700
-				font-size: 16px
-				line-height: 27px
-				color: $white
-				+trs()
-
-				&:hover
-					color: $color-primary
+		&:nth-child(-n+2)
+			margin-bottom: 40px
 
 	&__media
 		display: flex
@@ -140,19 +96,8 @@
 		&__header
 			margin-bottom: 20px
 
-		&__events-card
-			width: calc(50% - 15px)
-			min-height: 261px
-			padding: 0 22px 20px 35px
-
-			&-date
-				padding: 9px 11px
-				margin-bottom: 22px
-				font-size: 9px
-
-			&-descr
-				font-size: 13px
-				line-height: 22px
+		&__card-info
+			width: calc(50% - 20px)
 
 		&__media
 			height: calc(100% - 54px)
@@ -189,21 +134,11 @@
 		&__h2
 			margin-right: 22px
 
-		&__events-card
-			min-height: 324px
-			padding: 0 28px 20px 41px
+		&__card-info
+			width: calc(50% - 15px)
 
 			&:nth-child(-n+2) 
 				margin-bottom: 30px
-
-			&-date
-				padding: 11px 12px
-				margin-bottom: 25px
-				font-size: 10px
-
-			&-descr
-				font-size: 14px
-				line-height: 24px
 
 		&__media
 			height: calc(100% - 54px)
@@ -220,22 +155,11 @@
 		&__h2
 			margin-right: 0
 
-		&__events-card
+		&__card-info
 			width: 100%
-			min-height: 261px
-			padding: 0 28px 20px 35px
 
 			&:nth-child(-n+2) 
 				margin-bottom: 0
-
-			&-date
-				padding: 9px 11px
-				margin-bottom: 22px
-				font-size: 9px
-
-			&-descr
-				font-size: 13px
-				line-height: 22px
 
 		&__media
 			height: 100%

@@ -1,0 +1,37 @@
+/*
+ * ========================
+ * ABOUT-MAIN 
+ * ========================
+ */
+.about-main
+	padding-bottom: 110px
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		padding-top: 33px
+
+	&__card-info
+		width: calc(50% - 20px)
+		margin-bottom: 40px
+
+	+width-md()
+
+		&__card-info
+			width: calc(50% - 15px)
+			margin-bottom: 30px
+
+	+width-xs()
+
+		&__card-info
+			width: 100%
+
+
+	+m-min(1200px)
+
+		&__card-info
+			margin-bottom: 0
+
+			&:not(:first-child)
+				width: calc(25% - 20px)
