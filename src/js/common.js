@@ -4,6 +4,7 @@ $(document).ready(function() {
   //= ../blocks/upload-file/upload-file.js
   //= ../blocks/btn-up/btn-up.js
   //= ../blocks/instagram/instagram.js
+  //= ../blocks/contacts/contacts.js
 	
 
 	// scroll to block

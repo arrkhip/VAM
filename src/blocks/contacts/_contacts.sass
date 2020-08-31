@@ -1,0 +1,146 @@
+/*
+ * ========================
+ * CONTACTS
+ * ========================
+ */
+.contacts 
+	padding-bottom: 110px
+
+	&__inner
+		display: flex
+		justify-content: space-between
+		padding-top: 28px
+
+	&__info,
+	&__departments
+		width: calc(25% - 26px)
+
+	&__info
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		padding: 28px 10px 28px 30px 
+		border: 1px solid #9E9E9E
+
+		&-address
+			margin-bottom: 10px
+			font: 700 14px/28px $font-main
+
+		&-email
+			margin: 55px 0 20px 0
+			font: 700 15px/20px $font-main
+
+		&-phone
+			margin-bottom: 20px
+			font: 700 18px/24px $font-main
+
+		&-social
+			display: flex
+			align-items: center
+			margin-top: 38px
+	
+			&-item
+
+				&:not(:last-child)
+					margin-right: 35px
+	
+			&-icon
+				width: 21px
+				height: 21px
+				fill: $color-text
+				+trs()
+
+				&:hover
+					fill: $color-primary
+	
+	&__departments
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	
+		&-item
+			padding: 28px 31px
+			border: 1px solid #9E9E9E
+			font-size: 14px
+			line-height: 21px
+
+			&:not(:last-child)
+				margin-bottom: 20px
+	
+		&-subtitle
+			margin-bottom: 20px
+	
+		&-descr
+	
+			span
+				font-weight: 700
+				font-size: 18px
+	
+	&__map
+		display: flex
+		width: calc(50% - 26px)
+		background-color: #f6f6f6
+
+
+	+width-xlg()
+
+		&__info,
+		&__departments
+			width: calc(25% - 16px)
+
+		&__map
+			width: calc(50% - 16px)
+
+
+	+width-lg()
+
+		&__info,
+		&__departments
+			width: calc(30% - 16px)
+
+		&__map
+			width: calc(40% - 16px)
+
+
+	+width-md()
+
+		&__inner
+			flex-wrap: wrap
+
+		&__info,
+		&__departments
+			width: calc(50% - 15px)
+			margin-bottom: 30px
+
+		&__map
+			width: 100%
+			height: 400px
+
+
+	+width-sm()
+
+		&__info,
+		&__departments-item
+			padding: 25px 15px
+
+		&__info
+			&-email
+				margin: 30px 0 15px 0
+
+		&__map
+			height: 300px
+
+
+	+width-xs()
+
+		&__inner
+			flex-direction: column
+
+		&__info,
+		&__departments
+			width: 100%
+			margin-bottom: 30px
+
+		&__map
+			height: 250px
+
