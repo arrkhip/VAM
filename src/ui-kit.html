@@ -76,18 +76,50 @@
 				<div class="ui-kit__block-head">
 					<div class="ui-kit__block-title">Form elements</div>
 				</div>
-				<div class="ui-kit__block-body" style="background: url('img/promo-bg-home.png') center no-repeat; background-size: cover;">
-					<div style="padding: 20px; background-color: rgba(0, 0, 0, .3);">
-						<input type="text" name="test-1" placeholder="Заполните поле" class="input">
-						<br>
-						<br>
-						<input type="text" name="test-2" placeholder="Заполните поле" class="input input--lightblue">
-						<br>
-						<br>
-						<input type="text" name="test-3" placeholder="Заполните поле" class="input input--empty">
-						<br>
-						<br>
-						<textarea name="test-4" placeholder="Введите ваше сообщение" class="textarea"></textarea>
+				<div class="ui-kit__block-body">
+					<div style="background: url('img/promo-bg-home.png') center no-repeat; background-size: cover;">
+						<div style="padding: 20px; background-color: rgba(0, 0, 0, .3);">
+							<input type="text" name="test-1" placeholder="Заполните поле" class="input">
+							<br>
+							<br>
+							<input type="text" name="test-2" placeholder="Заполните поле" class="input input--lightblue">
+							<br>
+							<br>
+							<input type="text" name="test-3" placeholder="Заполните поле" class="input input--empty">
+							<br>
+							<br>
+							<textarea name="test-4" placeholder="Введите ваше сообщение" class="textarea"></textarea>
+						</div>
+					</div>
+
+					<br>
+					<br>
+
+					<div class="upload-file">
+						<div class="upload-file__btn">
+							<input type="file" name="file" id="upload-file__input" class="upload-file__input" multiple>
+							<label class="upload-file__label" for="upload-file__input">
+								<svg class="upload-file__icon">
+									<use xlink:href="img/sprite.svg#pin"></use>
+								</svg>
+								<span class="upload-file__text">Прикрепить файл</span>
+							</label>
+						</div>
+						<div class="upload-file__message">
+							<svg class="upload-file__message-icon">
+								<use xlink:href="img/sprite.svg#file"></use>
+							</svg>
+							<p class="upload-file__message-text"></p>
+						</div>
+					</div>
+
+					<br>
+					<br>
+
+
+					<div class="checkbox">
+						<input type="checkbox" id="checkbox" class="questions__form-checkbox" name="ch-1" required />
+						<label for="checkbox" class="checkbox__label">Я согласен на обработку персональных данных. <a href="#" target="_blank" class="link link--white">Политика конфиденциальности</a></label>
 					</div>
 				</div>
 			</div>
@@ -102,6 +134,11 @@
 					<div class="ui-kit__svg-icon">
 						<svg>
 							<use xlink:href="img/sprite.svg#circular"></use>
+						</svg>
+					</div>
+					<div class="ui-kit__svg-icon">
+						<svg>
+							<use xlink:href="img/sprite.svg#file"></use>
 						</svg>
 					</div>
 					<div class="ui-kit__svg-icon">
