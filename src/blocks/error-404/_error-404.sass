@@ -1,0 +1,77 @@
+/*
+ * ========================
+ * ERROR-404
+ * ========================
+ */
+.error-404 
+	
+	&__inner
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		padding-top: 25px
+	
+	&__info
+		width: 100%
+		max-width: 363px
+		margin-right: 69px
+	
+	&__descr
+		margin-bottom: 25px
+		font-size: 16px
+		line-height: 27px
+	
+	&__banner
+		line-height: 0
+
+
+	+width-xlg()
+
+		&__info
+			margin-right: 40px
+
+
+	+width-md()
+
+		&__inner
+			position: relative
+			padding: 35px 25px 110px
+			margin-top: 30px
+			overflow: hidden
+
+		&__info
+			position: relative
+			z-index: 1
+			max-width: 425px
+			margin-right: 0
+
+		&__descr
+			color: $white
+
+		&__banner
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-color: rgba(0, 0, 0, .5)
+
+			img
+				object-fit: cover
+				width: 100%
+				height: 100%
+
+
+	+m-min(1400px)
+
+		&__btn
+			height: 57px
+			padding: 0 42px
