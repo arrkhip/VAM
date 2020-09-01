@@ -6,6 +6,7 @@ $(document).ready(function() {
   //= ../blocks/instagram/instagram.js
   //= ../blocks/contacts/contacts.js
   //= ../blocks/info/info.js
+  //= ../blocks/tabs/tabs.js
 	
 
 	// scroll to block
