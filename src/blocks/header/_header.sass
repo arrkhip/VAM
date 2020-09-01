@@ -7,19 +7,11 @@
 	position: absolute
 	top: 0
 	left: 0
-	width: 100%
 	z-index: 11
-	color: $white
+	width: 100%
+	padding: 14px 0
+	background-color: $white
 	+trs()
-
-	&::before
-		content: ''
-		position: absolute
-		top: 0
-		right: 0
-		width: 100%
-		height: 50px
-		background-color: fade-out($color-text, .5)
 
 	&--fixed
 		position: fixed
@@ -28,280 +20,442 @@
 		height: 78px
 		background-color: rgba(0, 0, 0, .9)
 
-		&::before
-			display: none
-
-		.header 
-
-			&__logo
-				width: 121px
-				height: 61px
-
-			&__info
-				height: 0
-				visibility: hidden
-				opacity: 0
-
-			&__inner
-				height: 78px
-				align-items: center
-
-			&__nav-item
-				margin-top: 0
-
-
-	&__city-mob,
-	&__phone-mob,
-	&__mail-mob,
-	&__switch
-		display: none
-	
 	&__inner
 		display: flex
-		flex-wrap: wrap
-		align-items: flex-start
-
+		align-items: center
+		
 	&__logo
-		width: 229px
-		height: 115px
-		// margin-right: 50px
+		width: 100%
+		max-width: 324px
+		line-height: 0
+		+trs()
 
-	&__nav
-		margin-left: auto
+		&:hover
+			opacity: 0.8
 
-		&-list
-			display: flex
+	&__box
+		margin: 0 auto
+		text-align: center
+
+	&__phone
+		margin-bottom: 24px
+
+		&-number
+			display: inline-flex
 			align-items: center
+			margin-right: 14px
+
+			&:hover
+				opacity: 0.6
+
+			svg
+				width: 21px
+				height: 21px
+				margin-right: 11px
+				fill: $color-primary
+
+			span
+				font: 700 18px/1 $font-main
+				color: $color-primary
+
+		&-back-call
+			font-size: 14px
+			line-height: 1.4em
+
+	&__menu
+		display: flex
+		padding: 0 10px
 
 		&-item
 			position: relative
-			margin-top: 20px
 
 			&:not(:last-child)
-				margin-right: 87px
-	
+				margin-right: 80px
+
 		&-link
-			font-size: 20px
-			line-height: 1.3em
+			font: 700 16px/1 $font-main
+			text-transform: uppercase
+
+			&:hover
+				text-decoration: underline
+
+		&-sublist
+			display: none
+
+		&-subitem
+
+		&-sublink
+
+	&__search
+		display: inline-flex
+		align-items: center
+		margin-right: 99px
+
+		&:hover
+			cursor: pointer
+
+			.header__search-icon
+				fill: $color-primary
+
+			.header__search-text
+				color: $color-primary
+
+		&-icon
+			width: 15px
+			height: 16px
+			fill: $color-text
+			margin-right: 8px
 			+trs()
 
-			&.active
-				opacity: .5
+		&-text
+			font: 700 14px/1 $font-main
+			+trs()
 
-			&:hover:not(.active)
-				opacity: .8
-
-	&__info
-		position: relative
-		display: flex
-		justify-content: flex-end
+	&__social
+		display: inline-flex
 		align-items: center
-		height: 50px
-		font-size: 16px
 
-		&-separator
-			padding: 0 15px
+		&-item
 
-	&__phone
-		
+			&:not(:last-child)
+				margin-right: 30px
+
 		&-icon
-			width: 16px
-			height: 16px
-			margin-right: 3px
-			fill: $white
+			width: 15px
+			height: 15px
+			fill: $color-text
+			+trs()
+
+			&:hover
+				fill: $color-primary
+
+	&__switch
+		display: none
+
+	&__mob-menu
+		display: none
 
 
 	+width-xlg()
-
+		
 		&__logo
-			width: 180px
-			height: auto
+			max-width: 294px
 
-		&__nav
+		&__phone
+			margin-bottom: 19px
 
-			&-item:not(:last-child)
-				margin-right: 60px
+			&-number
 
+				svg
+					width: 16px
+					height: 16px
 
-	+width-lg
+				span
+					font-size: 13px
 
-		&__logo
-			width: 150px
-			margin-right: 0
+			&-back-call
+				font-size: 16px
 
-		&__nav
-
-			&-item:not(:last-child)
-				margin-right: 20px
-	
-
-	+width-md()
-
-		&__nav
+		&__menu
+			display: flex
+			padding: 0 10px
 
 			&-item
-				margin-top: 10px
+
+				&:not(:last-child)
+					margin-right: 56px
 
 			&-link
-				font-size: 18px
+				font-size: 13px
+
+			&-sublist
+
+			&-subitem
+
+			&-sublink
+
+		&__search
+			margin-right: 59px
+
+			&-text
+				font-size: 13px
 
 
-	+width-sm()
-		height: 50px
-		padding: 15px 0
-		background-color: rgba(0, 0, 0, .3)
+	+width-lg()
+		&__logo
+			max-width: 225px
 
-		&::before
+	&__menu
+		&-item:not(:last-child)
+			margin-right: 35px
+
+	&__search
+		margin-right: 35px
+
+	&__social-item:not(:last-child)
+		margin-right: 20px
+
+
+	+width-md()
+		padding: 11px 0
+
+		&__social,
+		&__phone-back-call,
+		&__menu
 			display: none
 
-		&--fixed
-			background-color: rgba(0, 0, 0, .9)
-
-		&__content
-			display: flex
-			align-items: center
+		&__inner
 			justify-content: space-between
-			width: 62%
-			margin-left: auto
 
 		&__logo
-			display: none
+			max-width: 205px
+			margin-right: 0
+
+		&__box
+			margin: 0
+
+		&__phone
+			margin-bottom: 0
+
+			&-number
+				margin-right: 0
+
+				span
+					font-size: 16px
+
+		&__search
+			margin-right: 0
 
 		&__switch
-			position: relative
-			display: block
-			cursor: pointer
-			z-index: 11
+			display: flex
+			align-items: center
+
+			&:hover
+				cursor: pointer
 
 			&-icon
 				position: relative
-				width: 32px
-				height: 19px
+				display: block
+				width: 18px
+				height: 14px
 				padding: 0
 				margin: 0
-				overflow: hidden
+				margin-right: 11px
+				z-index: 11
 
-			span
-				position: absolute
-				top: calc(50% - 2px)
-				left: 0
-				display: block
-				width: 100%
-				height: 2px
-				background-color: $white
-	
-				&::before, 
-				&::after 
-					content: ''
+				span
 					position: absolute
-					display: block
+					top: calc(50% - 1px)
 					left: 0
+					display: block
 					width: 100%
 					height: 2px
-					background-color: $white
-					transition-duration: 0.3s, 0.3s
-
-				&::before 
-					top: -8px
-					transition-property: top, transform
-
-				&::after 
-					bottom: -8px
-					transition-property: bottom, transform
-				
-			&--open 
-				.header__switch-title
-					opacity: 0
-
-				span 
-					background: none
-			
+					background-color: $color-text
+		
 					&::before, 
 					&::after 
-						transition-delay: 0s, 0.3s
-						background-color: $white
-			
+						content: ''
+						position: absolute
+						display: block
+						left: 0
+						width: 100%
+						height: 2px
+						background-color: $color-text
+						transition-duration: 0.3s, 0.3s
+
 					&::before 
-						top: 0
-						transform: rotate(45deg)
-				
+						top: -5px
+						transition-property: top, transform
+
 					&::after 
-						bottom: 0
-						transform: rotate(-45deg)
+						bottom: -5px
+						transition-property: bottom, transform
+				
+			&--open 
 
-		&__inner
+				.header__switch
+
+					&-icon span 
+						background: none
+				
+						&::before, 
+						&::after 
+							transition-delay: 0s, 0.3s
+							background-color: $color-primary
+				
+						&::before 
+							top: 0
+							transform: rotate(45deg)
+					
+						&::after 
+							bottom: 0
+							transform: rotate(-45deg)
+
+					&-title
+						color: $color-primary
+
+			&-title
+				font: 700 13px/1 $font-main
+				text-transform: uppercase
+
+		&__mob-menu
 			position: fixed
-			top: 0
+			top: 63px
 			left: 0
-			display: flex
-			flex-wrap: nowrap
-			flex-direction: column
-			justify-content: center
+			display: block
 			width: 100%
-			height: 100%
-			padding: 30px
+			height: calc(100% - 63px)
+			padding: 50px 45px
+			color: $white
+			background-color: rgba(0, 0, 0, .95)
 			overflow-y: auto
-
-			opacity: 0
+			+trs(all, .25s, ease-in)
 			visibility: hidden
-			+trs()
+			opacity: 0
+			transform: translateY(50px)
+
 
 			&--open
-				height: 100% !important
-				opacity: 1
 				visibility: visible
+				opacity: 1
+				transform: translateY(0)
 
-		&__nav
-			order: 0
-			width: 100%
-			margin-bottom: 44px
-			margin-right: auto
+			&-inner
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-between
+				align-items: flex-start
 
 			&-list
+				width: calc(50% - 25px)
+				margin-bottom: 50px
+		
+			&-title,
+			&-link
+				+trs()
+
+				&:hover
+					color: $color-primary
+
+			&-title
+				margin-bottom: 7px
+				font: 700 16px/1 $font-main
+				text-transform: uppercase
+
+			&-item
+				position: relative
+				padding-left: 10px
+
+				&::before
+					content: ''
+					position: absolute
+					top: 12px
+					left: 0
+					width: 4px
+					height: 4px
+					border-radius: 50%
+					background-color: $white
+					+trs()
+
+				&:hover::before
+					background-color: $color-primary
+
+			&-link
+				font-size: 13px
+				line-height: 18px
+
+			&-contacts
+				display: flex
 				flex-direction: column
 				align-items: flex-start
 
-			&-item
-				padding: 0
+			&-address,
+			&-email,
+			&-phone
+				margin-bottom: 10px
 
-				&:not(:last-child)
-					margin-bottom: 10px
+			&-address
+				font-size: 13px
+				line-height: 26px
 
-			&-link
-				font-size: 20px
+			&-email
+				display: inline-block
+				font-size: 13px
 
-		&__info
-			display: none
+			&-phone
+				display: inline-block
+				font-size: 16px
 
-		&__city-mob,
-		&__phone-mob,
-		&__mail-mob
-			display: block
+			&-btn
+				height: 45px
+				padding: 0 30px
+				font-size: 14px
 
-		&__city-mob 
-			font-size: 16px
-			color: $white
+			&-social
+				display: inline-flex
+				margin-top: -80px
 
-		&__phone-mob svg
-			width: 16px
-			height: 16px
-			fill: $white
+				.header__social
+				
+					&-item:not(:last-child)
+						margin-right: 40px
 
-		&__mail-mob svg
-			width: 20px
-			height: 14px
+					&-icon
+						width: 21px
+						height: 21px
+						fill: $white
 
+						&:hover
+							fill: $color-primary
 
-	@media screen and (max-width: 578px)
+	+width-sm()
 
-		&__switch
-			right: 15px
+		&__logo
+			max-width: 140px
+
+		&__mob-menu
+			top: 52px
+			height: calc(100% - 52px)
+			padding: 40px 30px
+
+			&-list
+				margin-bottom: 40px
+				width: calc(50% - 15px)
 
 
 	+width-xs()
+		padding: 10px 0
 
-		&__content
-			width: 100%
-			margin-left: 0
+		&__phone-number span,
+		&__search-text
+			display: none
 
+		&__logo
+			max-width: 150px
 
+		&__switch
+
+			&-icon
+				width: 13px
+				height: 12px
+				margin-right: 5px
+
+				span
+
+					&::before 
+						top: -4px
+
+					&::after 
+						bottom: -4px
+
+			&-title
+				font-size: 10px
+
+		&__mob-menu
+
+			&-inner
+				flex-direction: column
+				align-items: flex-start
+
+			&-list
+				width: 100%
