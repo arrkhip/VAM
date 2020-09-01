@@ -1,6 +1,7 @@
 $('.js-header__switch').click(function() {
 	$('.header__switch').toggleClass('header__switch--open');
 	$('.header__mob-menu').toggleClass('header__mob-menu--open');
+	$('.header').toggleClass('header--h-full');
 	$('body').toggleClass('scroll-hidden');
 });
 

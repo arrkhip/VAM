@@ -4,21 +4,65 @@
  * ========================
  */
 .header 
-	position: absolute
+	position: fixed
 	top: 0
 	left: 0
 	z-index: 11
 	width: 100%
-	padding: 14px 0
+	padding-top: 14px
 	background-color: $white
 	+trs()
 
+	&--blur//home and product 
+		background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.65) 100%)
+		backdrop-filter: blur(20px)
+
 	&--fixed
-		position: fixed
-		top: 0
-		left: 0
-		height: 78px
-		background-color: rgba(0, 0, 0, .9)
+		padding: 0
+		background: rgba(29, 29, 27, 0.8)
+		backdrop-filter: blur(10px)
+
+		&.header--h-full
+			height: 100%
+
+		.header
+			&__logo-black,
+			&__phone,
+			&__search,
+			&__social
+				display: none
+
+			&__logo
+				max-width: 248px
+
+				&-white
+					display: block
+
+			&__box
+				margin: 0
+
+			&__menu
+				padding: 0 0 0 42px
+
+				&-item
+					padding: 20px 0
+
+				&-link
+					color: $white
+
+			&__switch
+
+				&-icon span
+					background-color: $white
+
+					&::before,
+					&::after
+						background-color: $white
+
+				&-title
+					color: $white
+
+
 
 	&__inner
 		display: flex
@@ -32,6 +76,9 @@
 
 		&:hover
 			opacity: 0.8
+
+		&-white
+			display: none
 
 	&__box
 		margin: 0 auto
@@ -68,9 +115,16 @@
 
 		&-item
 			position: relative
+			padding-bottom: 14px
 
 			&:not(:last-child)
 				margin-right: 80px
+
+			&:hover
+				.header__menu-sublist
+					visibility: visible
+					opacity: 1
+					transform: translateY(0)
 
 		&-link
 			font: 700 16px/1 $font-main
@@ -80,11 +134,42 @@
 				text-decoration: underline
 
 		&-sublist
-			display: none
+			position: absolute
+			top: 100%
+			left: 0
+			width: 597px
+			padding: 25px 33px
+			background-color: $white
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+			visibility: hidden
+			opacity: 0
+			transform: translateY(20px)
+			+trs()
 
 		&-subitem
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+			&:not(:last-child)
+				margin-bottom: 21px
+
+			&-img
+				width: 100%
+				max-width: 156px
+				line-height: 0
 
 		&-sublink
+			width: 100%
+			max-width: 356px
+			font: 700 14px/17px $font-main
+			text-transform: uppercase
+			text-align: left
+			+trs()
+
+			&:hover
+				color: $color-primary
+				text-decoration: underline
 
 	&__search
 		display: inline-flex
@@ -169,8 +254,10 @@
 				font-size: 13px
 
 			&-sublist
+				padding: 25px 20px
 
-			&-subitem
+			&-subitem-img
+				margin-right: 15px
 
 			&-sublink
 
@@ -409,6 +496,10 @@
 							fill: $color-primary
 
 	+width-sm()
+
+		&--fixed
+			.header__logo
+				max-width: 120px
 
 		&__logo
 			max-width: 140px
