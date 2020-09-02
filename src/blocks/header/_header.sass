@@ -10,17 +10,20 @@
 	z-index: 11
 	width: 100%
 	padding-top: 14px
+	border-bottom: 1px solid  #DEDEDE
 	background-color: $white
 	+trs()
 
 	&--blur//home and product 
 		background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.65) 100%)
 		backdrop-filter: blur(20px)
+		border-bottom: none
 
 	&--fixed
 		padding: 0
 		background: rgba(29, 29, 27, 0.8)
 		backdrop-filter: blur(10px)
+		border-bottom: none
 
 		&.header--h-full
 			height: 100%
@@ -62,7 +65,10 @@
 				&-title
 					color: $white
 
-
+	// верхний отступ у последующих за шапкой блоков
+	&:not(.header--blur) + section,
+	&:not(.header--blur) + div
+		margin-top: 108px
 
 	&__inner
 		display: flex
@@ -222,6 +228,10 @@
 
 
 	+width-xlg()
+
+		&:not(.header--blur) + section,
+		&:not(.header--blur) + div
+			margin-top: 104px
 		
 		&__logo
 			max-width: 294px
@@ -269,6 +279,7 @@
 
 
 	+width-lg()
+
 		&__logo
 			max-width: 225px
 
@@ -285,6 +296,10 @@
 
 	+width-md()
 		padding: 11px 0
+
+		&:not(.header--blur) + section,
+		&:not(.header--blur) + div
+			margin-top: 66px
 
 		&__social,
 		&__phone-back-call,
@@ -495,7 +510,11 @@
 						&:hover
 							fill: $color-primary
 
+
 	+width-sm()
+		&:not(.header--blur) + section,
+		&:not(.header--blur) + div
+			margin-top: 52px
 
 		&--fixed
 			.header__logo
