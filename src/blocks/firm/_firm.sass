@@ -1,0 +1,123 @@
+/*
+ * ========================
+ * FIRM 
+ * ========================
+ */
+.firm 
+	padding-bottom: 110px
+
+	&__inner
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+
+	&__col
+		width: calc(50% - 22px)
+
+	&__headline
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 30px
+
+	&__catalog
+		display: flex
+		align-items: center
+
+		&-icon
+			width: 38px
+			height: 44px
+			fill: $color-primary
+			margin-right: 16px
+
+		&-link
+			font-size: 14px
+			line-height: 21px
+			text-decoration: underline
+			color: $color-primary
+
+			&:hover
+				text-decoration: none
+
+	&__info
+
+		&-text
+			&:not(:first-child)
+				margin-top: 35px
+
+		&-list
+			padding-left: 18px
+
+			li 
+				list-style-type: disc
+
+	&__slider
+		overflow: hidden
+		margin-bottom: 50px
+
+		&-top
+			position: relative
+			overflow: hidden
+
+		&-next,
+		&-prev
+			position: absolute
+			top: 50%
+			z-index: 1
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 74px
+			height: 74px
+			background-color: fade-out($color-text, .5)
+			transform: translateY(-50%)
+
+			&:hover
+				cursor: pointer
+				opacity: .8
+
+		&-next
+			right: 0
+
+		&-prev
+			left: 0
+
+			.firm__slider-arrow
+				transform: rotate(-180deg)
+
+		&-arrow
+			width: 16px
+			height: 28px
+			fill: $white
+
+		&-thumbs
+
+			.swiper-slide-thumb-active
+				.firm__slider-thumb::after
+					opacity: 1
+
+
+		&-thumb
+			position: relative
+
+			&::after
+				content: ''
+				position: absolute
+				top: -10px
+				left: 10px
+				width: calc(100% - 20px)
+				height: 10px
+				background-color: $color-primary
+				opacity: 0
+
+
+	+width-md()
+
+		&__inner
+			flex-direction: column
+
+		&__col
+			width: 100%
+
+			&:first-child
+				margin-bottom: 50px

@@ -7,6 +7,7 @@ $(document).ready(function() {
   //= ../blocks/contacts/contacts.js
   //= ../blocks/info/info.js
   //= ../blocks/tabs/tabs.js
+  //= ../blocks/firm/firm.js
 	
 
 	// scroll to block
