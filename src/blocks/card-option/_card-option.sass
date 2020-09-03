@@ -1,0 +1,49 @@
+/*
+ * ========================
+ * CARD-OPTION
+ * ========================
+ */
+.card-option 
+	width: 100%
+	max-width: 392px
+	padding: 33px 30px 56px 30px
+	border: 1px solid #9E9E9E
+	+trs()
+
+	&:hover
+		border-color: $color-primary
+
+	&__inner
+		display: flex
+		align-items: flex-start
+		
+	&__icon
+		flex-shrink: 0
+		width: 63px
+		height: 63px
+		margin-right: 20px
+
+	&__info
+
+	&__descr
+		font-size: 14px
+		line-height: 21px
+
+
+	+width-xlg()
+		padding: 20px
+
+		&__icon
+			width: 50px
+			height: 50px
+			margin-right: 20px
+
+
+	+m-max(1100px)
+
+		&__inner
+			flex-direction: column
+			text-align: center
+
+		&__icon
+			margin-bottom: 20px

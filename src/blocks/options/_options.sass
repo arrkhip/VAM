@@ -1,0 +1,51 @@
+/*
+ * ========================
+ * OPTIONS
+ * ========================
+ */
+.options 
+	padding: 100px 0 110px			
+
+	&__list
+		display: flex
+		padding-top: 32px	
+		margin: 0 -20px
+
+	&__item
+		display: flex
+		width: 25%
+		padding: 0 20px
+
+
+	+width-lg()
+
+		&__list
+			margin: 0 -15px
+
+		&__item
+			padding: 0 15px
+
+
+	+width-md()
+		padding: 80px
+
+		&__list
+			flex-wrap: wrap
+
+		&__item
+			width: 50%
+			margin-bottom: 20px
+
+
+	+width-xs()
+		padding: 60px 0	
+
+		&__list
+			flex-direction: column
+			margin: 0 -10px
+
+		&__item
+			justify-content: center
+			width: 100%
+			padding: 0 10px
+
