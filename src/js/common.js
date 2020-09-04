@@ -8,6 +8,7 @@ $(document).ready(function() {
   //= ../blocks/info/info.js
   //= ../blocks/tabs/tabs.js
   //= ../blocks/firm/firm.js
+  //= ../blocks/spares/spares.js
 	
 
 	// scroll to block

@@ -1,0 +1,80 @@
+/*
+ * ========================
+ * SPARES 
+ * ========================
+ */
+.spares 
+	padding-top: 96px
+	
+	&__inner
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		overflow: hidden
+	
+	&__info,
+	&__slider
+		width: calc(50% - 32px)
+	
+	&__info
+
+	&__headline 
+		margin-bottom: 25px
+
+	&__descr
+		margin-bottom: 31px
+	
+	&__slider
+		position: relative
+		overflow: hidden
+		// padding: 0 65px
+
+		&-arrow-prev,
+		&-arrow-next
+			position: absolute
+			top: 50%
+			z-index: 1
+			width: 22px
+			height: 40px
+			fill: $color-text
+			transform: translateY(-50%)
+			+trs()
+
+			&:hover
+				cursor: pointer
+				fill: $color-primary
+
+		&-arrow-prev
+			left: 0
+			transform: translateY(-50%) rotate(-180deg)
+
+		&-arrow-next
+			right: 0
+
+	&__card
+		margin-bottom: 45px
+
+		&-banner
+			max-width: 190px
+			max-height: 106px
+			margin-bottom: 10px
+	
+		&-info
+			font: 400 14px/21px $font-main
+	
+		&-title
+			font-weight: 700
+
+
+	+width-md()
+
+		&__inner
+			flex-direction: column
+
+		&__info,
+		&__slider
+			width: 100%
+
+		&__info
+			margin-bottom: 50px
