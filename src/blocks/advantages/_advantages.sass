@@ -1,0 +1,106 @@
+/*
+ * ========================
+ * ADVANTAGES 
+ * ========================
+ */
+.advantages
+	padding-bottom: 90px
+
+	&__tabs
+		display: flex
+		padding-top: 32px
+
+		&-header
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			width: 52.68%
+			padding-top: 1px
+			padding-right: 50px
+
+		&-item
+			display: flex
+			align-items: center
+			width: calc(50% - 25px)
+			min-height: 69px
+			padding: 10px 20px
+			margin-top: -1px
+			border: 1px solid #DEDEDE
+			+trs()
+
+			&:hover
+				cursor: pointer
+				border-color: $color-primary
+				z-index: 1
+
+			&.active
+				border-color: $color-primary
+				z-index: 1
+
+				.advantages__tabs-item-icon
+					fill: $color-primary
+
+				.advantages__tabs-item-text
+					color: $color-primary
+
+			&-icon
+				flex-shrink: 0
+				width: 25px
+				height: 25px
+				fill: $color-text
+				margin-right: 20px
+				+trs()
+
+			&-text
+				font-size: 14px
+				line-height: 21px
+				color: $black
+				+trs()
+
+		&-wrapper
+			display: flex
+			width: 47.32%
+
+		&-content
+			display: flex
+
+	&__card
+		display: flex
+
+		&-info,
+		&-banner
+			width: 50%
+
+		&-info
+			display: inline-flex
+			align-items: center
+			padding: 45px
+			background-color: $color-primary
+
+		&-text
+			font-size: 14px
+			line-height: 31px
+			color: $white
+
+		&-banner
+			min-height: 342px
+			line-height: 0
+
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+
+
+	+width-md()
+
+		&__tabs
+			flex-direction: column
+
+			&-header,
+			&-wrapper
+				width: 100%
+
+			&-header
+				padding-right: 0
+				padding-bottom: 50px
