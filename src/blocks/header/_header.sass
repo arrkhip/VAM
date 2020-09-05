@@ -25,6 +25,12 @@
 		backdrop-filter: blur(10px)
 		border-bottom: none
 
+		.header__menu--fix
+			display: none
+
+		.header__menu--scroll
+			display: flex !important
+
 		&.header--h-full
 			height: 100%
 
@@ -32,7 +38,7 @@
 			&__logo-black,
 			&__phone,
 			&__search,
-			&__social
+			&__social,
 				display: none
 
 			&__logo
@@ -118,6 +124,9 @@
 	&__menu
 		display: flex
 		padding: 0 10px
+
+		&--scroll
+			display: none !important	
 
 		&-item
 			position: relative
