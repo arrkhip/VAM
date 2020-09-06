@@ -19,13 +19,49 @@
 			margin-top: 40px
 
 
+	&--sm
+		padding-top: 110px
+
+		.certificates 
+
+			&__item
+				width: calc(25% - 35px)
+
+				&:not(:nth-child(-n+2))
+					margin-top: 0
+
+		.card-certificate
+
+			&__inner
+				align-items: flex-start
+
+			&__banner
+				margin-right: 13px
+
+			&__descr
+				font-size: 14px
+				line-height: 24px
+
+
 	+width-xlg()
 
 		&__item
 			width: calc(50% - 40px)
 
+		&--sm
+			.certificates 
 
-	+width-xlg()
+				&__item
+					width: calc(25% - 15px)
+
+			.card-certificate
+
+				&__descr
+					font-size: 12px
+					line-height: 20px
+
+
+	+width-lg()
 	
 		&__item
 			width: calc(50% - 25px)
@@ -60,6 +96,18 @@
 				margin-bottom: 20px
 
 
+		&--sm
+			padding-top: 80px
+			
+			.certificates 
+
+				&__item
+					width: calc(50% - 15px)
+
+					&:not(:nth-child(-n+2))
+						margin-top: 30px
+
+
 	+width-xs()
 	
 		&__list
@@ -73,3 +121,12 @@
 
 			&:not(:last-child)
 				margin-bottom: 50px
+
+		&--sm
+			.certificates 
+
+				&__item
+					width: 100%
+
+					&:not(:nth-child(-n+2))
+						margin-top: inherit
