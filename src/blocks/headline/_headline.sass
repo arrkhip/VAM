@@ -7,4 +7,30 @@
 	
 	&--center
 		text-align: center
-		
+
+	&--line
+		display: flex
+		align-items: center
+		margin-bottom: 28px
+
+		.h2
+			margin-right: 30px
+
+
+	+width-xlg()
+
+		&--line
+			margin-bottom: 20px
+
+
+	+width-md()
+
+		&--line
+			margin-bottom: 18px
+
+
+	+width-xs()
+
+		&--line
+			justify-content: space-between
+			margin-bottom: 16px

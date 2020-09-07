@@ -1,0 +1,31 @@
+/*
+ * ========================
+ * DETAILED-REVIEWS
+ * ========================
+ */
+.detailed-reviews 
+
+	&__inner
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+
+	.reviews,
+	.video-reviews
+		width: calc(50% - 20px)
+
+	.video-reviews__item
+		width: 50%
+
+
+	+width-md()
+
+		&__inner
+			flex-direction: column
+
+		.reviews,
+		.video-reviews
+			width: 100%
+
+		.reviews
+			margin-bottom: 50px

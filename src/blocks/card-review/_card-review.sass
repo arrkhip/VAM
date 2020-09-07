@@ -1,0 +1,34 @@
+/*
+ * ========================
+ * CARD-REVIEW
+ * ========================
+ */
+.card-review 
+	max-width: 178px
+	
+	&__inner
+	
+	&__banner
+		position: relative
+		display: inline-block
+		line-height: 0
+		margin-bottom: 7px
+		border: 1px solid #DEDEDE
+
+		&:hover
+			.card-review__icon
+				fill: $color-primary
+
+	&__icon
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 55px
+		height: 55px
+		fill: rgba(0, 0, 0, .2)
+		transform: translate(-50%, -50%)
+		+trs()
+
+	&__info
+		font-size: 14px
+		line-height: 21px
