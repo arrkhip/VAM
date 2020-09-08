@@ -7,8 +7,8 @@ $('.js-header__switch').click(function() {
 
 
 // header search
-$('.js-header__search').click(function() {
-	$(this).toggleClass('active');
+$('.js-header__search .header__search-header').click(function() {
+	$('.js-header__search').toggleClass('active');
 });
 
 
