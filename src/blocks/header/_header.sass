@@ -14,10 +14,13 @@
 	background-color: $white
 	+trs()
 
-	&--blur//home and product 
+	&--blur // home and product pages
 		background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.65) 100%)
 		backdrop-filter: blur(20px)
 		border-bottom: none
+
+	&--h-full
+		height: 100%
 
 	&--fixed
 		padding: 0
@@ -31,8 +34,8 @@
 		.header__menu--scroll
 			display: flex !important
 
-		&.header--h-full
-			height: 100%
+		// &.header--h-full
+		// 	height: 100%
 
 		.header
 			&__logo-black,
@@ -187,18 +190,44 @@
 				text-decoration: underline
 
 	&__search
-		display: inline-flex
-		align-items: center
-		margin-right: 99px
 
-		&:hover
-			cursor: pointer
+		&.active
+			.header__search-body,
+			.header__search-header::after
+				visibility: visible
+				opacity: 1
+				transform: translateY(0)
 
-			.header__search-icon
-				fill: $color-primary
+		&-header
+			position: relative
+			display: inline-flex
+			align-items: center
+			margin-right: 99px
 
-			.header__search-text
-				color: $color-primary
+			&::after
+				content: ''
+				position: absolute
+				top: 37px
+				left: 20px
+				width: 0
+				height: 0 
+				border-style: solid
+				border-width: 0 17px 18px 17px
+				border-color: transparent transparent rgba(29, 29, 27, .7) transparent
+				backdrop-filter: blur(20px)
+				visibility: hidden
+				opacity: 0
+				transform: translateY(20px)
+				+trs()
+
+			&:hover
+				cursor: pointer
+
+				.header__search-icon
+					fill: $color-primary
+
+				.header__search-text
+					color: $color-primary
 
 		&-icon
 			width: 15px
@@ -210,6 +239,33 @@
 		&-text
 			font: 700 14px/1 $font-main
 			+trs()
+
+		&-body
+			position: absolute
+			top: 100%
+			left: 0
+			width: 100%
+			padding: 23px 290px 23px 0
+			background-color: rgba(29, 29, 27, 0.7)
+			backdrop-filter: blur(20px)
+			visibility: hidden
+			opacity: 0
+			transform: translateY(20px)
+			+trs()
+
+		&-box
+			display: flex
+			justify-content: flex-end
+
+		&-input
+			height: 40px
+			max-width: 833px
+
+		&-btn
+			height: 40px
+			font-size: 14px
+			font-weight: 400
+
 
 	&__social
 		display: inline-flex
@@ -281,10 +337,15 @@
 			&-sublink
 
 		&__search
-			margin-right: 59px
+
+			&-header
+				margin-right: 59px
 
 			&-text
 				font-size: 13px
+
+			&-body
+				padding: 23px 180px 23px 40px
 
 
 	+width-lg()
@@ -296,7 +357,7 @@
 		&-item:not(:last-child)
 			margin-right: 35px
 
-	&__search
+	&__search-header
 		margin-right: 35px
 
 	&__social-item:not(:last-child)
@@ -335,7 +396,16 @@
 					font-size: 16px
 
 		&__search
-			margin-right: 0
+
+			&-header
+				margin-right: 0
+
+			&-body
+				padding: 23px 80px
+
+			&-input,
+			&-btn
+				height: 30px
 
 		&__switch
 			display: flex
@@ -551,6 +621,10 @@
 
 		&__logo
 			max-width: 150px
+
+		&__search
+			&-body
+				padding: 12px 18px
 
 		&__switch
 

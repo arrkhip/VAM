@@ -50,12 +50,22 @@
 					</li>
 				</ul>
 			</div>
-			<div class="header__search">
-				<svg class="header__search-icon">
-					<use xlink:href="img/sprite.svg#search"></use>
-				</svg>
-				<span class="header__search-text">Поиск</span>
+			<div class="header__search js-header__search">
+				<div class="header__search-header">
+					<svg class="header__search-icon">
+						<use xlink:href="img/sprite.svg#search"></use>
+					</svg>
+					<span class="header__search-text">Поиск</span>
+				</div>
+
+				<div class="header__search-body">
+					<div class="header__search-box">	
+						<input type="text" placeholder="Поиск по сайту..." class="header__search-input input">
+						<button class="header__search-btn btn">Поиск</button>
+					</div>
+				</div>
 			</div>
+
 			<div class="header__social">
 				<a href="#" class="header__social-item">
 					<svg class="header__social-icon">

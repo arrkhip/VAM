@@ -6,6 +6,12 @@ $('.js-header__switch').click(function() {
 });
 
 
+// header search
+$('.js-header__search').click(function() {
+	$(this).toggleClass('active');
+});
+
+
 //header fixed
 $(window).scroll(function(){
 	if ($(window).scrollTop() >= 200) {
