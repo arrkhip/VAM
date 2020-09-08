@@ -33,9 +33,18 @@
 
 		.header__menu--scroll
 			display: flex !important
+			flex-wrap: wrap
 
-		// &.header--h-full
-		// 	height: 100%
+			.header__menu
+
+				&-item:not(:last-child)
+					margin-right: 33px
+
+				&-link
+					font-size: 14px
+					text-transform: none
+
+
 
 		.header
 			&__logo-black,
@@ -370,6 +379,9 @@
 		&:not(.header--blur) + section,
 		&:not(.header--blur) + div
 			margin-top: 66px
+
+		.header__menu--scroll
+			display: none !important
 
 		&__social,
 		&__phone-back-call,
