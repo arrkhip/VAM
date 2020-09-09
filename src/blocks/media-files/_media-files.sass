@@ -1,0 +1,28 @@
+/*
+ * ========================
+ * MEDIA-FILES
+ * ========================
+ */
+.media-files 
+
+	&__inner
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+
+	&__catalog-file,
+	&__manual
+		width: calc(50% - 20px)
+
+
+	+width-md()
+
+		&__inner
+			flex-direction: column
+
+		&__catalog-file,
+		&__manual
+			width: 100%
+
+		&__catalog-file
+			margin-bottom: 50px
