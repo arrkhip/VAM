@@ -1,0 +1,73 @@
+/*
+ * ========================
+ * PARTNERS
+ * ========================
+ */
+.partners 
+	
+	&__row
+		display: flex
+		margin: 0 -15px
+
+		&:nth-child(1)
+
+			.partners__item
+				border-bottom: 2px solid $color-text
+				min-height: auto
+				padding-bottom: 15px
+				text-transform: uppercase
+
+	&__item
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		width: 16.6%
+		padding: 30px 0px
+		margin: 0 15px
+		min-height: 150px
+		border-bottom: 2px solid #DEDEDE
+
+	&__title,
+	&__text,
+	&__link
+		font-size: 14px
+		line-height: 21px
+	
+	&__title
+		font-weight: 700
+
+	&__logo
+		line-height: 0
+		box-shadow: 0.998538px 0.998538px 9.98538px rgba(0, 0, 0, 0.1)
+	
+	&__link
+		font-weight: 700
+
+
+	+width-lg()
+		&__row
+			margin: 0 -8px
+
+		&__item
+			margin: 0 8px
+
+		&__title,
+		&__text,
+		&__link
+			font-size: 12px
+			line-height: 18px
+
+
+	+width-md()
+
+		&__item
+			min-height: 130px
+
+		&__title,
+		&__text,
+		&__link
+			font-size: 11px
+
+
+	+width-sm()
+		display: none
