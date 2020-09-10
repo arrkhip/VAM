@@ -1,0 +1,144 @@
+<form id="modal-call" class="modal">
+	<div class="modal__header">
+		<div class="modal__header-title">Заказать звонок</div>
+	</div>
+	<div class="modal__body">
+		<div class="modal__box-input">
+			<input type="text" name="name" placeholder="ФИО*" class="input input--empty" required>
+			<input type="tel" name="phone" placeholder="Телефон*" class="input input--empty" required>
+		</div>
+		<div class="modal__controls">
+			<button type="submit" class="modal__controls-btn btn">Отправить заявку</button>
+			<div class="modal__controls-checkbox checkbox">
+				<input type="checkbox" id="modal-call-check" class="questions__form-checkbox" required />
+				<label for="modal-call-check" class="checkbox__label">Я согласен на обработку персональных данных. <a href="#" target="_blank" class="link link--black">Политика конфиденциальности</a></label>
+			</div>
+		</div>
+	</div>
+</form>
+
+
+<form id="modal-selection" class="modal">
+	<div class="modal__header">
+		<div class="modal__header-title">Заявка на подбор техники</div>
+	</div>
+	<div class="modal__body">
+		<div class="modal__box-input">
+			<input type="text" name="name" placeholder="ФИО*" class="input input--empty" required>
+			<input type="text" name="email" placeholder="E-mail*" class="input input--empty" required>
+			<input type="tel" name="phone" placeholder="Телефон*" class="input input--empty" required>
+			<div class="modal__upload-file upload-file">
+				<div class="upload-file__btn">
+					<input type="file" name="file" id="modal-selection-upload-file" class="upload-file__input" multiple>
+					<label class="upload-file__label" for="modal-selection-upload-file">
+						<svg class="upload-file__icon">
+							<use xlink:href="img/sprite.svg#pin"></use>
+						</svg>
+						<span class="upload-file__text">Прикрепить файл</span>
+					</label>
+				</div>
+				<div class="upload-file__message">
+					<svg class="upload-file__message-icon">
+						<use xlink:href="img/sprite.svg#file"></use>
+					</svg>
+					<p class="upload-file__message-text"></p>
+				</div>
+			</div>
+		</div>
+		<textarea name="message" placeholder="Комментарий" class="modal__textarea textarea textarea--empty"></textarea>
+		<div class="modal__controls">
+			<button type="submit" class="modal__controls-btn btn">Отправить заявку</button>
+			<div class="modal__controls-checkbox checkbox">
+				<input type="checkbox" id="modal-selection-check" class="questions__form-checkbox" required />
+				<label for="modal-selection-check" class="checkbox__label">Я согласен на обработку персональных данных. <a href="#" target="_blank" class="link link--black">Политика конфиденциальности</a></label>
+			</div>
+		</div>
+	</div>
+</form>
+
+
+<form id="modal-consultation" class="modal">
+	<div class="modal__header">
+		<div class="modal__header-title">Заявка на получение консультации</div>
+	</div>
+	<div class="modal__body">
+		<div class="modal__box-input">
+			<input type="text" name="name" placeholder="ФИО*" class="input input--empty" required>
+			<input type="text" name="email" placeholder="E-mail*" class="input input--empty" required>
+			<input type="tel" name="phone" placeholder="Телефон*" class="input input--empty" required>
+			<div class="modal__upload-file upload-file">
+				<div class="upload-file__btn">
+					<input type="file" name="file" id="modal-consultation-upload-file" class="upload-file__input" multiple>
+					<label class="upload-file__label" for="modal-consultation-upload-file">
+						<svg class="upload-file__icon">
+							<use xlink:href="img/sprite.svg#pin"></use>
+						</svg>
+						<span class="upload-file__text">Прикрепить файл</span>
+					</label>
+				</div>
+				<div class="upload-file__message">
+					<svg class="upload-file__message-icon">
+						<use xlink:href="img/sprite.svg#file"></use>
+					</svg>
+					<p class="upload-file__message-text"></p>
+				</div>
+			</div>
+		</div>
+		<textarea name="message" placeholder="Комментарий" class="modal__textarea textarea textarea--empty"></textarea>
+		<div class="modal__controls">
+			<button type="submit" class="modal__controls-btn btn">Отправить заявку</button>
+			<div class="modal__controls-checkbox checkbox">
+				<input type="checkbox" id="modal-consultation-check" class="questions__form-checkbox" required />
+				<label for="modal-consultation-check" class="checkbox__label">Я согласен на обработку персональных данных. <a href="#" target="_blank" class="link link--black">Политика конфиденциальности</a></label>
+			</div>
+		</div>
+	</div>
+</form>
+
+
+<form id="modal-spares" class="modal">
+	<div class="modal__header">
+		<div class="modal__header-title">Заявка на запасные части</div>
+	</div>
+	<div class="modal__body">
+		<div class="modal__box-input">
+			<input type="text" name="name" placeholder="ФИО*" class="input input--empty" required>
+			<input type="text" name="email" placeholder="E-mail*" class="input input--empty" required>
+			<input type="tel" name="phone" placeholder="Телефон*" class="input input--empty" required>
+			<div class="modal__upload-file upload-file">
+				<div class="upload-file__btn">
+					<input type="file" name="file" id="modal-spares-upload-file" class="upload-file__input" multiple>
+					<label class="upload-file__label" for="modal-spares-upload-file">
+						<svg class="upload-file__icon">
+							<use xlink:href="img/sprite.svg#pin"></use>
+						</svg>
+						<span class="upload-file__text">Прикрепить файл</span>
+					</label>
+				</div>
+				<div class="upload-file__message">
+					<svg class="upload-file__message-icon">
+						<use xlink:href="img/sprite.svg#file"></use>
+					</svg>
+					<p class="upload-file__message-text"></p>
+				</div>
+			</div>
+		</div>
+		<div class="modal__controls">
+			<button type="submit" class="modal__controls-btn btn">Отправить заявку</button>
+			<div class="modal__controls-checkbox checkbox">
+				<input type="checkbox" id="modal-spares-check" class="questions__form-checkbox" required />
+				<label for="modal-spares-check" class="checkbox__label">Я согласен на обработку персональных данных. <a href="#" target="_blank" class="link link--black">Политика конфиденциальности</a></label>
+			</div>
+		</div>
+	</div>
+</form>
+
+
+<form id="modal-thanks" class="modal modal--thanks">
+	<div class="modal__header">
+		<div class="modal__header-title">Заявка успешно отправлена!</div>
+	</div>
+	<div class="modal__body">
+		<a href="#" class="btn btn--white">Закрыть</a>
+	</div>
+</form>

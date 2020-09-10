@@ -1,0 +1,125 @@
+/*
+ * ========================
+ * MODAL
+ * ========================
+ */
+
+// ======= FOR DEV !!!!!!!!
+.modal-wrap
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	padding: 100px 50px
+	background-color: rgba(0, 0, 0, .8)
+
+	form+form
+		margin-top: 100px
+// =============== !!!!!!!!!
+
+.modal 
+	width: 100%
+	max-width: 660px
+	padding: 40px 30px 30px 30px
+	background-color: $white
+	
+	&__header
+		padding-bottom: 50px
+	
+		&-title
+			font: normal 20px/24px $font-second
+			text-align: center
+			letter-spacing: 0.05em
+	
+	&__body
+	
+	&__box-input
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: flex-start
+
+		.input,
+		.upload-file
+			width: calc(50% - 15px)
+			margin-bottom: 36px
+
+		.upload-file
+			margin-bottom: 0
+
+	&__textarea
+		padding: 18px 25px
+		height: 165px
+		margin-bottom: 36px
+	
+	&__controls
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+		&-btn,
+		&-checkbox
+			width: calc(50% - 15px)
+
+		&-btn
+			justify-content: center
+
+
+	+width-sm()
+		max-width: 550px
+
+		&__header
+			padding-bottom: 30px
+		
+			&-title
+				font-size: 18px
+				line-height: 22px
+
+		&__box-input
+			flex-direction: column
+
+			.input,
+			.upload-file
+				width: 100%
+				max-width: 100%
+				margin-bottom: 25px
+
+		&__textarea
+			padding: 20px
+			height: 100px
+			margin-bottom: 25px
+
+		&__controls
+			flex-direction: column
+
+			&-btn,
+			&-checkbox
+				width: 100%
+
+			&-btn
+				margin-bottom: 25px
+
+	// modal thanks
+	&--thanks
+		padding: 0
+
+		.modal
+
+			&__header
+				padding: 40px 30px 30px 30px
+
+			&__body
+				display: flex
+				align-items: flex-end
+				justify-content: center
+				min-height: 400px
+				padding: 30px
+				background: url('../img/modal-thanks.png') center no-repeat 
+				background-size: cover
+
+
+	+width-sm()
+		&--thanks
+
+			.modal__body
+				min-height: 250px
