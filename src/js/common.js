@@ -9,6 +9,7 @@ $(document).ready(function() {
   //= ../blocks/tabs/tabs.js
   //= ../blocks/firm/firm.js
   //= ../blocks/spares/spares.js
+  //= ../blocks/map/map.js
 	
 
 	// scroll to block

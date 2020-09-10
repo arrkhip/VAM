@@ -22,10 +22,54 @@
 		&-pin
 			position: absolute
 
+			&.active
+				.map__card-dealer
+					width: 280px
+					height: auto
+					display: block
+
 			&:nth-child(1)
-				left: 9.5%
-				bottom: -10%
+				left: 17.2%
+				bottom: 49%
+
+			&:nth-child(2)
+				left: 9.7%
+				bottom: 44%
+
+			&:nth-child(3)
+				left: 19.7%
+				bottom: 52%
+
+			&:nth-child(4)
+				left: 23%
+				bottom: 55%
+
+			&:nth-child(5)
+				left: 27%
+				bottom: 48%
+
+			&:nth-child(6)
+				left: 39%
+				bottom: 36%
+
+			&:nth-child(7)
+				left: 13.4%
+				bottom: 61.4%
+
+			&:nth-child(8)
+				left: 19%
+				bottom: 65%
 		
 		&-icon
-			width: 32px
-			height: 39px
+			width: 23px
+			height: 26px
+
+			&:hover
+				cursor: pointer
+
+	&__card-dealer
+		position: absolute
+		top: 100%
+		left: 0
+		display: none
+		z-index: 2
