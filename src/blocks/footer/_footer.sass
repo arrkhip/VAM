@@ -8,7 +8,7 @@
 	
 	&__top
 		position: relative
-		background: url('../img/footer-bg.png') center no-repeat
+		background: url('../img/footer-bg.jpg') center no-repeat
 		background-size: cover
 		color: $white
 
@@ -90,8 +90,8 @@
 	
 		&-list
 			margin-top: 54px
-			// width: calc(50% - 13px)
-			width: 100%
+			width: calc(50% - 13px)
+			// width: 100%
 
 			&:nth-child(1),
 			&:nth-child(3)
@@ -308,23 +308,18 @@
 					color: $color-primary
 
 			&-title
-				margin-bottom: 2px
 				font-size: 11px
 				line-height: 1.2em
 
 			&-item
-				position: relative
-				padding-left: 12px
+				padding-left: 8px
+				line-height: 16px
 
 				&::before
-					content: ''
-					position: absolute
-					top: 12px
+					top: 9px
 					left: 0
-					width: 4px
-					height: 4px
-					border-radius: 50%
-					background-color: $white
+					width: 3px
+					height: 3px
 
 			&-link
 				font-size: 10px
@@ -351,9 +346,30 @@
 				margin-bottom: 30px
 				border-bottom-color: $white
 
+		&__bottom-inner
+			padding: 5px 0
 
+		&__copyright,
+		&__author
+			font-size: 10px
 
-	+width-lg()
+		&__social
+			margin: 0 auto
+
+			&-item:not(:last-child)
+				margin-right: 25px
+
+			&-icon
+				width: 13px
+				height: 13px
+
+		&__author
+
+			&-descr
+				margin-right: 11px
+
+			&-logo
+				width: 46px
 
 
 	+width-md()
@@ -371,6 +387,11 @@
 			width: 100%
 			max-width: 100%
 
+		&__copyright,
+		&__social,
+		&__author
+			width: auto
+
 	
 	+width-sm()
 
@@ -386,6 +407,67 @@
 			display: none
 
 		&__form
+			position: relative
 			width: 100%
+			max-width: 100%
+			padding: 37px 0 30px
+			border: none
 
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				left: -30px
+				width: calc(100% + 60px)
+				height: 1.5px
+				background-color: $white
+		
+			&-title
+				margin-bottom: 28px
+
+			&-input,
+			&-upload-file,
+			&-btn
+				width: 100%
+				max-width: 100%
+
+			&-controls
+				flex-direction: column
+				align-items: flex-start
+				max-width: 216px
+				margin: 0 auto
+
+
+			&-btn, 
+			&-checkbox
+				width: 100%
+
+			&-btn
+				margin-bottom: 30px
+
+			&-checkbox
+				input[type=checkbox] + label
+					font-size: 9px
+
+
+		&__social
+
+			&-item:not(:last-child)
+				margin-right: 12px
+
+		&__copyright,
+		&__author
+			font-size: 8px
+
+
+	+width-xs()
+
+		&__form::after
+			left: -18px
+			width: calc(100% + 36px)
+
+		&__author
+
+			&-descr
+				display: none
 	
