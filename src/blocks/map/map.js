@@ -1,5 +1,5 @@
-$(".map__dealer-pin").click(function() {
-	$(this).parent().find(".map__dealer-pin").removeClass("active")
+$(".map__dealer-item").click(function() {
+	$(this).parent().find(".map__dealer-item").removeClass("active")
 	// $(this).toggleClass("active")
 
 if (!$(this).hasClass('active')) {
