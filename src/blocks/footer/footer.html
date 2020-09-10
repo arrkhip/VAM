@@ -11,7 +11,7 @@
 						<a class="footer__email link link--white" href="mailto:mail@volgaagromash.ru">mail@volgaagromash.ru</a>
 						<div class="footer__phone">
 							<a href="tel:8-800-550-99-01" class="footer__phone-link">8-800-550-99-01</a>
-							<a href="#" class="btn">Заказать звонок</a>
+							<a data-fancybox data-src="#modal-call" href="javascript:;" class="footer__phone-btn btn">Заказать звонок</a>
 						</div>
 					</div>
 					<div class="footer__partners">
@@ -25,58 +25,58 @@
 				<div class="footer__menu">
 					<ul class="footer__menu-list">
 						<li class="footer__menu-title">
-							<a href="#" class="footer__menu-link">О компании</a>
+							<a href="about-main.html" class="footer__menu-link">О компании</a>
 						</li>
 						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">О компании</a>
+							<a href="about.html" class="footer__menu-link">О компании</a>
 						</li>
 						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Сертификаты</a>
+							<a href="certificates.html" class="footer__menu-link">Сертификаты</a>
 						</li>
 						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Награды и дипломы</a>
+							<a href="awards.html" class="footer__menu-link">Награды и дипломы</a>
 						</li>
 					</ul>
 
 					<ul class="footer__menu-list">
 						<li class="footer__menu-title">
-							<a href="#" class="footer__menu-link">Продукция</a>
+							<a href="products.html" class="footer__menu-link">Продукция</a>
 						</li>
 						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Плуг модульный «Сириус» ПОМ-6+1+1</a>
+							<a href="detailed.html" class="footer__menu-link">Плуг модульный «Сириус» ПОМ-6+1+1</a>
 						</li>
 						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Плуг модульный «Сириус» ПОМ-4/7</a>
+							<a href="detailed.html" class="footer__menu-link">Плуг модульный «Сириус» ПОМ-4/7</a>
 						</li>
 						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Культиватор «Антарес» КМП-14</a>
+							<a href="detailed.html" class="footer__menu-link">Культиватор «Антарес» КМП-14</a>
 						</li>
 					</ul>
 
 					<ul class="footer__menu-list">
 						<li class="footer__menu-title">
-							<a href="#" class="footer__menu-link">Медиа</a>
+							<a href="media.html" class="footer__menu-link">Медиа</a>
 						</li>
 						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Каталог продукции, брошюры</a>
+							<a href="media.html#media-catalog-file" class="footer__menu-link">Каталог продукции, брошюры</a>
 						</li>
 						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Руководства по эксплуатации</a>
+							<a href="media.html#media-manual" class="footer__menu-link">Руководства по эксплуатации</a>
 						</li>
 						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Видео</a>
+							<a href="media.html#media-video" class="footer__menu-link">Видео</a>
 						</li>
 						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Протоколы демопоказов</a>
+							<a href="media.html#media-protocols" class="footer__menu-link">Протоколы демопоказов</a>
 						</li>
 						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Отзывы</a>
+							<a href="media.html#media-reviews" class="footer__menu-link">Отзывы</a>
 						</li>
 					</ul>
 
 					<ul class="footer__menu-list">
 						<li class="footer__menu-title">
-							<a href="#" class="footer__menu-link">Контакты</a>
+							<a href="contacts.html" class="footer__menu-link">Контакты</a>
 						</li>
 					</ul>
 				</div>
@@ -84,9 +84,9 @@
 				<form action="#" method="post" id="sendform" class="footer__form" enctype="multipart/form-data">
 					<div class="footer__form-title">Отправьте нам заявку</div>
 					<div class="footer__form-box">
-						<input type="text" name="name" placeholder=" ФИО*" class="footer__form-input input" required>
-						<input type="text" name="email" placeholder="E-mail*" class="footer__form-input input" required>
-						<input type="text" name="phone" placeholder="Телефон*" class="footer__form-input input" required>
+						<input type="text" name="name" placeholder=" ФИО*" class="footer__form-input input input--empty" required>
+						<input type="text" name="email" placeholder="E-mail*" class="footer__form-input input input--empty" required>
+						<input type="text" name="phone" placeholder="Телефон*" class="footer__form-input input input--empty" required>
 						<div class="footer__form-upload-file upload-file">
 							<div class="upload-file__btn">
 								<input type="file" name="file" id="upload-file__input" class="upload-file__input" multiple>
@@ -106,7 +106,7 @@
 						</div>
 						<div class="footer__form-controls">
 							<button id="submit-form" type="submit" class="footer__form-btn btn">Отправить заявку</button>
-							<div class="checkbox">
+							<div class="footer__form-checkbox checkbox">
 								<input type="checkbox" id="checkbox" class="questions__form-checkbox" name="ch-1" required />
 								<label for="checkbox" class="checkbox__label">Я согласен на обработку персональных данных. <a href="http://tehpromservis.com/upload/condition.pdf" target="_blank" class="link link--white">Политика конфиденциальности</a></label>
 							</div>
