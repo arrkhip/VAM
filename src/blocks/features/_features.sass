@@ -4,3 +4,130 @@
  * ========================
  */
 .features 
+
+	&__table
+		border-top: 2px solid #1D1D1B
+
+	&__inner
+		display: flex
+		align-items: flex-start
+		margin: 0 -18px
+
+	&__col
+		width: 33.3%
+		margin: 0 18px
+
+	&__header
+		padding: 12px 0
+		min-height: 60px
+		border-bottom: 2px solid $color-text
+
+		&-title
+			font: 700 12px/1.1em $font-main
+			text-align: center
+			text-transform: uppercase
+
+			&--lg
+				font-size: 14px
+				line-height: 38px
+
+		&-box
+			display: flex
+			align-items: flex-start
+			padding-top: 12px
+
+		&-subtitle
+			width: 33.3%
+			font-size: 12px
+			line-height: 1.2em
+
+	&__container
+		.features__item
+			display: flex
+			align-items: center
+
+	&__item
+		min-height: 48px
+		margin-top: 4px
+		font-size: 14px
+		line-height: 18px
+		line-height: 48px
+
+		&-icon
+			flex-shrink: 0
+			width: 23px
+			height: 23px
+			fill: $color-text
+			margin-right: 17px
+
+		p 
+			line-height: 18px
+
+	&__body
+		display: flex
+
+	&__sub-col
+		width: 33.3%
+
+		.features__item
+				text-align: center
+
+
+	+width-md()
+		&__inner
+			margin: 0 -8px
+
+		&__col
+			margin: 0 8px
+
+
+	+width-sm()
+		&__table
+			border-top-width: 1px 
+
+		&__header
+			padding: 12px 0
+			min-height: 60px
+			border-top-width: 1px 
+
+			&-title
+				font: 700 12px/1.1em $font-main
+
+				&--lg
+					font-size: 14px
+					line-height: 35px
+
+			&-box
+				padding-top: 10px
+
+			&-subtitle
+				font-size: 10px
+				line-height: 1.2em
+
+		&__item
+			min-height: 40px
+			margin-top: 4px
+			font-size: 10px
+			line-height: 40px
+
+			&-icon
+				flex-shrink: 0
+				width: 17px
+				height: 17px
+				fill: $color-text
+				margin-right: 12px
+
+			p 
+				line-height: 18px
+
+
+	+m-max(670px)
+
+		&__table
+			overflow-x: scroll
+
+		&__inner
+			width: 590px
+
+
+

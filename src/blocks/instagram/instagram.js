@@ -1,6 +1,6 @@
 var mySwiper = new Swiper('.js-instagram-slider', {
   slidesPerView: 'auto',
-  // slidesPerView: 8,
+  loop: true,
   spaceBetween: 10,
   freeMode: true,
 
