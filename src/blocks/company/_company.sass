@@ -65,11 +65,16 @@
 				.company__tabs-item-icon
 					fill: $color-primary
 
+				.company__tabs-item-icon--stroke
+					stroke: $color-primary
+					fill: none
+
 				.company__tabs-item-text
 					color: $color-primary
 				
 				&::after
 					background-color: $color-primary
+
 			&:nth-child(1)::after
 				width: calc(100% - 240px)
 
@@ -98,7 +103,7 @@
 				content: ""
 				position: absolute
 				top: 50%
-				z-index: -1;
+				z-index: -1
 				height: 2px
 				background-color: #DEDEDE
 						
@@ -109,6 +114,10 @@
 				fill: #CECECE
 				margin-right: 18px
 				+trs()
+
+				&--stroke
+					fill: none
+					stroke: #CECECE
 
 			&-text
 				width: calc(100% - 63px)
@@ -184,9 +193,6 @@
 			&-content
 				display: none
 
-	@media(max-width: 1200px)
-		.company__tabs-content
-			display: none
 
 	+width-xs()
 
