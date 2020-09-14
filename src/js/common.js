@@ -10,6 +10,7 @@ $(document).ready(function() {
   //= ../blocks/firm/firm.js
   //= ../blocks/spares/spares.js
   //= ../blocks/map/map.js
+  //= ../blocks/wow-animated/wow-animated.js
 	
 
 	// scroll to block
