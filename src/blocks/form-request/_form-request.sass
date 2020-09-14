@@ -18,6 +18,9 @@
 		height: 100%
 		background: linear-gradient(0deg, rgba(29, 29, 27, 0.85), rgba(29, 29, 27, 0.85))
 
+	&--detailed
+		margin-bottom: 110px
+
 	&__headline,
 	&__form
 		position: relative
@@ -42,22 +45,28 @@
 	&__input
 		width: calc(33.3% - 66.6px)
 
-	&__textarea
-		width: calc(66.7% - 50px)
+	&__textarea,
+	&__controls
+		width: calc(66.5% - 32px)
 
 	&__upload-file
-		width: calc(33.3% - 50px)
+		width: calc(33.3% - 67px)
 
 	&__controls
 		display: inline-flex
+		justify-content: space-between
 		align-items: center
-		width: calc(66.7% - 50px)
 
 	&__btn
-		margin-left: 100px
+		flex-shrink: 0
+		margin-left: 10px
 
 
 	+width-md()
+
+		&--detailed
+			margin-bottom: 80px
+			
 		&__form
 			padding: 35px 20px
 
@@ -74,7 +83,7 @@
 
 		&__controls,
 		&__textarea
-			width: calc(66.7% - 15px)
+			width: calc(67.3% - 15px)
 
 		&__btn
 			margin-left: 30px
