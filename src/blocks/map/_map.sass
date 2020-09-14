@@ -18,51 +18,55 @@
 		margin-top: -47px
 	
 	&__dealer
+
+		&-header
+
+		&-pin
+			line-height: 0
 		
 		&-item
 			position: absolute
 
 			&.active
 				.map__card-dealer
-					width: 280px
+					width: 322px
 					height: auto
-					display: block
+					opacity: 1
+					visibility: visible
+					transform: translateY(0)
+
+				.map__dealer-icon
+
+					&--white
+						display: none
+
+					&--black
+						display: block
 
 			&:nth-child(1)
-				left: 17.2%
-				bottom: 49%
+				left: 19.5%
+				bottom: 53%
 
 			&:nth-child(2)
-				left: 9.7%
-				bottom: 44%
+				left: 13.4%
+				bottom: 48.9%
 
 			&:nth-child(3)
-				left: 19.7%
-				bottom: 52%
+				left: 6%
+				bottom: 50%
 
 			&:nth-child(4)
-				left: 23%
-				bottom: 55%
+				left: 16.8%
+				bottom: 61%
 
 			&:nth-child(5)
-				left: 27%
-				bottom: 48%
-
-			&:nth-child(6)
-				left: 39%
-				bottom: 36%
-
-			&:nth-child(7)
-				left: 13.4%
-				bottom: 61.4%
-
-			&:nth-child(8)
-				left: 19%
-				bottom: 65%
+				left: 14.6%
+				bottom: 58%
 		
 		&-icon
-			width: 23px
-			height: 26px
+			width: 32px
+			height: 39px
+
 
 			&--white
 
@@ -77,7 +81,106 @@
 
 	&__card-dealer
 		position: absolute
-		top: 100%
-		left: 0
-		display: none
+		top: 7px
+		left: calc(100% + 4px)
 		z-index: 2
+		opacity: 0
+		visibility: hidden
+		transform: translateY(20px)
+		+trs(all, .45s, ease)
+
+
+	+width-sm()
+		padding: 50px 0 20px
+		background-position: center bottom
+		background-size: contain
+
+		&__body
+			display: flex
+			flex-direction: column-reverse
+			margin-top: 0
+
+		&__banner
+			img
+				width: 100%
+				object-fit: cover
+		
+		&__dealer
+			padding-top: 15px
+
+			&-header
+
+			&-pin
+				display: none
+
+			&-headline
+				display: flex
+				align-items: center
+
+				&-icon
+					width: 46px
+					height: 46px
+					margin-right: 10px
+					fill: #CECECE
+					stroke: #CECECE
+					+trs()
+
+				&-title
+					font-size: 14px
+					line-height: 1.2em
+			
+			&-item
+				position: relative
+
+				&:not(:last-child)
+					margin-bottom: 10px
+
+				&.active
+					.map__card-dealer
+						width: 100%
+						max-width: 450px
+						height: auto
+						padding-top: 12px !important
+						opacity: 1
+						visibility: visible
+						transform: translateY(0)
+						box-shadow: none
+
+					.map__dealer-headline
+
+						&-icon
+							fill: $color-primary
+							stroke: $color-primary
+							transform: rotate(45deg)
+
+						&-title
+							font-weight: 500
+							color: $color-primary
+
+				&:nth-child(1),
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4),
+				&:nth-child(5)
+					left: 0
+					bottom: 0
+			
+			&-icon
+				width: 32px
+				height: 39px
+
+				&--white
+
+				&--black
+					display: none
+
+				&:hover
+					cursor: pointer
+
+		&__card-dealer
+			position: static
+			height: 0
+			padding: 0 !important
+
+			.card-dealer__close
+				display: none
