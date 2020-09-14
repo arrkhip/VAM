@@ -1,0 +1,48 @@
+/*
+ * ========================
+ * VIDEOS
+ * ========================
+ */
+.videos 
+	padding-bottom: 110px
+
+	&__player
+		padding-top: 36px
+		width: 100%
+		height: 708px
+
+
+	+width-xlg()
+
+		&__player
+			height: 500px
+
+
+	+width-md()
+		padding-bottom: 80px
+
+		&__player
+			height: 400px
+
+	+width-md()
+
+		&__player
+			height: 350px
+
+
+	+width-sm()
+		padding-bottom: 60px
+
+		&__player
+			height: 300px
+
+
+	+width-xs()
+
+		&__player
+			height: 200px
+
+		// iframe
+			// width: 100%
+			// height: 100%
+			// object-fit: cover
