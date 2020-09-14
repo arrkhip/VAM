@@ -32,19 +32,25 @@
 			align-items: flex-start
 
 		&-item
+			position: relative
 			display: flex
 			width: 50%
 			// max-width: 415px
 			margin-bottom: 55px
-
+			&:nth-child(odd)
+				.company__tabs-item-box
+					padding-right: 30px
 			&:nth-child(even)
 				justify-content: flex-end
+				.company__tabs-item-box
+					padding-left: 30px
 
 			&-box
 				position: relative
 				display: flex
 				align-items: center
 				max-width: 415px
+				background-color: #fff;
 
 				// &::after
 				// 	content: ''
@@ -61,7 +67,41 @@
 
 				.company__tabs-item-text
 					color: $color-primary
+				
+				&::after
+					background-color: $color-primary
+			&:nth-child(1)::after
+				width: calc(100% - 240px)
 
+			&:nth-child(2)::after
+				width: calc(100% - 240px)
+
+			&:nth-child(3)::after
+				width: calc(100% - 280px)
+
+			&:nth-child(4)::after
+				width: calc(100% - 280px)
+
+			&:nth-child(5)::after
+				width: calc(100% - 280px)
+
+			&:nth-child(6)::after
+				width: calc(100% - 280px)
+
+			&:nth-child(7)::after
+				width: calc(100% - 240px)
+
+			&:nth-child(8)::after
+				width: calc(100% - 240px)
+
+			&::after
+				content: ""
+				position: absolute
+				top: 50%
+				z-index: -1;
+				height: 2px
+				background-color: #DEDEDE
+						
 			&-icon
 				flex-shrink: 0
 				width: 45px
@@ -75,12 +115,14 @@
 				font-size: 14px
 				line-height: 21px
 				+trs()
+				
 
 		&-content
 			position: absolute
 			top: 50%
 			left: 50%
 			transform: translate(-50%, -50%) 
+			background-color: #fff
 
 		&-banner
 			line-height: 0
