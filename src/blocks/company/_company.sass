@@ -145,10 +145,28 @@
 					.company__tabs-item-box
 						padding-left: 0px
 
-
 			&-banner
 				width: 350px
 				height: 350px
+
+
+	+width-lg()
+		&__tabs-item-box
+			max-width: 350px
+
+		&__tabs-banner
+			width: 290px
+			height: 290px
+
+
+	+m-max(1100px)
+
+		&__tabs-item-box
+			max-width: 310px
+
+		&__tabs-banner
+			width: 270px
+			height: 270px
 
 
 	+width-md()
