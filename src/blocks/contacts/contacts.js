@@ -4,7 +4,7 @@
       var myMap = new ymaps.Map("contacts-map", {
         center: [53.153120, 50.659448],
         zoom: 12,
-        controls: []
+        // controls: []
       });
       
       var myGeoObject = new ymaps.GeoObject({
@@ -16,7 +16,7 @@
   
       var myPlacemark = new ymaps.Placemark([53.153120, 50.659448], {}, {
         iconLayout: 'default#image',
-        iconImageHref: '../img/map-icon.svg',
+        iconImageHref: '../img/map-pin-black.svg',
         iconImageSize: [32, 39],
   
     });
