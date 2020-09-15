@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<title>«Волгаагромаш» | Сельскохозяйственная техника нового поколения</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta property="og:title" content="«ВолгаАгроМаш»" />
+	<meta property="og:description" content="Сельскохозяйственная техника нового поколения." />
+	<meta property="vk:image" content="img/open_graph_vk.png" />
+	<meta property="og:image" content="img/open_graph_fb.png" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#000000">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="css/libs.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+	<header class="header header--blur">
+		<div class="wrapper">
+			<div class="header__inner">
+				<a href="index.html" class="header__logo">
+					<img class="header__logo-black" src="img/logo-green.svg" alt="">
+					<img class="header__logo-white" src="img/logo-green-white.svg" alt="">
+				</a>
+				<div class="header__box">
+					<div class="header__phone">
+						<a href="tel:8-800-550-99-01" class="header__phone-number">
+							<svg class="">
+								<use xlink:href="img/sprite.svg#phone"></use>
+							</svg>
+							<span>8-800-550-99-01</span>
+						</a>
+						<a data-fancybox data-src="#modal-call" href="javascript:;" class="header__phone-back-call link link--green">Заказать обратный звонок</a>
+					</div>
+					<ul class="header__menu header__menu--fix">
+						<li class="header__menu-item">
+							<a href="about-main.html" class="header__menu-link">О компании</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="products.html" class="header__menu-link">Продукция</a>
+							<ul class="header__menu-sublist">
+								<li class="header__menu-subitem">
+									<span class="header__menu-subitem-img">	
+										<img src="img/header-product-1.jpg" alt="">
+									</span>
+									<a href="detailed.html" class="header__menu-sublink">Культиватор «Антарес» КМП-14</a>
+								</li>
+								<li class="header__menu-subitem">
+									<span class="header__menu-subitem-img">	
+										<img src="img/header-product-2.jpg" alt="">
+									</span>
+									<a href="detailed.html" class="header__menu-sublink">Плуг модульный «Сириус» ПОМ-6+1+1</a>
+								</li>
+								<li class="header__menu-subitem">
+									<span class="header__menu-subitem-img">	
+										<img src="img/header-product-3.jpg" alt="">
+									</span>
+									<a href="detailed.html" class="header__menu-sublink">Плуг модульный «Сириус» ПОМ-4/7</a>
+								</li>
+							</ul>
+						</li>
+						<li class="header__menu-item">
+							<a href="media.html" class="header__menu-link">Медиа</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="contacts.html" class="header__menu-link">Контакты</a>
+						</li>
+					</ul>
+					<ul class="header__menu header__menu--scroll">
+						<li class="header__menu-item">
+							<a href="#firm" class="header__menu-link">Информация о продукте</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#" class="header__menu-link">Подобрать плуг</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#docs" class="header__menu-link">Документы</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#options" class="header__menu-link">Варианты покупки</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#form-request" class="header__menu-link">Отправить заявку</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#" class="header__menu-link">3D</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#advantages" class="header__menu-link">Преимущества</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#detailed-videos" class="header__menu-link">Видео</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#detailed-reviews" class="header__menu-link">Отзывы</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#map" class="header__menu-link">Карта дилеров</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#spares" class="header__menu-link">Запчасти</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__search js-header__search">
+					<div class="header__search-header">
+						<svg class="header__search-icon">
+							<use xlink:href="img/sprite.svg#search"></use>
+						</svg>
+						<span class="header__search-text">Поиск</span>
+					</div>
+					<div class="header__search-body">
+						<div class="header__search-box">	
+							<input type="text" placeholder="Поиск по сайту..." class="header__search-input input">
+							<button class="header__search-btn btn">Поиск</button>
+						</div>
+					</div>
+				</div>
+				<div class="header__social">
+					<a href="https://www.youtube.com/channel/UCj1n4lmARxlulGfeAOMzwvQ" target="_blank" class="header__social-item">
+						<svg class="header__social-icon">
+							<use xlink:href="img/sprite.svg#youtube"></use>
+						</svg>
+					</a>
+					<a href="https://www.instagram.com/volgaagromash" target="_blank" class="header__social-item">
+						<svg class="header__social-icon">
+							<use xlink:href="img/sprite.svg#instagram"></use>
+						</svg>
+					</a>
+					<a href="https://www.facebook.com/volgaagromash" target="_blank" class="header__social-item">
+						<svg class="header__social-icon">
+							<use xlink:href="img/sprite.svg#facebook"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="header__switch js-header__switch">
+					<div class="header__switch-icon"><span></span></div>
+					<div class="header__switch-title">Меню</div>
+				</div>
+			</div>
+			<div class="header__mob-menu">
+				<div class="header__mob-menu-inner">
+					<ul class="header__mob-menu-list">
+						<li class="header__mob-menu-title">
+							<a href="about-main.html" class="header__mob-menu-link">О компании</a>
+						</li>
+						<li class="header__mob-menu-item">
+							<a href="about.html" class="header__mob-menu-link">О компании</a>
+						</li>
+						<li class="header__mob-menu-item">
+							<a href="certificates.html" class="header__mob-menu-link">Сертификаты</a>
+						</li>
+						<li class="header__mob-menu-item">
+							<a href="awards.html" class="header__mob-menu-link">Награды и дипломы</a>
+						</li>
+					</ul>
+					<ul class="header__mob-menu-list">
+						<li class="header__mob-menu-title">
+							<a href="services.html" class="header__mob-menu-link">Продукция</a>
+						</li>
+						<li class="header__mob-menu-item">
+							<a href="detailed.html" class="header__mob-menu-link">Плуг модульный «Сириус» ПОМ-6+1+1</a>
+						</li>
+						<li class="header__mob-menu-item">
+							<a href="detailed.html" class="header__mob-menu-link">Плуг модульный «Сириус» ПОМ-4/7</a>
+						</li>
+						<li class="header__mob-menu-item">
+							<a href="detailed.html" class="header__mob-menu-link">Культиватор «Антарес» КМП-14</a>
+						</li>
+					</ul>
+					<ul class="header__mob-menu-list">
+						<li class="header__mob-menu-title">
+							<a href="media.html" class="header__mob-menu-link">Медиа</a>
+						</li>
+						<li class="header__mob-menu-item">
+							<a href="media.html#media-catalog" class="header__mob-menu-link">Каталог продукции, брошюры</a>
+						</li>
+						<li class="header__mob-menu-item">
+							<a href="media.html#media-guide" class="header__mob-menu-link">Руководства по эксплуатации</a>
+						</li>
+						<li class="header__mob-menu-item">
+							<a href="media.html#media-video" class="header__mob-menu-link">Видео</a>
+						</li>
+						<li class="header__mob-menu-item">
+							<a href="media.html#media-protocols" class="header__mob-menu-link">Протоколы демопоказов</a>
+						</li>
+						<li class="header__mob-menu-item">
+							<a href="media.html#media-reviews" class="header__mob-menu-link">Отзывы</a>
+						</li>
+					</ul>
+					<ul class="header__mob-menu-list">
+						<li class="header__mob-menu-title">
+							<a href="contacts.html" class="header__mob-menu-link">Контакты</a>
+						</li>
+						<li class="header__mob-menu-contacts">
+							<span class="header__mob-menu-address">446406, Самарская область, Кинельский район, село Бобровка, улица Восточная, участок 1Ж</span>
+							<a class="header__mob-menu-email link link--white" href="mailto:mail@volgaagromash.ru">mail@volgaagromash.ru</a>
+							<a href="tel:8-800-550-99-01" class="header__mob-menu-phone">8-800-550-99-01</a>
+							<a href="#" class="header__mob-menu-btn btn">Заказать звонок</a>
+						</li>
+					</ul>
+					<div class="header__social header__mob-menu-social">
+						<a href="#" class="header__social-item">
+							<svg class="header__social-icon">
+								<use xlink:href="img/sprite.svg#youtube"></use>
+							</svg>
+						</a>
+						<a href="#" class="header__social-item">
+							<svg class="header__social-icon">
+								<use xlink:href="img/sprite.svg#instagram"></use>
+							</svg>
+						</a>
+						<a href="#" class="header__social-item">
+							<svg class="header__social-icon">
+								<use xlink:href="img/sprite.svg#facebook"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="promo" class="promo promo--detailed" style="background-image: url('./img/sirius-pom-4-7/promo-bg.jpg');">
+		<div class="wrapper">
+			<div class="promo__inner">
+				<div class="promo__info">
+					<h1 class="h1 promo__h1">Плуг модульный <br> «Сириус» ПОМ-4/7</h1>
+					<a data-fancybox data-src="#modal-consultation" href="javascript:;" class="btn promo__btn">Получить консультацию</a>
+				</div>
+				<a href="https://youtu.be/028eMflkSrw" data-fancybox class="promo__play">
+					<div class="promo__play-icon"></div>
+				</a>
+			</div>
+		</div>
+		<div class="official-badge promo__official-badge">
+			<div class="official-badge__icon">
+				<img src="img/official-badge.png" alt="">
+			</div>
+			<p class="official-badge__text">Официальный поставщик ОАО «Росагролизинг»</p>
+		</div>
+	</section>
+
+	<div class="breadcrumbs">
+		<div class="wrapper">
+			<div class="breadcrumbs__list">
+				<a href="index.html" class="breadcrumbs__item link link--black">Главная</a>
+				<span class="breadcrumbs__delimiter">/</span>
+				<a href="index.html" class="breadcrumbs__item link link--black">Продукция</a>
+				<span class="breadcrumbs__delimiter">/</span>
+				<span class="breadcrumbs__item">Плуг модульный «Сириус» ПОМ-4/7</span>
+			</div>
+		</div>
+	</div>
+
+	<section id="firm" class="firm">
+		<div class="wrapper">
+			<div class="firm__inner">
+				<div class="firm__col">
+					<div class="firm__slider">
+						<div class="firm__slider-top">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/sirius-pom-4-7/slider-prod/Det1-big.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/sirius-pom-4-7/slider-prod/Det2-big.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/sirius-pom-4-7/slider-prod/Det3-big.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/sirius-pom-4-7/slider-prod/Det4-big.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/sirius-pom-4-7/slider-prod/Det5-big.jpg" alt="">
+								</div>
+							</div>
+							<!-- Add Arrows -->
+							<div class="firm__slider-next">
+								<svg class="firm__slider-arrow">
+									<use xlink:href="img/sprite.svg#arrow-1"></use>
+								</svg>
+							</div>
+							<div class="firm__slider-prev">
+								<svg class="firm__slider-arrow">
+									<use xlink:href="img/sprite.svg#arrow-1"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="firm__slider-thumbs">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="firm__slider-thumb">
+										<img src="img/sirius-pom-4-7/slider-prod/Det1.jpg" alt="">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="firm__slider-thumb">
+										<img src="img/sirius-pom-4-7/slider-prod/Det2.jpg" alt="">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="firm__slider-thumb">
+										<img src="img/sirius-pom-4-7/slider-prod/Det3.jpg" alt="">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="firm__slider-thumb">
+										<img src="img/sirius-pom-4-7/slider-prod/Det4.jpg" alt="">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="firm__slider-thumb">
+										<img src="img/sirius-pom-4-7/slider-prod/Det5.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="firm__col">
+					<div class="firm__headline headline">
+						<h2 class="h2">Общая информация</h2>
+						<div class="firm__catalog">
+							<svg class="firm__catalog-icon">
+								<use xlink:href="img/sprite.svg#print"></use>
+							</svg>
+							<a href="#" class="firm__catalog-link">Распечатать <br> информацию о продукте</a>
+						</div>
+					</div>
+					<div class="firm__info">
+						<p class="firm__info-text">Плуг оснащен современными полувинтовыми корпусами повышенной прочности и износостойкости. Использование полувинтовых корпусов с такими элементами, как долото и грудь отвала, позволяет увеличить срок их службы - меняются только эти быстроизнашиваемые элементы, продлевая срок службы более дорогим лемеху и крылу отвала соответственно.</p>
+						<p class="firm__info-text">Применение в конструкции рабочих органов плуга двух распорок значительно повышает надежность и жесткость корпуса, особенно на «тяжелых» почвах. В стандартной комплектации каждая стойка корпуса снабжена срезным болтом, предохраняющим ее от перегрузок и поломок.</p>
+						<p class="firm__info-text">Ступенчато регулируемая ширина захвата позволяет эффективно адаптироваться к мощности трактора и почвенным условиям. Это дает возможность наиболее полно реализовать возможности трактора с получением максимальной производительности, что особенно актуально для тракторов с мощность двигателя до 180 л.с.</p>
+						<p class="firm__info-text">Расстояние между корпусами плуга по раме в 115 см позволяет работать без забивания, с предплужниками, на полях с большим количеством растительных остатков.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	//= blocks/selection/selection.html
+	//= blocks/docs/docs.html
+	//= blocks/options/options.html
+	<section id="form-request" class="form-request--detailed form-request">
+		<div class="wrapper">
+			<div class="form-request__headline headline">
+				<h2 class="h2 h2--white">Отправить заявку</h2>
+			</div>
+			<form action="post" class="form-request__form">
+				<input type="text" name="name" placeholder="ФИО*" class="form-request__input input" required>
+				<input type="text" name="email" placeholder="E-mail*" class="form-request__input input" required>
+				<input type="tel" name="phone" placeholder="Телефон*" class="form-request__input input" required>
+				<textarea name="message" placeholder="Сообщение" class="form-request__textarea textarea"></textarea>
+				<div class="form-request__upload-file upload-file">
+					<div class="upload-file__btn">
+						<input type="file" name="file" id="upload-file__input" class="upload-file__input" multiple>
+						<label class="upload-file__label" for="upload-file__input">
+							<svg class="upload-file__icon">
+								<use xlink:href="img/sprite.svg#pin"></use>
+							</svg>
+							<span class="upload-file__text">Прикрепить файл</span>
+						</label>
+					</div>
+					<div class="upload-file__message">
+						<svg class="upload-file__message-icon">
+							<use xlink:href="img/sprite.svg#file"></use>
+						</svg>
+						<p class="upload-file__message-text"></p>
+					</div>
+				</div>
+				<div class="form-request__controls">
+					<div class="checkbox checkbox--white">
+						<input type="checkbox" id="checkbox" class="questions__form-checkbox" name="ch-1" required />
+						<label for="checkbox" class="checkbox__label">Я согласен на обработку персональных данных. <a href="#" target="_blank" class="link link--white">Политика конфиденциальности</a></label>
+					</div>
+					<button class="btn form-request__btn">Отправить заявку</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	
+<!-- 	<section class="3d" style="padding-bottom: 110px;">
+		<div class="wrapper">
+			
+			<iframe allowfullscreen webkitallowfullscreen width="100%" height="600" frameborder="0" seamless src="https://p3d.in/e/4snfx+load"></iframe>
+		</div>
+	</section> -->
+
+	//= blocks/advantages/advantages.html
+	<section id="detailed-videos" class="videos">
+		<div class="wrapper">
+			<div class="headline">
+				<h2 class="h2">Видеоролики о продукте</h2>
+			</div>
+		</div>
+		<div class="videos__player">
+			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/028eMflkSrw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>	
+	</section>
+	//= blocks/map/map.html
+	<section id="spares" class="spares">
+		<div class="wrapper">
+			<div class="spares__inner">
+				<div class="spares__info">
+					<div class="spares__headline headline">
+						<h2 class="h2">Запасные части</h2>
+					</div>
+					<p class="spares__descr">В конструкции модульного плуга «Сириус» ПОМ-6+1+1 применяются рабочие органы ведущих европейских производителей. Все запасные части, изготовленные для компании «Волгаагромаш», проходят  контроль  качества и  имеют специальное клеймо, позволяющее отличить фирменное изделие от контрафактной продукции.</p>
+					<p class="spares__descr">При производстве наших запасных частей используются высокопрочная сталь, которую получают с помощью уникальных методов термообработки. Закалка деталей рабочих органов с использованием полимерной среды позволяет добиться  непревзойденного качества и износостойкости. Долговечность таких комплектующих обеспечивает максимальную экономическую выгоду.</p>
+					<a data-fancybox data-src="#modal-spares" href="javascript:;" class="btn">Отправить заявку</a>
+				</div>
+
+				<div class="spares__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-1.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Отвал</div>
+									<div class="spares__card-item">Левый: № 073291</div>
+									<div class="spares__card-item">Правый: № 073290</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-2.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Отвал углоснима</div>
+									<div class="spares__card-item">Левый: № 073301</div>
+									<div class="spares__card-item">Правый: № 073300</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-3.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title"> Лемех</div>
+									<div class="spares__card-item">Левый: № 073005</div>
+									<div class="spares__card-item">Правый: № 073004</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-4.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Кронштейн углоснима</div>
+									<div class="spares__card-item">Левый: № 073311</div>
+									<div class="spares__card-item">Правый: № 073310</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-5.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Грудь отвала</div>
+									<div class="spares__card-item">Левый: № 073257</div>
+									<div class="spares__card-item">Правый: № 073256</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-6.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Стойка</div>
+									<div class="spares__card-item">Левый: № ПРНП 00.01.001-01</div>
+									<div class="spares__card-item">Правый: № ПРНП 00.01.001</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-7.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Долото</div>
+									<div class="spares__card-item">Левый: № 063090</div>
+									<div class="spares__card-item">Правый: № 053090</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-8.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Башмак </div>
+									<div class="spares__card-item">Левый: № ПРНП 16.01.000-01</div>
+									<div class="spares__card-item">Правый: № ПРНП 16.01.000</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-9.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Отвал</div>
+									<div class="spares__card-item">Левый: № 073291</div>
+									<div class="spares__card-item">Правый: № 073290</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-10.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Отвал углоснима</div>
+									<div class="spares__card-item">Левый: № 073301</div>
+									<div class="spares__card-item">Правый: № 073300</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-11.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title"> Лемех</div>
+									<div class="spares__card-item">Левый: № 073005</div>
+									<div class="spares__card-item">Правый: № 073004</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-12.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Кронштейн углоснима</div>
+									<div class="spares__card-item">Левый: № 073311</div>
+									<div class="spares__card-item">Правый: № 073310</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-13.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Грудь отвала</div>
+									<div class="spares__card-item">Левый: № 073257</div>
+									<div class="spares__card-item">Правый: № 073256</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-14.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Стойка</div>
+									<div class="spares__card-item">Левый: № ПРНП 00.01.001-01</div>
+									<div class="spares__card-item">Правый: № ПРНП 00.01.001</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-15.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Долото</div>
+									<div class="spares__card-item">Левый: № 063090</div>
+									<div class="spares__card-item">Правый: № 053090</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-16.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Башмак </div>
+									<div class="spares__card-item">Левый: № ПРНП 16.01.000-01</div>
+									<div class="spares__card-item">Правый: № ПРНП 16.01.000</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-17.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Башмак </div>
+									<div class="spares__card-item">Левый: № ПРНП 16.01.000-01</div>
+									<div class="spares__card-item">Правый: № ПРНП 16.01.000</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="spares__card">
+								<div class="spares__card-banner">
+									<img src="img/sirius-pom-4-7/spares/spares-18.jpg" alt="">
+								</div>
+								<div class="spares__card-info">
+									<div class="spares__card-title">Башмак </div>
+									<div class="spares__card-item">Левый: № ПРНП 16.01.000-01</div>
+									<div class="spares__card-item">Правый: № ПРНП 16.01.000</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<svg class="spares__slider-arrow-prev">
+						<use xlink:href="img/sprite.svg#arrow-1"></use>
+					</svg>
+					<svg class="spares__slider-arrow-next">
+						<use xlink:href="img/sprite.svg#arrow-1"></use>
+					</svg>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	//= blocks/instagram/instagram.html
+	//= blocks/footer/footer.html
+
+	//= blocks/btn-up/btn-up.html
+	//= blocks/modal/modal.html
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>
