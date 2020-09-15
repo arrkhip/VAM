@@ -92,6 +92,41 @@
 				height: 100%
 				object-fit: cover
 
+	// styles for large version
+	&--lg
+
+		.advantages
+
+			&__tabs
+
+				&-header
+					width: 26.5%
+					padding-top: 1px
+					padding-right: 50px
+
+				&-item
+					width: 100%
+
+				&-wrapper
+					width: 73.5%
+
+
+	+width-xlg()
+
+		// styles for large version
+		&--lg
+
+			.advantages
+
+				&__tabs
+
+					&-header
+						width: 35%
+						padding-right: 40px
+
+					&-wrapper
+						width: 65%
+
 
 	+width-md()
 		padding: 80px 0
@@ -106,6 +141,21 @@
 			&-header
 				padding-right: 0
 				padding-bottom: 50px
+
+
+		// styles for large version
+		&--lg
+
+			.advantages
+
+				&__tabs
+
+					&-header
+						width: inherit
+						padding-right: inherit
+
+					&-wrapper
+						width: inherit
 
 
 	+width-sm()
