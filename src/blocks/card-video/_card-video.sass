@@ -4,24 +4,37 @@
  * ========================
  */
 .card-video 
+	position: relative
 	
-	&__video
+	&__banner
 		position: relative
 		width: 100%
 		max-width: 392px 
 		height: 252px
 		margin-bottom: 7px
 		overflow: hidden
+
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+		&-icon
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 70px
+			height: 50px
+			transform: translate(-50%, -50%)
 	
-	&__iframe
+	&__link
 		position: absolute
 		top: 0
 		left: 0
 		width: 100%
 		height: 100%
-		border-width: 0
-		outline-width: 0
-		object-fit: cover
+		z-index: 1
+
 
 	&__descr
 		font-size: 14px
