@@ -11,12 +11,45 @@
 		padding-top: 25px
 	
 	&__banner
+		position: relative
 		margin-right: 52px
+
+		&-icon
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 55px
+			height: 55px
+			fill: rgba(0, 0, 0, .2)
+			transform: translate(-50%, -50%)
+			+trs()
+
+		&:hover
+			.catalog-file__banner-icon
+				fill: $color-primary
 	
 	&__info
+		position: relative
 		width: 100%
 		max-width: 399px
-	
+
+		&:hover
+			.catalog-file__descr,
+			.catalog-file__descr span
+				color: $color-primary
+
+			.catalog-file__icon
+				fill: $color-primary
+
+		&-link
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 100%
+			height: 100%
+			transform: translate(-50%, -50%)
+
+
 	&__title
 		margin-bottom: 20px
 		font: normal 30px/36px $font-second
@@ -32,11 +65,14 @@
 		height: 56px
 		fill: $color-text
 		margin-right: 18px
+		+trs()
 	
 	&__descr
 		font: 700 14px/21px $font-main
+		+trs()
 
 		span
 			display: block
 			font-weight: 400
 			color: #9E9E9E
+			+trs()
