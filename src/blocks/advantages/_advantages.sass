@@ -106,3 +106,59 @@
 			&-header
 				padding-right: 0
 				padding-bottom: 50px
+
+
+	+width-sm()
+
+		&__tabs
+
+			&-header
+				padding-bottom: 30px
+
+			&-item
+				width: calc(50% - 15px)
+				min-height: 40px
+				padding: 5px 10px 
+
+				&-icon
+					width: 15px
+					height: 15px
+					margin-right: 10px
+
+				&-text
+					font-size: 12px
+					line-height: 18px
+
+		&__card
+			flex-direction: column-reverse
+
+			&-banner
+				width: 100%
+				min-height: auto
+				height: 200px
+
+			&-info
+				width: 100%
+				padding: 10px 15px 
+
+			&-text
+				line-height: 24px
+
+
+	+width-xs()
+
+		&__tabs
+
+			&-item
+				width: 100%
+				min-height: 40px
+				padding: 5px 10px 
+
+				&-icon
+					width: 15px
+					height: 15px
+					margin-right: 10px
+
+				&-text
+					font-size: 12px
+					line-height: 18px

@@ -4,6 +4,11 @@ var galleryThumbs = new Swiper('.firm__slider-thumbs', {
       freeMode: true,
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
+      breakpoints: {
+       560: {
+          slidesPerView: 3,
+        },
+      }
     });
     var galleryTop = new Swiper('.firm__slider-top', {
       spaceBetween: 10,

@@ -187,6 +187,7 @@
 
 
 	+width-md()
+		padding-top: 0
 
 		&__tabs
 
@@ -224,3 +225,9 @@
 			&-item
 				width: 100%
 				margin-bottom: 20px
+
+				&:nth-child(even)
+					justify-content: flex-start
+
+				&-box
+					max-width: 100%
