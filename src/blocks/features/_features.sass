@@ -8,6 +8,7 @@
 	&__table
 		border-top: 2px solid #1D1D1B
 
+		// For antares page
 		&--antares
 
 			.features
@@ -21,6 +22,20 @@
 
 						.features__item
 							justify-content: center
+
+		// For plow-4/7 page
+		&--plow
+
+			.features
+
+				&__col
+					width: 50%
+
+					.features__item--line
+						justify-content: space-between
+
+						b 
+							margin-left: 10px
 
 	&__inner
 		display: flex
