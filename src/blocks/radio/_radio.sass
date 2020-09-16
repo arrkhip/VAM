@@ -1,0 +1,56 @@
+.radio 
+
+	&:not(:last-child)
+		margin-bottom: 10px
+
+	input[type=radio] 
+		display: none
+
+	label 
+		display: inline-block
+		cursor: pointer
+		position: relative
+		padding-left: 31px
+		margin-right: 0
+		font-size: 14px
+		line-height: 21px
+		user-select: none
+
+		&::before 
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			width: 20px
+			height: 20px
+			border-radius: 50%
+			background-color: $color-text
+
+		&::after
+			content: ""
+			position: absolute
+			top: 6px
+			left: 6px
+			width: 8px
+			height: 8px
+			border-radius: 50%
+			background-color: $white
+			opacity: 0
+			+trs()
+
+
+	input[type=radio]:checked + label::after
+		opacity: 1
+
+
+	// label:hover:before 
+	// 	filter: brightness(120%)
+
+
+	input[type=radio]:disabled + label::before 
+		filter: grayscale(100%)
+
+
+	&-title
+		margin-bottom: 5px
+		font: 700 14px/21px $font-main
