@@ -307,6 +307,25 @@
 					<input type="text" placeholder="Наименование организации" name="quiz-17" class="input input--lightblue">
 					<input type="text" placeholder="Местонахождение (адрес)" name="quiz-18" class="input input--lightblue">
 					<input type="text" placeholder="Контактное лицо" name="quiz-19" class="input input--lightblue">
+
+					<div class="upload-file">
+						<div class="upload-file__btn">
+							<input type="file" name="file" id="upload-file__input-quiz" class="upload-file__input" multiple>
+							<label class="upload-file__label" for="upload-file__input-quiz">
+								<svg class="upload-file__icon">
+									<use xlink:href="img/sprite.svg#pin"></use>
+								</svg>
+								<span class="upload-file__text">Прикрепить файл</span>
+							</label>
+						</div>
+						<div class="upload-file__message">
+							<svg class="upload-file__message-icon">
+								<use xlink:href="img/sprite.svg#file"></use>
+							</svg>
+							<p class="upload-file__message-text"></p>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
@@ -314,12 +333,12 @@
 				<div class="modal__box-inputs">
 					<input type="text" placeholder="Укажите действующий e-mail*" name="quiz-20" class="input input--lightblue" required>
 					<input type="text" placeholder="Укажите телефон контакта*" name="quiz-21" class="input input--lightblue" required>
-					<input type="text" placeholder="Любая дополнительная информация:" name="quiz-22" class="input input--lightblue modal__input-lg">
+					<textarea name="quiz-22" placeholder="Любая дополнительная информация:" class="textarea textarea--lightblue modal__textarea-lg"></textarea>
 				</div>
 			</div>
 		</div>
 
-		<div class="modal__controls">
+		<div class="modal__controls modal__controls--centered">
 			<button type="submit" class="modal__controls-btn btn">Отправить заявку</button>
 			<div class="modal__controls-checkbox checkbox">
 				<input type="checkbox" id="modal-quiz-check" class="questions__form-checkbox" required />

@@ -88,6 +88,7 @@ img
 
   +input-placeholder()
     color: $color-text
+    font-weight: 700
 
   &:focus 
     border-color: $color-primary
@@ -124,11 +125,18 @@ img
   text-overflow: ellipsis
   +trs()
 
+  +input-placeholder()
+    color: $color-text
+    font-weight: 700
+
   &:focus 
     border-color: $color-primary
 
   &--empty 
     border: 2px solid $color-text
+
+  &--lightblue
+    background-color: #F4F4F4
 
 input:focus, 
 textarea:focus, 
