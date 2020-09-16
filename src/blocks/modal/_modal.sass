@@ -51,6 +51,43 @@
 		&-btn
 			justify-content: center
 
+	&__box
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+
+		& + .modal__subtitle
+			margin-top: 50px
+
+		&-inputs
+			margin-bottom: 30px
+
+			.input:not(:last-child)
+				margin-bottom: 20px
+
+		.radio-box:not(:last-child)
+			margin-bottom: 30px
+
+	&__subtitle
+		margin-bottom: 17px
+		font: normal 14px/17px $font-second
+		letter-spacing: 0.05em
+		color: $color-primary
+	
+	&__col
+		width: calc(50% - 40px)
+
+
+	+width-lg()
+
+		&__box
+
+			& + .modal__subtitle
+				margin-top: 30px
+
+		&__col
+			width: calc(50% - 20px)
+
 
 	+width-sm()
 		max-width: 550px
@@ -86,7 +123,19 @@
 			&-btn
 				margin-bottom: 25px
 
-	// modal thanks
+		&__box
+			flex-direction: column
+
+			&-inputs
+				margin-bottom: 20px
+
+		&__col
+			width: 100%
+
+			// &:not(:last-child)
+			// 	margin-bottom: 20px
+
+	// === MODAL THANKS
 	&--thanks
 		padding: 0
 
@@ -110,3 +159,14 @@
 
 			.modal__body
 				min-height: 250px
+
+
+	// === MODAL QUIZ
+	&--quiz
+		max-width: 964px
+		padding: 40px 60px 30px 50px
+
+		.modal
+
+		+width-lg()
+			padding: 40px 30px 30px 30px
