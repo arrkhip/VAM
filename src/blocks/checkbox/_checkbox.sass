@@ -1,6 +1,5 @@
 .checkbox
 
-
 	input[type=checkbox] 
 		position: absolute
 		width: 0
@@ -59,5 +58,8 @@
 		input[type=checkbox] + label
 			color: $white
 
-		input[type=checkbox] + label::before 
+		input[type=checkbox] + label::before
 			background-color: $white
+			
+		input[type=checkbox] + label::after
+			border-color: $black

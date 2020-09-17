@@ -10,7 +10,7 @@
 		<div class="modal__controls">
 			<button type="submit" class="modal__controls-btn btn">Отправить заявку</button>
 			<div class="modal__controls-checkbox checkbox">
-				<input type="checkbox" id="modal-call-check" class="questions__form-checkbox" required />
+				<input type="checkbox" id="modal-call-check" class="checkbox__input" required />
 				<label for="modal-call-check" class="checkbox__label">Я согласен на обработку персональных данных. <a href="#" target="_blank" class="link link--black">Политика конфиденциальности</a></label>
 			</div>
 		</div>
@@ -45,11 +45,11 @@
 				</div>
 			</div>
 		</div>
-		<textarea name="message" placeholder="Комментарий" class="modal__textarea textarea textarea--empty"></textarea>
+		<textarea name="text" placeholder="Комментарий" class="modal__textarea textarea textarea--empty"></textarea>
 		<div class="modal__controls">
 			<button type="submit" class="modal__controls-btn btn">Отправить заявку</button>
 			<div class="modal__controls-checkbox checkbox">
-				<input type="checkbox" id="modal-selection-check" class="questions__form-checkbox" required />
+				<input type="checkbox" id="modal-selection-check" class="checkbox__input" required />
 				<label for="modal-selection-check" class="checkbox__label">Я согласен на обработку персональных данных. <a href="#" target="_blank" class="link link--black">Политика конфиденциальности</a></label>
 			</div>
 		</div>
@@ -84,11 +84,11 @@
 				</div>
 			</div>
 		</div>
-		<textarea name="message" placeholder="Комментарий" class="modal__textarea textarea textarea--empty"></textarea>
+		<textarea name="text" placeholder="Комментарий" class="modal__textarea textarea textarea--empty"></textarea>
 		<div class="modal__controls">
 			<button type="submit" class="modal__controls-btn btn">Отправить заявку</button>
 			<div class="modal__controls-checkbox checkbox">
-				<input type="checkbox" id="modal-consultation-check" class="questions__form-checkbox" required />
+				<input type="checkbox" id="modal-consultation-check" class="checkbox__input" required />
 				<label for="modal-consultation-check" class="checkbox__label">Я согласен на обработку персональных данных. <a href="#" target="_blank" class="link link--black">Политика конфиденциальности</a></label>
 			</div>
 		</div>
@@ -126,7 +126,7 @@
 		<div class="modal__controls">
 			<button type="submit" class="modal__controls-btn btn">Отправить заявку</button>
 			<div class="modal__controls-checkbox checkbox">
-				<input type="checkbox" id="modal-spares-check" class="questions__form-checkbox" required />
+				<input type="checkbox" id="modal-spares-check" class="checkbox__input" required />
 				<label for="modal-spares-check" class="checkbox__label">Я согласен на обработку персональных данных. <a href="#" target="_blank" class="link link--black">Политика конфиденциальности</a></label>
 			</div>
 		</div>
@@ -139,7 +139,7 @@
 		<div class="modal__header-title">Заявка успешно отправлена!</div>
 	</div>
 	<div class="modal__body">
-		<a href="#" class="btn btn--white">Закрыть</a>
+		<a href="javascript:;" onclick="$.fancybox.close();" class="btn btn--white">Закрыть</a>
 	</div>
 </form>
 
@@ -153,21 +153,21 @@
 		<div class="modal__box">
 			<div class="modal__col">
 				<div class="modal__box-inputs">
-					<input type="text" placeholder="Марка и модель трактора" name="quiz-1" class="input input--lightblue">
-					<input type="text" placeholder="Мощность двигателя трактора, л.с." name="quiz-2" class="input input--lightblue">
-					<input type="text" placeholder="Вес трактора, кг." name="quiz-3" class="input input--lightblue">
-					<input type="text" placeholder="Ширина шин задних колес трактора, см" name="quiz-4" class="input input--lightblue">
-					<input type="text" placeholder="Ширина колеи по задним шинам, см" name="quiz-5" class="input input--lightblue">
+					<input type="text" placeholder="Марка и модель трактора" name="quiz1" class="input input--lightblue">
+					<input type="text" placeholder="Мощность двигателя трактора, л.с." name="quiz2" class="input input--lightblue">
+					<input type="text" placeholder="Вес трактора, кг." name="quiz3" class="input input--lightblue">
+					<input type="text" placeholder="Ширина шин задних колес трактора, см" name="quiz4" class="input input--lightblue">
+					<input type="text" placeholder="Ширина колеи по задним шинам, см" name="quiz5" class="input input--lightblue">
 				</div>
 
 				<div class="radio-box">
 					<div class="radio-title">«Органика» будет запахиваться:</div>
 					<div class="radio">
-						<input id="quiz-6-1" type="radio" name="quiz-6" value="Да" checked>
+						<input id="quiz-6-1" type="radio" name="quiz6" value="Да">
 						<label for="quiz-6-1">Да</label>
 					</div>
 					<div class="radio">
-						<input id="quiz-6-2" type="radio" name="quiz-6" value="Нет">
+						<input id="quiz-6-2" type="radio" name="quiz6" value="Нет">
 						<label for="quiz-6-2">Нет</label>
 					</div>
 				</div>
@@ -175,11 +175,11 @@
 				<div class="radio-box">
 					<div class="radio-title">Нужный тип отвала:</div>
 					<div class="radio">
-						<input id="quiz-7-1" type="radio" name="quiz-7" value="Сплошной" checked>
+						<input id="quiz-7-1" type="radio" name="quiz7" value="Сплошной">
 						<label for="quiz-7-1">Сплошной</label>
 					</div>
 					<div class="radio">
-						<input id="quiz-7-2" type="radio" name="quiz-7" value="Полосовой">
+						<input id="quiz-7-2" type="radio" name="quiz7" value="Полосовой">
 						<label for="quiz-7-2">Полосовой</label>
 					</div>
 				</div>
@@ -187,11 +187,11 @@
 				<div class="radio-box">
 					<div class="radio-title">В почве могут присутствовать камни, размер которых превышает 10 см:</div>
 					<div class="radio">
-						<input id="quiz-8-1" type="radio" name="quiz-8" value="Да" checked>
+						<input id="quiz-8-1" type="radio" name="quiz8" value="Да">
 						<label for="quiz-8-1">Да</label>
 					</div>
 					<div class="radio">
-						<input id="quiz-8-2" type="radio" name="quiz-8" value="Нет">
+						<input id="quiz-8-2" type="radio" name="quiz8" value="Нет">
 						<label for="quiz-8-2">Нет</label>
 					</div>
 				</div>
@@ -199,11 +199,11 @@
 				<div class="radio-box">
 					<div class="radio-title">Этим плугом предполагается обработка почв, с влажностью которых может превышать 25%:</div>
 					<div class="radio">
-						<input id="quiz-9-1" type="radio" name="quiz-9" value="Да" checked>
+						<input id="quiz-9-1" type="radio" name="quiz9" value="Да">
 						<label for="quiz-9-1">Да</label>
 					</div>
 					<div class="radio">
-						<input id="quiz-9-2" type="radio" name="quiz-9" value="Нет">
+						<input id="quiz-9-2" type="radio" name="quiz9" value="Нет">
 						<label for="quiz-9-2">Нет</label>
 					</div>
 				</div>
@@ -213,11 +213,11 @@
 				<div class="radio-box">
 					<div class="radio-title">Тип трактора</div>
 					<div class="radio">
-						<input id="quiz-10-1" type="radio" name="quiz-10" value="Колесный" checked>
+						<input id="quiz-10-1" type="radio" name="quiz10" value="Колесный">
 						<label for="quiz-10-1">Колесный</label>
 					</div>
 					<div class="radio">
-						<input id="quiz-10-2" type="radio" name="quiz-10" value="Гусеничный">
+						<input id="quiz-10-2" type="radio" name="quiz10" value="Гусеничный">
 						<label for="quiz-10-2">Гусеничный</label>
 					</div>
 				</div>
@@ -225,11 +225,11 @@
 				<div class="radio-box">
 					<div class="radio-title">Трактор оснащен гидравлической навеской:</div>
 					<div class="radio">
-						<input id="quiz-11-1" type="radio" name="quiz-11" value="Да" checked>
+						<input id="quiz-11-1" type="radio" name="quiz11" value="Да">
 						<label for="quiz-11-1">Да</label>
 					</div>
 					<div class="radio">
-						<input id="quiz-11-2" type="radio" name="quiz-11" value="Нет">
+						<input id="quiz-11-2" type="radio" name="quiz11" value="Нет">
 						<label for="quiz-11-2">Нет</label>
 					</div>
 				</div>
@@ -237,15 +237,15 @@
 				<div class="radio-box">
 					<div class="radio-title">Для обработки каких почв:</div>
 					<div class="radio">
-						<input id="quiz-12-1" type="radio" name="quiz-12" value="Легкие" checked>
+						<input id="quiz-12-1" type="radio" name="quiz12" value="Легкие">
 						<label for="quiz-12-1">Легкие</label>
 					</div>
 					<div class="radio">
-						<input id="quiz-12-2" type="radio" name="quiz-12" value="Средние">
+						<input id="quiz-12-2" type="radio" name="quiz12" value="Средние">
 						<label for="quiz-12-2">Средние</label>
 					</div>
 					<div class="radio">
-						<input id="quiz-12-3" type="radio" name="quiz-12" value="Тяжелые">
+						<input id="quiz-12-3" type="radio" name="quiz12" value="Тяжелые">
 						<label for="quiz-12-3">Тяжелые</label>
 					</div>
 				</div>
@@ -253,11 +253,11 @@
 				<div class="radio-box">
 					<div class="radio-title">Предпочтительная конструкция:</div>
 					<div class="radio">
-						<input id="quiz-13-1" type="radio" name="quiz-13" value="«По полю»" checked>
+						<input id="quiz-13-1" type="radio" name="quiz13" value="«По полю»">
 						<label for="quiz-13-1">«По полю»</label>
 					</div>
 					<div class="radio">
-						<input id="quiz-13-2" type="radio" name="quiz-13" value="«В борозде»">
+						<input id="quiz-13-2" type="radio" name="quiz13" value="«В борозде»">
 						<label for="quiz-13-2">«В борозде»</label>
 					</div>
 				</div>
@@ -265,11 +265,11 @@
 				<div class="radio-box">
 					<div class="radio-title">Нужны ли в плуге предплужники:</div>
 					<div class="radio">
-						<input id="quiz-14-1" type="radio" name="quiz-14" value="Да" checked>
+						<input id="quiz-14-1" type="radio" name="quiz14" value="Да">
 						<label for="quiz-14-1">Да</label>
 					</div>
 					<div class="radio">
-						<input id="quiz-14-2" type="radio" name="quiz-14" value="Нет">
+						<input id="quiz-14-2" type="radio" name="quiz14" value="Нет">
 						<label for="quiz-14-2">Нет</label>
 					</div>
 				</div>
@@ -277,11 +277,11 @@
 				<div class="radio-box">
 					<div class="radio-title">Предполагается обработка полей с уклоном более 8 градусов:</div>
 					<div class="radio">
-						<input id="quiz-15-1" type="radio" name="quiz-15" value="Да" checked>
+						<input id="quiz-15-1" type="radio" name="quiz15" value="Да">
 						<label for="quiz-15-1">Да</label>
 					</div>
 					<div class="radio">
-						<input id="quiz-15-2" type="radio" name="quiz-15" value="Нет">
+						<input id="quiz-15-2" type="radio" name="quiz15" value="Нет">
 						<label for="quiz-15-2">Нет</label>
 					</div>
 				</div>
@@ -289,11 +289,11 @@
 				<div class="radio-box">
 					<div class="radio-title">Предполагается обработка полей, с высотой пожнивных остатков более 20 см:</div>
 					<div class="radio">
-						<input id="quiz-16-1" type="radio" name="quiz-16" value="Да" checked>
+						<input id="quiz-16-1" type="radio" name="quiz16" value="Да">
 						<label for="quiz-16-1">Да</label>
 					</div>
 					<div class="radio">
-						<input id="quiz-16-2" type="radio" name="quiz-16" value="Нет">
+						<input id="quiz-16-2" type="radio" name="quiz16" value="Нет">
 						<label for="quiz-16-2">Нет</label>
 					</div>
 				</div>
@@ -304,9 +304,9 @@
 		<div class="modal__box">
 			<div class="modal__col">
 				<div class="modal__box-inputs">
-					<input type="text" placeholder="Наименование организации" name="quiz-17" class="input input--lightblue">
-					<input type="text" placeholder="Местонахождение (адрес)" name="quiz-18" class="input input--lightblue">
-					<input type="text" placeholder="Контактное лицо" name="quiz-19" class="input input--lightblue">
+					<input type="text" placeholder="Наименование организации" name="quiz17" class="input input--lightblue">
+					<input type="text" placeholder="Местонахождение (адрес)" name="quiz18" class="input input--lightblue">
+					<input type="text" placeholder="Контактное лицо" name="quiz19" class="input input--lightblue">
 
 					<div class="upload-file">
 						<div class="upload-file__btn">
@@ -331,9 +331,9 @@
 
 			<div class="modal__col">
 				<div class="modal__box-inputs">
-					<input type="text" placeholder="Укажите действующий e-mail*" name="quiz-20" class="input input--lightblue" required>
-					<input type="text" placeholder="Укажите телефон контакта*" name="quiz-21" class="input input--lightblue" required>
-					<textarea name="quiz-22" placeholder="Любая дополнительная информация:" class="textarea textarea--lightblue modal__textarea-lg"></textarea>
+					<input type="text" placeholder="Укажите действующий e-mail*" name="quiz20" class="input input--lightblue" required>
+					<input type="text" placeholder="Укажите телефон контакта*" name="quiz21" class="input input--lightblue" required>
+					<textarea name="quiz22" placeholder="Любая дополнительная информация:" class="textarea textarea--lightblue modal__textarea-lg"></textarea>
 				</div>
 			</div>
 		</div>
@@ -341,7 +341,7 @@
 		<div class="modal__controls modal__controls--centered">
 			<button type="submit" class="modal__controls-btn btn">Отправить заявку</button>
 			<div class="modal__controls-checkbox checkbox">
-				<input type="checkbox" id="modal-quiz-check" class="questions__form-checkbox" required />
+				<input type="checkbox" id="modal-quiz-check" class="checkbox__input" required />
 				<label for="modal-quiz-check" class="checkbox__label">Я согласен на обработку персональных данных. <a href="#" target="_blank" class="link link--black">Политика конфиденциальности</a></label>
 			</div>
 		</div>

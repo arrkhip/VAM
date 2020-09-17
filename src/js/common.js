@@ -11,6 +11,9 @@ $(document).ready(function() {
   //= ../blocks/spares/spares.js
   //= ../blocks/map/map.js
   //= ../blocks/wow-animated/wow-animated.js
+  //= ../blocks/modal/modal.js
+  //= ../blocks/form-request/form-request.js
+  //= ../blocks/footer/footer.js
 	
 
 	// scroll to block
