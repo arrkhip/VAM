@@ -155,7 +155,10 @@
 			font: 700 16px/1 $font-main
 			text-transform: uppercase
 
-			&:hover
+			&.active
+				color: $color-primary
+
+			&:not(.active):hover
 				text-decoration: underline
 
 		&-sublist
