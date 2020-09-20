@@ -40,9 +40,44 @@
 		</div>
 	</div>
 
-
 	//= blocks/contacts/contacts.html
-	//= blocks/form-request/form-request.html
+	<section class="form-request">
+		<div class="wrapper">
+			<div class="form-request__headline headline">
+				<h2 class="h2 h2--white">Отправить заявку</h2>
+			</div>
+			<form id="form-request" class="form-request__form">
+				<input type="text" name="name" placeholder="ФИО*" class="form-request__input input" required>
+				<input type="text" name="email" placeholder="E-mail*" class="form-request__input input" required>
+				<input type="tel" name="phone" placeholder="Телефон*" class="form-request__input input" required>
+				<textarea name="text" placeholder="Сообщение" class="form-request__textarea textarea"></textarea>
+				<div class="form-request__upload-file upload-file">
+					<div class="upload-file__btn">
+						<input type="file" name="file" id="upload-file__input-1" class="upload-file__input" multiple>
+						<label class="upload-file__label" for="upload-file__input-1">
+							<svg class="upload-file__icon">
+								<use xlink:href="img/sprite.svg#pin"></use>
+							</svg>
+							<span class="upload-file__text">Прикрепить файл</span>
+						</label>
+					</div>
+					<div class="upload-file__message">
+						<svg class="upload-file__message-icon">
+							<use xlink:href="img/sprite.svg#file"></use>
+						</svg>
+						<p class="upload-file__message-text"></p>
+					</div>
+				</div>
+				<div class="form-request__controls">
+					<div class="checkbox checkbox--white">
+						<input type="checkbox" id="form-request-check" class="checkbox__input" required />
+						<label for="form-request-check" class="checkbox__label">Я согласен на обработку персональных данных. <a href="#" target="_blank" class="link link--white">Политика конфиденциальности</a></label>
+					</div>
+					<button class="btn form-request__btn">Отправить заявку</button>
+				</div>
+			</form>
+		</div>
+	</section>
 	//= blocks/map/map.html
 	//= blocks/partners/partners.html
 	//= blocks/instagram/instagram.html

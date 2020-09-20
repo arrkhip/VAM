@@ -128,6 +128,7 @@
 
 
 	+width-md()
+		padding-bottom: 80px
 
 		&__inner
 			flex-direction: column
@@ -138,18 +139,23 @@
 			&:first-child
 				margin-bottom: 50px
 
-
-	+width-sm()
-
 		&__slider
 			margin-bottom: 0
 
+		&__info-text
+			font-size: 14px
+			line-height: 21px
+
+			&:not(:first-child)
+				margin-top: 20px
+
+
 	+width-xs()
+		padding-bottom: 60px
 
 		&__headline
 			flex-direction: column
 			align-items: flex-start
-			// margin-bottom: 20px
 
 		&__catalog
 			margin-top: 15px
