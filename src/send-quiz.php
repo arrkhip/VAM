@@ -1,6 +1,5 @@
 <?php
 if (isset ($_POST['quiz21'])) {
-  // $to = "arkhipovvladislav@mail.ru";
   $to = "site@volgaagromash.ru";
   $quiz1  = substr( $_POST['quiz1 '], 0, 64 );
   $quiz2  = substr( $_POST['quiz2 '], 0, 64 );

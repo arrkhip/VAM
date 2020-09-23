@@ -17,6 +17,22 @@
 	&__body
 		position: relative
 		margin-top: -47px
+
+	&__factory
+		position: absolute
+		top: 0
+		left: 0
+
+		&-black
+			display: none
+		
+		&.active
+
+			.map__factory-white
+				display: none
+
+			.map__factory-black
+				display: block
 	
 	&__dealer
 
@@ -24,6 +40,13 @@
 
 		&-pin
 			line-height: 0
+
+			&--factory
+				width: 35px
+				height: 35px
+
+				&:hover
+					cursor: pointer
 		
 		&-item
 			position: absolute
@@ -63,11 +86,14 @@
 			&:nth-child(5)
 				left: 14.6%
 				bottom: 58%
+
+			&:nth-child(6)
+				left: 17%
+				bottom: 50%
 		
 		&-icon
 			width: 32px
 			height: 39px
-
 
 			&--white
 
@@ -104,6 +130,9 @@
 			display: flex
 			flex-direction: column-reverse
 			margin-top: 0
+
+		&__factory
+			display: none
 
 		&__banner
 			img
@@ -166,7 +195,8 @@
 				&:nth-child(2),
 				&:nth-child(3),
 				&:nth-child(4),
-				&:nth-child(5)
+				&:nth-child(5),
+				&:nth-child(6)
 					left: 0
 					bottom: 0
 			

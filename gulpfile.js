@@ -102,6 +102,7 @@ gulp.task('scripts:libs', function() {
 		'src/libs/fancybox/jquery.fancybox.min.js',
 		'src/libs/swiper/swiper.min.js',
 		'src/libs/input-mask/jquery.inputmask.min.js',
+		'src/libs/lazysizes/lazysizes.min.js',
 		'src/libs/wow/wow.min.js'
 	])
 		.pipe(concat('libs.min.js')) 

@@ -15,5 +15,11 @@ $(".map__dealer-header").click(function() {
 
 
 $(".js-map-close").click(function() {
-	$(this).closest(".map__dealer-item").removeClass("active")
+	$(this).closest(".map__dealer-item").removeClass("active");
+	$('.map__factory').removeClass("active");
+});
+
+
+$(".map__dealer-pin--factory").click(function() {
+	$('.map__factory').toggleClass('active');
 });

@@ -51,7 +51,11 @@
 			&__social,
 				display: none
 
+			&__mob-menu-social
+				display: flex
+
 			&__logo
+				flex-shrink: 0
 				max-width: 248px
 
 				&-white
@@ -173,6 +177,9 @@
 			opacity: 0
 			transform: translateY(20px)
 			+trs()
+
+			&--sm
+				width: 250px
 
 		&-subitem
 			display: flex
@@ -665,3 +672,6 @@
 
 			&-list
 				width: 100%
+
+			&-social
+				margin-top: 0
