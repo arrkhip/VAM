@@ -13,11 +13,16 @@
 
 	&__item,
 	&__delimiter
-		font-size: 14px
-		line-height: 21px 
+		font: 700 14px/21px $font-main
 
 	&__delimiter
 		padding: 0 5px
+
+
+	+width-sm()
+		&__item,
+		&__delimiter
+			font-size: 12px
 
 
 			

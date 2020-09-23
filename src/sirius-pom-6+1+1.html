@@ -435,12 +435,16 @@
 					<picture>
 						<source srcset="img/map/map-banner-md.png" media="(max-width: 768px)">
 						<source srcset="img/map/map-banner-sm.png" media="(max-width: 400px)">
-						<img src="img/map/map-banner.png" alt="">
+						<img data-src="img/map/map-banner.png" class="lazyload" alt="">
 					</picture>
+				</div>
+				<div class="map__factory active">
+					<img class="map__factory-black" src="img/map/map-factory-black.png" alt="">
+					<img class="map__factory-white" src="img/map/map-factory-white.png" alt="">
 				</div>
 				<div class="map__dealer">
 					<!-- с. Высокая Гора -->
-					<div class="map__dealer-item active">
+					<div class="map__dealer-item">
 						<div class="map__dealer-header">
 							<div class="map__dealer-pin">
 								<img class="map__dealer-icon map__dealer-icon--white" src="img/map-pin-white.svg" alt="">
@@ -626,6 +630,46 @@
 									</div>
 									<div class="card-dealer__item">
 										<a href="https://souzbelagro.ru/" class="link link--black">www.souzbelagro.ru</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ООО «Волгаагромаш» -->
+					<div class="map__dealer-item active">
+						<div class="map__dealer-header">
+							<!-- <div class="map__dealer-pin">
+								<img class="map__dealer-icon map__dealer-icon--white" src="img/map-pin-white.svg" alt="">
+								<img class="map__dealer-icon map__dealer-icon--black" src="img/map-pin-black.svg" alt="">
+							</div> -->
+							<div class="map__dealer-pin map__dealer-pin--factory"></div>
+							<div class="map__dealer-headline">
+								<svg class="map__dealer-headline-icon">
+									<use xlink:href="img/sprite.svg#circle-btn"></use>
+								</svg>
+								<div class="map__dealer-headline-title">ООО «Волгаагромаш» завод-изготовитель</div>
+							</div>
+						</div>
+						<div class="map__dealer-body">
+							<div class="map__card-dealer card-dealer">
+								<div class="card-dealer__info">
+									<div class="js-map-close card-dealer__close">
+										<svg class="card-dealer__close-icon">
+											<use xlink:href="img/sprite.svg#close"></use>
+										</svg>
+									</div>	
+									<div class="card-dealer__city">с. Бобровка</div>
+									<div class="card-dealer__title">ООО «Волгаагромаш» <span>завод-изготовитель</span></div>
+									<div class="card-dealer__item">446406, Самарская область, Кинельский район, село Бобровка, улица Восточная, участок 1Ж</div>
+									<div class="card-dealer__item">
+										<p>8-800-550-99-01</p>
+										<p>8 (846 63) 46-589</p>
+									</div>
+									<div class="card-dealer__item">
+										<a href="mailto:mail@volgaagromash.ru" class="link">mail@volgaagromash.ru</a>
+									</div>
+									<div class="card-dealer__item">
+										<a href="http://volgaagromash.ru/" class="link link--black">www.volgaagromash.ru</a>
 									</div>
 								</div>
 							</div>

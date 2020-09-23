@@ -5,10 +5,15 @@ $(".map__dealer-header").click(function() {
 	// $(this).toggleClass("active")
 
 	if (!$(this).closest(".map__dealer-item").hasClass('active')) {
-		$(".map__dealer-item").parent().find(".map__dealer-item").removeClass("active")
-		$(this).closest(".map__dealer-item").addClass('active')
+		$(".map__dealer-item").parent().find(".map__dealer-item").removeClass("active");
+		$(this).closest(".map__dealer-item").addClass('active');
 	} else {
 		$(this).closest(".map__dealer-item").removeClass('active');
+	}
+
+	if ($(".map__factory").hasClass("active")) {
+		$(".map__factory").removeClass('active');
+		console.log('Ok');
 	}
 
 });
@@ -21,5 +26,5 @@ $(".js-map-close").click(function() {
 
 
 $(".map__dealer-pin--factory").click(function() {
-	$('.map__factory').toggleClass('active');
+	$('.map__factory').addClass('active');
 });
