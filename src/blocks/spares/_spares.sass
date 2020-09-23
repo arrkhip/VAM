@@ -14,7 +14,7 @@
 		overflow: hidden
 	
 	&__info,
-	&__slider
+	&__slider-wrapper
 		width: calc(50% - 32px)
 	
 	&__info
@@ -26,9 +26,12 @@
 		margin-bottom: 31px
 	
 	&__slider
-		position: relative
 		overflow: hidden
-		// padding: 0 65px
+		margin: 0 65px
+
+		&-wrapper
+			position: relative
+			overflow: hidden
 
 		&-arrow-prev,
 		&-arrow-next
@@ -67,6 +70,11 @@
 			font-weight: 700
 
 
+	+width-xlg()
+
+		&__slider
+			margin: 0 40px
+
 	+width-md()
 		padding-bottom: 80px
 
@@ -74,7 +82,7 @@
 			flex-direction: column
 
 		&__info,
-		&__slider
+		&__slider-wrapper
 			width: 100%
 
 		&__info
