@@ -150,9 +150,9 @@ $(function() {
 });
 
 
-// checkbox
 $('.modal__controls-btn').on('click', function() {
-  var flag = $('.checkbox__input').prop('checked');
+  // var flag = $('.checkbox__input').prop('checked');
+  var flag = $(this).closest('.modal__controls').find('.checkbox__input').prop('checked');
   if (!flag) {
     $('.checkbox__label').addClass('pulse');
     setTimeout(function() {

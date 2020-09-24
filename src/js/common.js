@@ -37,7 +37,7 @@ $(document).ready(function() {
     "mask": "+7 (999) 999-99-99"
   });
 
-  $('input[name="email"]').inputmask({
+  $('input[name="email"], input[name="quiz20"]').inputmask({
     mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
     greedy: false,
     onBeforePaste: function (pastedValue, opts) {
