@@ -1,15 +1,16 @@
 <?php
 if (isset ($_POST['quiz21'])) {
-  $to = "site@volgaagromash.ru";
-  $quiz1  = substr( $_POST['quiz1 '], 0, 64 );
-  $quiz2  = substr( $_POST['quiz2 '], 0, 64 );
-  $quiz3  = substr( $_POST['quiz3 '], 0, 64 );
-  $quiz4  = substr( $_POST['quiz4 '], 0, 64 );
-  $quiz5  = substr( $_POST['quiz5 '], 0, 64 );
-  $quiz6  = substr( $_POST['quiz6 '], 0, 64 );
-  $quiz7  = substr( $_POST['quiz7 '], 0, 64 );
-  $quiz8  = substr( $_POST['quiz8 '], 0, 64 );
-  $quiz9  = substr( $_POST['quiz9 '], 0, 64 );
+  // $to = "site@volgaagromash.ru";
+  $to = "varnoff.test@yandex.ru, order@varnoff.ru";
+  $quiz1  = substr( $_POST['quiz1'], 0, 64 );
+  $quiz2  = substr( $_POST['quiz2'], 0, 64 );
+  $quiz3  = substr( $_POST['quiz3'], 0, 64 );
+  $quiz4  = substr( $_POST['quiz4'], 0, 64 );
+  $quiz5  = substr( $_POST['quiz5'], 0, 64 );
+  $quiz6  = substr( $_POST['quiz6'], 0, 64 );
+  $quiz7  = substr( $_POST['quiz7'], 0, 64 );
+  $quiz8  = substr( $_POST['quiz8'], 0, 64 );
+  $quiz9  = substr( $_POST['quiz9'], 0, 64 );
   $quiz10 = substr( $_POST['quiz10'], 0, 64 );
   $quiz11 = substr( $_POST['quiz11'], 0, 64 );
   $quiz12 = substr( $_POST['quiz12'], 0, 64 );

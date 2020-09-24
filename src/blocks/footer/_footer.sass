@@ -158,9 +158,16 @@
 		&-input
 			margin-bottom: 30px
 			border-bottom-color: $white
+			color: $white
 
 			+input-placeholder()
 				color: $white
+
+			&:-webkit-autofill,
+			&:-webkit-autofill:hover, 
+			&:-webkit-autofill:focus
+				color: $white
+				-webkit-text-fill-color: $white
 
 		&-controls
 			display: flex

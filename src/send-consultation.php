@@ -1,6 +1,7 @@
 <?php
 if (isset ($_POST['phone'])) {
-  $to = "site@volgaagromash.ru";
+  // $to = "site@volgaagromash.ru";
+  $to = "varnoff.test@yandex.ru, order@varnoff.ru";
   $name  = substr( $_POST['name'], 0, 64 );
   $tel = substr( $_POST['phone'], 0, 64 );
   $email   = substr( $_POST['email'], 0, 64 );
