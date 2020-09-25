@@ -6,6 +6,9 @@
 .firm 
 	padding-bottom: 110px
 
+	&--offset-none
+		padding-bottom: 0
+
 	&__inner
 		display: flex
 		align-items: flex-start
@@ -98,6 +101,11 @@
 
 		&-thumb
 			position: relative
+			+trs()
+
+			&:hover
+				cursor: pointer
+				opacity: 0.8
 
 			&::after
 				content: ''
