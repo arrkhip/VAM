@@ -18,7 +18,8 @@
 		margin-right: 29px
 		line-height: 0
 
-		+m-min(1450px)
+		// for IE
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
 			flex-shrink: 0
 
 		&::after
