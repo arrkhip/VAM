@@ -87,19 +87,24 @@
 		width: 100%
 		max-width: 563px
 		margin-right: 50px
+
+		&-col
+			width: calc(50% - 15px)
 	
 		&-list
-			margin-top: 54px
-			width: calc(50% - 13px)
+
+			&:not(:last-child)
+				margin-bottom: 15px
+			// width: calc(50% - 13px)
 			// width: 100%
 
-			&:nth-child(1),
-			&:nth-child(3)
-				max-width: 240px
+			// &:nth-child(1),
+			// &:nth-child(3)
+			// 	max-width: 240px
 
-			&:nth-child(2),
-			&:nth-child(4)
-				max-width: 297px
+			// &:nth-child(2),
+			// &:nth-child(4)
+			// 	max-width: 297px
 	
 		&-title,
 		&-link
@@ -293,19 +298,6 @@
 		&__menu
 			max-width: 409px
 			margin-right: 20px
-		
-			&-list
-				margin-top: 54px
-				width: calc(50% - 12px)
-				max-width: 100%
-
-				// &:nth-child(1),
-				// &:nth-child(3)
-				// 	max-width: 240px
-
-				// &:nth-child(2),
-				// &:nth-child(4)
-				// 	max-width: 297px
 		
 			&-title,
 			&-link
