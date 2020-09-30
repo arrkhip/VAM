@@ -1,8 +1,8 @@
 <?php
 if (isset ($_POST['phone'])) {
   // $to = "site@volgaagromash.ru";
-  // $to = "varnoff.test@yandex.ru, arkhipovvladislav@mail.ru";
-  $to = "arkhipovvladislav@mail.ru";
+  $to = "varnoff.test@yandex.ru, arkhipovvladislav@mail.ru";
+  // $to = "arkhipovvladislav@mail.ru";
   
   $name  = substr( $_POST['name'], 0, 64 );
   $company = substr( $_POST['company'], 0, 64 );
