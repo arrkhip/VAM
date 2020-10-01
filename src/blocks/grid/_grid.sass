@@ -1,0 +1,43 @@
+/*
+ * ========================
+ * GRID
+ * ========================
+ */
+.grid 
+	margin-bottom: 70px
+	
+	&__list
+		display: flex
+		flex-wrap: wrap
+		padding-top: 33px
+		margin: 0 -20px
+	
+	&__item
+		width: 25%
+		padding: 0 20px
+		margin-bottom: 40px
+
+
+	+width-lg()
+
+		&__list
+			margin: 0 -10px
+
+		&__item
+			padding: 0 10px
+			margin-bottom: 20px
+
+
+	+width-md()
+		margin-bottom: 60px
+
+		&__item
+			display: flex
+			width: 33.3%
+
+
+	+width-sm()
+		margin-bottom: 40px
+	
+		&__item
+			width: 50%
