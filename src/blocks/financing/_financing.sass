@@ -1,0 +1,82 @@
+/*
+ * ========================
+ * FINANCING
+ * ========================
+ */
+.financing 
+	margin-bottom: 110px
+	
+	&__inner
+	
+	&__company
+		display: flex
+		align-items: flex-start
+
+		&:not(:last-child)
+			margin-bottom: 80px
+	
+	&__logo
+		width: 100%
+		max-width: 392px
+		margin-right: 40px
+	
+	&__info
+		width: 100%
+		max-width: 824px
+		margin-right: 40px
+	
+	&__subtitle
+		font: normal 18px/21px $font-second
+		text-transform: uppercase
+	
+	&__descr
+		margin-top: 30px
+		font-size: 16px
+		line-height: 27px
+	
+	&__plus
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -40px 
+	
+		&-item
+			width: 33%
+			padding: 0 40px
+			margin-top: 55px
+	
+		&-icon
+			width: 74px
+			height: 74px
+			margin-bottom: 15px
+	
+		&-text
+			font-size: 16px
+			line-height: 24px
+	
+	&__contacts
+		display: inline-flex
+		flex-direction: column
+		align-items: flex-start
+		width: 100%
+		max-width: 392px
+		padding: 30px 30px 84px
+		margin-top: 50px
+		border: 1px solid #9E9E9E
+
+		&-item
+			font-size: 15px
+			line-height: 30px
+
+			&:not(:last-child)
+				margin-bottom: 35px
+
+
+	+width-md()
+		margin-bottom: 80px
+
+		&__company
+			flex-direction: column
+
+
+	+width-xs()
+		margin-bottom: 50px
