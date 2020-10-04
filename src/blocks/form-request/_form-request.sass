@@ -82,6 +82,34 @@
 			&__textarea
 				height: 160px
 
+	&--subscription
+		padding-bottom: 60px
+
+		.form-request
+
+			&__form
+				flex-wrap: nowrap
+				padding: 0
+				border: none
+
+			&__headline
+				margin-bottom: 50px
+
+			&__input
+				width: 100%
+				max-width: 680px
+				margin-right: 40px
+				margin-bottom: 0
+
+			&__controls
+				width: 100%
+				justify-content: flex-start
+
+			&__btn
+				margin-left: 0
+				margin-right: 40px
+
+
 	+width-md()
 
 		&--offset
@@ -131,6 +159,18 @@
 				&__textarea
 					height: 150px
 
+		&--subscription
+			padding-bottom: 60px
+
+			.form-request
+
+				&__form
+					flex-wrap: wrap
+
+				&__input
+					max-width: 100%
+					margin-right: 0
+					margin-bottom: 30px
 
 	+width-sm()
 	
@@ -167,3 +207,16 @@
 
 				&__box
 					width: 100%
+
+		&--subscription
+
+			.form-request
+
+				&__controls
+					align-items: flex-start
+
+				&__btn
+					margin-right: 0
+					margin-top: 0
+					margin-bottom: 15px
+
