@@ -91,6 +91,7 @@
 		margin-top: 108px
 
 	&__inner
+		position: relative
 		display: flex
 		align-items: center
 		
@@ -107,7 +108,7 @@
 			display: none
 
 	&__box
-		margin: 0 auto
+		margin-left: auto
 		text-align: center
 
 	&__phone
@@ -147,7 +148,7 @@
 			padding-bottom: 14px
 
 			&:not(:last-child)
-				margin-right: 80px
+				margin-right: 30px
 
 			&:hover
 				.header__menu-sublist
@@ -216,15 +217,17 @@
 				transform: translateY(0)
 
 		&-header
-			position: relative
+			position: absolute
+			top: 3px
+			right: 200px
 			display: inline-flex
 			align-items: center
-			margin-right: 99px
+			// margin-right: 99px
 
 			&::after
 				content: ''
 				position: absolute
-				top: 37px
+				top: 68px
 				left: 20px
 				width: 0
 				height: 0 
@@ -285,6 +288,9 @@
 
 
 	&__social
+		position: absolute
+		top: 2px
+		right: 0
 		display: inline-flex
 		align-items: center
 
@@ -309,14 +315,35 @@
 		display: none
 
 
+	+m-max(1600px)
+
+		&__logo
+			max-width: 270px
+
+		&__menu
+
+			&-item
+
+				&:not(:last-child)
+					margin-right: 28px
+
+			&-link
+				font-size: 13px
+
+		&__search
+
+			&-header
+				right: 160px
+
+
 	+width-xlg()
 
 		&:not(.header--blur) + section,
 		&:not(.header--blur) + div
 			margin-top: 104px
-		
+
 		&__logo
-			max-width: 294px
+			max-width: 190px
 
 		&__phone
 			margin-bottom: 19px
@@ -337,11 +364,6 @@
 			display: flex
 			padding: 0 10px
 
-			&-item
-
-				&:not(:last-child)
-					margin-right: 56px
-
 			&-link
 				font-size: 13px
 
@@ -355,9 +377,6 @@
 
 		&__search
 
-			&-header
-				margin-right: 59px
-
 			&-text
 				font-size: 13px
 
@@ -368,17 +387,23 @@
 	+width-lg()
 
 		&__logo
-			max-width: 225px
+			max-width: 150px
 
-	&__menu
-		&-item:not(:last-child)
-			margin-right: 35px
+		&__menu
+			&-item:not(:last-child)
+				margin-right: 20px
 
-	&__search-header
-		margin-right: 35px
+			&-link
+				font-size: 11px
 
-	&__social-item:not(:last-child)
-		margin-right: 20px
+		// &__search-header
+		// 	margin-right: 35px
+
+		&__social-item:not(:last-child)
+			margin-right: 20px
+
+		&__search-header
+			right: 100px
 
 
 	+width-md()
@@ -390,6 +415,9 @@
 
 		.header__menu--scroll
 			display: none !important
+
+		&__inner
+			position: static
 
 		&__social,
 		&__phone-back-call,
@@ -418,7 +446,13 @@
 		&__search
 
 			&-header
+				position: relative
+				top: 0
+				right: 0
 				margin-right: 0
+
+				&::after
+					top: 34px
 
 			&-body
 				padding: 23px 80px
@@ -527,8 +561,10 @@
 				justify-content: space-between
 				align-items: flex-start
 
-			&-list
+			&-col
 				width: calc(50% - 25px)
+
+			&-list
 				margin-bottom: 50px
 		
 			&-title,
@@ -593,6 +629,7 @@
 				font-size: 14px
 
 			&-social
+				position: static
 				display: inline-flex
 				margin-top: -80px
 
@@ -634,6 +671,9 @@
 
 	+width-xs()
 		padding: 10px 0
+
+		&__mob-menu-col
+			width: 100%
 
 		&__phone-number span,
 		&__search-text
