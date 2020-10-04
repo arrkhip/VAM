@@ -6,6 +6,10 @@
 .firm 
 	padding-bottom: 110px
 
+	&__title
+		font: normal 30px/45px $font-second
+
+
 	&--offset-none
 		padding-bottom: 0
 
@@ -144,8 +148,19 @@
 				font-size: 16px
 
 
+	+width-lg()
+
+		&__title
+			font-size: 24px
+			line-height: 30px
+
+
 	+width-md()
 		padding-bottom: 80px
+
+		&__title
+			font-size: 20px
+			line-height: 24px
 
 		&__inner
 			flex-direction: column
@@ -169,6 +184,10 @@
 
 	+width-xs()
 		padding-bottom: 60px
+
+		&__title
+			font-size: 18px
+			line-height: 22px
 
 		&__headline
 			flex-direction: column
