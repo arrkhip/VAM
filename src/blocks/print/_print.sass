@@ -1,0 +1,152 @@
+/*
+ * ========================
+ * PRINT
+ * ========================
+ */
+.print 
+	
+	&__wrapper
+		width: 100%
+		max-width: 1700px
+		padding: 0 120px
+		margin: 0 auto
+
+		&--sm
+			padding: 0 70px
+	
+	&__header
+
+		&--b-line
+			border-bottom: 2px solid $black
+
+		&-inner
+			display: flex
+			align-items: flex-start
+			justify-content: space-between
+			padding: 80px 0 54px
+	
+		&-logo
+			width: 100%
+			max-width: 460px
+			margin-right: 103px
+
+			img
+				width: 100%
+	
+		&-info
+			width: 100%
+			max-width: 920px
+			text-align: right
+	
+		&-tel
+			font-weight: 700
+			font-size: 30px
+			line-height: 40px
+	
+		&-text
+			font-size: 25px
+			line-height: 30px
+			font-weight: 700
+
+	&__headline
+		padding: 30px 0 35px
+		margin-bottom: 30px
+		background-color: $black
+
+		&-title
+			font: normal 50px/1.3em $font-second
+			color: $white
+			text-align: center
+	
+	&__banner
+
+	&__features
+		padding-bottom: 40px
+		border-bottom: 2px solid $black
+		margin-bottom: 45px
+	
+	&__information
+		margin-bottom: 45px
+	
+		&-item
+			line-height: 34px
+			font-size: 22px
+			font-weight: 700
+			color: $black
+
+			&:not(:last-child)
+				margin-bottom: 35px
+	
+	&__options
+		padding-top: 60px
+		border-top: 2px solid $black
+
+		.options
+			padding: 0
+
+			&__list
+				padding-top: 0
+
+			.card-option
+				padding: 0
+				border: none
+	
+	&__author
+		padding: 40px 0 30px
+	
+		&--t-line
+			border-top: 2px solid $black
+	
+		&-text
+			font-weight: 700
+			font-size: 20px
+			line-height: 34px
+			text-align: center
+			color: $black
+	
+		&-link
+			text-decoration: underline
+	
+	&__plus
+
+		&-headline
+			padding: 50px 0 60px
+	
+		&-title
+			font: normal 50px/1.3em $font-second
+			color: $black
+			text-align: center
+	
+		&-list
+			display: flex
+			flex-wrap: wrap
+			align-items: flex-start
+			justify-content: space-between
+	
+		&-item
+			width: calc(50% - 50px)
+			margin-bottom: 65px
+	
+		&-card
+			display: flex
+			align-items: flex-start
+	
+			&-banner
+				flex-shrink: 0
+				width: 100%
+				max-width: 260px
+				margin-right: 30px
+	
+			&-info
+				width: 100%	
+				max-width: 518px
+	
+			&-subtitle
+				font-size: 30px
+				line-height: 50px
+				font-weight: 700
+	
+			&-descr
+				font-size: 22px
+				line-height: 40px
+				font-weight: 700
