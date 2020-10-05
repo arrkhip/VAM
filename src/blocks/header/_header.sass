@@ -342,6 +342,10 @@
 		&:not(.header--blur) + div
 			margin-top: 104px
 
+		&--fixed
+			.header__logo
+				max-width: 170px
+
 		&__logo
 			max-width: 190px
 
@@ -385,6 +389,10 @@
 
 
 	+width-lg()
+
+		&--fixed
+			.header__logo
+				max-width: 130px
 
 		&__logo
 			max-width: 150px
@@ -631,7 +639,9 @@
 			&-social
 				position: static
 				display: inline-flex
-				margin-top: -80px
+
+				&--xs
+					display: none
 
 				.header__social
 				
@@ -664,9 +674,11 @@
 			height: calc(100% - 52px)
 			padding: 40px 30px
 
+			&-col
+				width: calc(50% - 15px)
+
 			&-list
 				margin-bottom: 40px
-				width: calc(50% - 15px)
 
 
 	+width-xs()
@@ -714,4 +726,9 @@
 				width: 100%
 
 			&-social
-				margin-top: 0
+				
+				&--sm
+					display: none
+
+				&--xs
+					display: inline-flex
