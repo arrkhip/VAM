@@ -68,6 +68,7 @@ gulp.task('styles:libs', function() {
 	return gulp.src([
 	'src/libs/normalize/normalize.css',
 	'src/libs/fancybox/jquery.fancybox.min.css',
+	'src/libs/select2/select2.min.css',
 	'src/libs/swiper/swiper.min.css',
 	'src/libs/animate/animate.css'
 	]) 
@@ -100,6 +101,7 @@ gulp.task('scripts:libs', function() {
 		'src/libs/jquery/dist/jquery.min.js', 
 		'src/libs/svgxuse/svgxuse.min.js',
 		'src/libs/fancybox/jquery.fancybox.min.js',
+		'src/libs/select2/select2.min.js',
 		'src/libs/swiper/swiper.min.js',
 		'src/libs/input-mask/jquery.inputmask.min.js',
 		'src/libs/lazysizes/lazysizes.min.js',

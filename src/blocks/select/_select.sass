@@ -1,0 +1,37 @@
+/*
+ * ========================
+ * SELECT 
+ * ========================
+ */
+.select 
+
+	.select2-container--default .select2-selection--single
+		border: none	
+
+	.select2-container--default .select2-selection--single .select2-selection__rendered
+		height: 26px
+		background: none
+		font-family: inherit 
+		color: $black
+		background: url("../img/select-arrow.png") right center no-repeat
+		background-size: 26px 26px
+		outline: none
+		font-weight: 700
+		font-size: 14px
+		text-transform: uppercase
+
+	.select2-container .select2-selection--single
+		height: 24px
+
+	.select2-container--default .select2-selection--single .select2-selection__arrow
+		display: none
+
+
+.select2-results__option 
+	padding: 7px 13px
+	background: $color-text !important
+	color: $white !important
+	font-weight: 400
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+	font-weight: 700

@@ -113,6 +113,7 @@
 
 	&__phone
 		margin-bottom: 13px
+		margin-right: 25%
 
 		&-number
 			display: inline-flex
@@ -148,7 +149,7 @@
 			padding-bottom: 14px
 
 			&:not(:last-child)
-				margin-right: 30px
+				margin-right: 57px
 
 			&:hover
 				.header__menu-sublist
@@ -315,6 +316,11 @@
 		display: none
 
 
+	+m-max(1800px)
+		&__menu-item:not(:last-child)
+			margin-right: 35px
+
+
 	+m-max(1600px)
 
 		&__logo
@@ -444,6 +450,7 @@
 
 		&__phone
 			margin-bottom: 0
+			margin-right: 0
 
 			&-number
 				margin-right: 0

@@ -325,35 +325,291 @@
 			</div>
 		</div>
 	</div>
-
-	//= blocks/map/map.html
+	<section class="map map--dilers">
+		<div class="wrapper">
+			<div class="map__headline headline">
+				<h2 class="h2">Карта дилеров</h2>
+			</div>
+			<div class="map__body">
+				<div class="map__banner">
+					<picture>
+						<source srcset="img/map/map-banner-md.png" media="(max-width: 768px)">
+						<source srcset="img/map/map-banner-sm.png" media="(max-width: 400px)">
+						<img data-src="img/map/map-banner.png" class="lazyload" alt="">
+					</picture>
+				</div>
+				<div class="map__factory">
+				<!-- <div class="map__factory active"> -->
+					<!-- <img class="map__factory-black" src="img/map/map-factory-black.png" alt=""> -->
+					<img class="map__factory-white" src="img/map/map-factory-white.png" alt="">
+				</div>
+				<div class="map__dealer">
+					<!-- с. Высокая Гора -->
+					<div class="map__dealer-item">
+						<div class="map__dealer-header">
+							<div class="map__dealer-pin">
+								<img class="map__dealer-icon map__dealer-icon--white" src="img/map-pin-white.svg" alt="">
+								<img class="map__dealer-icon map__dealer-icon--black" src="img/map-pin-black.svg" alt="">
+							</div>
+							<div class="map__dealer-headline">
+								<svg class="map__dealer-headline-icon">
+									<use xlink:href="img/sprite.svg#circle-btn"></use>
+								</svg>
+								<div class="map__dealer-headline-title">с. Высокая Гора</div>
+							</div>
+						</div>
+						<div class="map__dealer-body">
+							<div class="map__card-dealer card-dealer">
+								<div class="card-dealer__info">
+									<div class="js-map-close card-dealer__close">
+										<svg class="card-dealer__close-icon">
+											<use xlink:href="img/sprite.svg#close"></use>
+										</svg>
+									</div>	
+									<div class="card-dealer__city">с. Высокая Гора</div>
+									<div class="card-dealer__title">ООО «КубАгро»</div>
+									<div class="card-dealer__item">Республика Татарстан, Высокогорский район, село Высокая Гора, ул. Меллиораторов, дом 9А корпус 2, офис 204</div>
+									<div class="card-dealer__item">
+										<p>+7 987 408-73-43</p>
+										<p>+7 843 249-53-49</p>
+									</div>
+									<div class="card-dealer__item">
+										<a href="mailto:kubagro1@bk.ru" class="link">kubagro1@bk.ru</a>
+									</div>
+									<div class="card-dealer__item">
+										<a href="https://www.kubagro16.ru/" class="link link--black">www.kubagro16.ru/</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Саратов -->
+					<div class="map__dealer-item">
+						<div class="map__dealer-header">
+							<div class="map__dealer-pin">
+								<img class="map__dealer-icon map__dealer-icon--white" src="img/map-pin-white.svg" alt="">
+								<img class="map__dealer-icon map__dealer-icon--black" src="img/map-pin-black.svg" alt="">
+							</div>
+							<div class="map__dealer-headline">
+								<svg class="map__dealer-headline-icon">
+									<use xlink:href="img/sprite.svg#circle-btn"></use>
+								</svg>
+								<div class="map__dealer-headline-title">г. Саратов</div>
+							</div>
+						</div>
+						<div class="map__dealer-body">
+							<div class="map__card-dealer card-dealer">
+								<div class="card-dealer__info">
+									<div class="js-map-close card-dealer__close">
+										<svg class="card-dealer__close-icon">
+											<use xlink:href="img/sprite.svg#close"></use>
+										</svg>
+									</div>	
+									<div class="card-dealer__city">г.Саратов</div>
+									<div class="card-dealer__title">ООО "ТЕХАГРО"</div>
+									<div class="card-dealer__item">410062, Саратовская обл., г. Саратов, ул. Московское шоссе, д.14 А, офис 4</div>
+									<div class="card-dealer__item">
+										<p>+7 937 811-50-20</p>
+									</div>
+									<div class="card-dealer__item">
+										<a href="mailto:tehagro69@mail.ru" class="link">tehagro69@mail.ru</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- г. Константиновск -->
+					<div class="map__dealer-item">
+						<div class="map__dealer-header">
+							<div class="map__dealer-pin">
+								<img class="map__dealer-icon map__dealer-icon--white" src="img/map-pin-white.svg" alt="">
+								<img class="map__dealer-icon map__dealer-icon--black" src="img/map-pin-black.svg" alt="">
+							</div>
+							<div class="map__dealer-headline">
+								<svg class="map__dealer-headline-icon">
+									<use xlink:href="img/sprite.svg#circle-btn"></use>
+								</svg>
+								<div class="map__dealer-headline-title">г. Константиновск</div>
+							</div>
+						</div>
+						<div class="map__dealer-body">
+							<div class="map__card-dealer card-dealer">
+								<div class="card-dealer__info">
+									<div class="js-map-close card-dealer__close">
+										<svg class="card-dealer__close-icon">
+											<use xlink:href="img/sprite.svg#close"></use>
+										</svg>
+									</div>	
+									<div class="card-dealer__city">г. Константиновск</div>
+									<div class="card-dealer__title">ООО ТД "ГСМ- "Палессе"</div>
+									<div class="card-dealer__item">347254, Ростовская область, г. Константиновск, Территория АТП-6, п. КГУ-1</div>
+									<div class="card-dealer__item">
+										<p>+7 928 964 99 91</p>
+									</div>
+									<div class="card-dealer__item">
+										<a href="mailto:gsm60650@yandex.ru" class="link">gsm60650@yandex.ru</a>
+									</div>
+									<div class="card-dealer__item">
+										<a href="http://tdgsm.ru/" class="link link--black">www.tdgsm.ru</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- г. Нижний Новгород -->
+					<div class="map__dealer-item">
+						<div class="map__dealer-header">
+							<div class="map__dealer-pin">
+								<img class="map__dealer-icon map__dealer-icon--white" src="img/map-pin-white.svg" alt="">
+								<img class="map__dealer-icon map__dealer-icon--black" src="img/map-pin-black.svg" alt="">
+							</div>
+							<div class="map__dealer-headline">
+								<svg class="map__dealer-headline-icon">
+									<use xlink:href="img/sprite.svg#circle-btn"></use>
+								</svg>
+								<div class="map__dealer-headline-title">г. Нижний Новгород</div>
+							</div>
+						</div>
+						<div class="map__dealer-body">
+							<div class="map__card-dealer card-dealer">
+								<div class="card-dealer__info">
+									<div class="js-map-close card-dealer__close">
+										<svg class="card-dealer__close-icon">
+											<use xlink:href="img/sprite.svg#close"></use>
+										</svg>
+									</div>	
+									<div class="card-dealer__city">г. Нижний Новгород</div>
+									<div class="card-dealer__title">АО "Нижегородагроснаб"</div>
+									<div class="card-dealer__item">603108, г. Нижний Новгород, ул. Кузбасская, 7а</div>
+									<div class="card-dealer__item">
+										<p>+7 920 056 7511</p>
+										<p>+7 831 279 44 50</p>
+										<p>+7 831 279 46 07</p>
+									</div>
+									<div class="card-dealer__item">
+										<a href="mailto:rsm4@agrosnabnn.ru" class="link">rsm4@agrosnabnn.ru</a>
+									</div>
+									<div class="card-dealer__item">
+										<a href="http://www.agrosnabnn.ru/" class="link link--black">www.kubagro16.ru/</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- г. Саранск -->
+					<div class="map__dealer-item">
+						<div class="map__dealer-header">
+							<div class="map__dealer-pin">
+								<img class="map__dealer-icon map__dealer-icon--white" src="img/map-pin-white.svg" alt="">
+								<img class="map__dealer-icon map__dealer-icon--black" src="img/map-pin-black.svg" alt="">
+							</div>
+							<div class="map__dealer-headline">
+								<svg class="map__dealer-headline-icon">
+									<use xlink:href="img/sprite.svg#circle-btn"></use>
+								</svg>
+								<div class="map__dealer-headline-title">г. Саранск</div>
+							</div>
+						</div>
+						<div class="map__dealer-body">
+							<div class="map__card-dealer card-dealer">
+								<div class="card-dealer__info">
+									<div class="js-map-close card-dealer__close">
+										<svg class="card-dealer__close-icon">
+											<use xlink:href="img/sprite.svg#close"></use>
+										</svg>
+									</div>	
+									<div class="card-dealer__city">г. Саранск</div>
+									<div class="card-dealer__title">ООО "ПКФ СоюзБелАгро"</div>
+									<div class="card-dealer__item">430003, Республика Мордовия, г. Саранск, пр. Ленина, д.91</div>
+									<div class="card-dealer__item">
+										<p>+7 927 192 53 60</p>
+										<p>+7 951 053 32 32</p>
+										<p>+7 834 230 40 92</p>
+									</div>
+									<div class="card-dealer__item">
+										<a href="mailto:soyzbelagro@yandex.ru" class="link">soyzbelagro@yandex.ru</a>
+									</div>
+									<div class="card-dealer__item">
+										<a href="https://souzbelagro.ru/" class="link link--black">www.souzbelagro.ru</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ООО «Волгаагромаш» -->
+					<div class="map__dealer-item active">
+						<div class="map__dealer-header">
+							<div class="map__dealer-pin map__dealer-pin--factory"></div>
+							<div class="map__dealer-headline">
+								<svg class="map__dealer-headline-icon">
+									<use xlink:href="img/sprite.svg#circle-btn"></use>
+								</svg>
+								<div class="map__dealer-headline-title">ООО «Волгаагромаш» завод-изготовитель</div>
+							</div>
+						</div>
+						<div class="map__dealer-body">
+							<div class="map__card-dealer card-dealer">
+								<div class="card-dealer__info">
+									<div class="js-map-close card-dealer__close">
+										<svg class="card-dealer__close-icon">
+											<use xlink:href="img/sprite.svg#close"></use>
+										</svg>
+									</div>	
+									<div class="card-dealer__city">с. Бобровка</div>
+									<div class="card-dealer__title">ООО «Волгаагромаш» <span>завод-изготовитель</span></div>
+									<div class="card-dealer__item">446406, Самарская область, Кинельский район, село Бобровка, улица Восточная, участок 1Ж</div>
+									<div class="card-dealer__item">
+										<p>8-800-550-99-01</p>
+										<p>8 (846 63) 46-589</p>
+									</div>
+									<div class="card-dealer__item">
+										<a href="mailto:mail@volgaagromash.ru" class="link">mail@volgaagromash.ru</a>
+									</div>
+									<div class="card-dealer__item">
+										<a href="http://volgaagromash.ru/" class="link link--black">www.volgaagromash.ru</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	//= blocks/partners/partners.html
-	<section class="form-request form-request--offset">
+	<section class="form-request form-request--dilers form-request--offset">
 		<div class="wrapper">
 			<div class="form-request__headline headline">
 				<h2 class="h2 h2--white">Отправить заявку</h2>
 			</div>
-			<form id="form-request" class="form-request__form">
-				<input type="text" name="name" placeholder="ФИО*" class="form-request__input input" required>
-				<input type="text" name="email" placeholder="E-mail*" class="form-request__input input" required>
-				<input type="tel" name="phone" placeholder="Телефон*" class="form-request__input input" required>
+			<form id="form-excursion" class="form-request__form">
+				<input type="text" name="company" placeholder="Название компании*" class="form-request__input input" required>
+				<input type="text" name="scope" placeholder="Сфера деятельности" class="form-request__input input">
+				<input type="text" name="inn" placeholder="ИНН" class="form-request__input input">
+				<input type="text" name="address" placeholder="Адрес компании*" class="form-request__input input" required>
+				<input type="tel" name="tel" placeholder="Телефон*" class="form-request__input input" required>
+				<input type="text" name="email" placeholder="Email*" class="form-request__input input" required>
 				<textarea name="text" placeholder="Сообщение" class="form-request__textarea textarea"></textarea>
-				<div class="form-request__upload-file upload-file">
-					<div class="upload-file__btn">
-						<input type="file" name="file" id="upload-file__input-1" class="upload-file__input" multiple>
-						<label class="upload-file__label" for="upload-file__input-1">
-							<svg class="upload-file__icon">
-								<use xlink:href="img/sprite.svg#pin"></use>
+				<div class="form-request__box">
+					<input type="text" name="website" placeholder="Сайт" class="form-request__input input">
+					<div class="form-request__upload-file upload-file">
+						<div class="upload-file__btn">
+							<input type="file" name="file" id="upload-file__input-1" class="upload-file__input" multiple>
+							<label class="upload-file__label" for="upload-file__input-1">
+								<svg class="upload-file__icon">
+									<use xlink:href="img/sprite.svg#pin"></use>
+								</svg>
+								<span class="upload-file__text">Прикрепить файл</span>
+							</label>
+						</div>
+						<div class="upload-file__message">
+							<svg class="upload-file__message-icon">
+								<use xlink:href="img/sprite.svg#file"></use>
 							</svg>
-							<span class="upload-file__text">Прикрепить файл</span>
-						</label>
+							<p class="upload-file__message-text"></p>
+						</div>
 					</div>
-					<div class="upload-file__message">
-						<svg class="upload-file__message-icon">
-							<use xlink:href="img/sprite.svg#file"></use>
-						</svg>
-						<p class="upload-file__message-text"></p>
-					</div>
+
 				</div>
 				<div class="form-request__controls">
 					<div class="checkbox checkbox--white">

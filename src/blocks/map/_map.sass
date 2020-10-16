@@ -16,7 +16,7 @@
 
 	&__body
 		position: relative
-		margin-top: -47px
+		margin-top: -100px
 
 	&__factory
 		position: absolute
@@ -117,13 +117,26 @@
 		+trs(all, .45s, ease)
 
 
+	+m-max(1650px)
+
+		&__body
+			margin-top: -70px	
+
+
+	+m-max(1100px)
+
+		&__body
+			margin-top: -40px
+
+
 	+width-sm()
 		padding: 50px 0 20px
 		margin-bottom: 50px
 		background-position: center bottom
 		background-size: contain
 
-		&--detailed
+		&--detailed,
+		&--dilers
 			padding-top: 0
 
 		&__body

@@ -29,20 +29,21 @@
 		left: 0
 		overflow: hidden
 		z-index: 1
-    // background: url(bg/daisy-stock-poster.jpg) no-repeat #94a233
-    // background-size: cover
+		// background: url(bg/daisy-stock-poster.jpg) no-repeat #94a233
+		// background-size: cover
 
 		video
-	    position: absolute
-	    top: 0
-	    left: 0
-	    min-width: 100% 
-	    min-height: 100%
-	    width: auto
-	    height: auto 
-	    object-fit: cover
-	    background: url('../img/promo-bg-home.png') center no-repeat
-	    background-size: cover
+			position: absolute
+			top: 0
+			left: 0
+			min-width: 100% 
+			min-height: 100%
+			width: auto
+			height: auto 
+			object-fit: cover
+			object-position: center
+			background: url('../img/promo-bg-home.png') center no-repeat
+			background-size: cover
 
 	&__info
 		position: relative
@@ -125,10 +126,14 @@
 
 
 	+width-xlg()
-		padding: 171px 0 105px
+		// padding: 171px 0 105px
+		padding: 250px 0 150px
 
 		&--detailed
 			padding: 280px 0 180px
+
+		// &--video
+		// 	height: 100vh
 
 		&__info
 			max-width: 500px	
@@ -166,6 +171,13 @@
 		&--detailed
 			padding: 140px 0 90px
 
+		&--video
+			background-image: url('../img/promo-bg-home-lg.jpg')
+			background-size: cover
+			
+		&__video-bg 
+			display: none
+
 		&__info
 			max-width: 310px	
 
@@ -187,15 +199,8 @@
 	+width-xs()
 		padding: 75px 0 50px
 
-		&--video
-			background-image: url('../img/promo-bg-home-lg.jpg')
-			background-size: cover
-
 		&--detailed
 			padding: 100px 0 80px
-
-		&__video-bg 
-			display: none
 			
 		&__info
 			max-width: 310px	

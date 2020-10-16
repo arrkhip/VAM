@@ -15,6 +15,7 @@ $(document).ready(function() {
   //= ../blocks/form-request/form-request.js
   //= ../blocks/footer/footer.js
   //= ../blocks/table/table.js
+  //= ../blocks/select/select.js
 	
 
 	// scroll to block

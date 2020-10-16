@@ -89,6 +89,31 @@
 		padding: 0 15px
 		height: 41px
 
+	&__centered-box
+		display: none
+
+
+	&--events
+
+		.table
+
+			&__item
+
+				&:nth-child(2)
+					max-width: 272px
+
+				&:nth-child(3)
+					max-width: 233px
+
+				&:nth-child(4)
+					max-width: 601px
+
+				&:nth-child(5)
+					max-width: 205px
+
+				.btn
+					padding: 0 38px
+
 
 	+width-xlg()
 
@@ -189,6 +214,10 @@
 				font-size: 16px
 				line-height: 20px
 				color: $black
+
+		&__centered-box
+			margin-top: 35px
+			display: block
 
 
 	+width-xs()
