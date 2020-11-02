@@ -48,6 +48,10 @@
 
 	&__info
 
+		&--offset
+			+m-min(992px)
+				padding-top: 57px
+			
 		&-subtitle
 			margin-bottom: 10px
 			font: normal 18px/21px $font-second
@@ -75,7 +79,8 @@
 			+m-min(992px)
 				margin-bottom: 0
 
-		&-top
+		&-top,
+		&-top-new
 			position: relative
 			overflow: hidden
 
@@ -110,7 +115,8 @@
 			height: 28px
 			fill: $white
 
-		&-thumbs
+		&-thumbs,
+		&-thumbs-new
 
 			.swiper-slide-thumb-active
 				.firm__slider-thumb::after
@@ -133,6 +139,22 @@
 				height: 10px
 				background-color: $color-primary
 				opacity: 0
+				line-height: 0
+				
+		&-video
+			position: relative
+			padding-bottom: 56.25%
+			height: 0
+			overflow: hidden
+
+			iframe
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				border-width: 0
+				outline-width: 0
 
 	&__card-certificate
 

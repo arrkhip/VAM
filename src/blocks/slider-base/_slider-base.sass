@@ -1,0 +1,53 @@
+/*
+ * ========================
+ * SLIDER-BASE
+ * ========================
+ */
+.slider-base
+	padding-bottom: 110px
+	
+	&__slider
+		position: relative
+		overflow: hidden
+		margin: 25px 65px 0 65px
+		
+		&-wrapper
+			position: relative
+			overflow: hidden
+		
+	&__arrow
+
+		&-next,
+		&-prev
+			position: absolute
+			top: 50%
+			z-index: 1
+			width: 22px
+			height: 40px
+			fill: $color-text
+			transform: translateY(-50%)
+
+			&:hover
+				cursor: pointer
+				opacity: .8
+
+		&-next
+			right: 0
+
+		&-prev
+			left: 0
+			transform: translateY(-50%) rotate(-180deg)
+			
+			
+	+width-lg()
+		&__slider
+			margin: 25px 40px 0 40px
+		
+
+	+width-md()
+		padding-bottom: 80px
+		
+
+	+width-xs()
+		padding-bottom: 50px
+

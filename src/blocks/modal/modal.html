@@ -348,3 +348,29 @@
 
 	</div>
 </form>
+
+
+<form id="modal-event" class="modal">
+	<div class="modal__header">
+		<div class="modal__header-title">Запись на мероприятие</div>
+	</div>
+	<div class="modal__body">
+		<div class="modal__box-input">
+			<input type="text" name="name" placeholder="ФИО*" class="input input--empty" required>
+
+			<div class="modal__box-empty"></div>
+
+			<input type="tel" name="phone" placeholder="Телефон*" class="input input--empty" required>
+			<input type="text" name="email" placeholder="E-mail*" class="input input--empty" required>
+			<input type="text" name="company" placeholder="Компания*" class="input input--empty" required>
+			<input type="text" name="post" placeholder="Должность*" class="input input--empty" required>
+		</div>
+		<div class="modal__controls">
+			<button type="submit" class="modal__controls-btn btn">Отправить заявку</button>
+			<div class="modal__controls-checkbox checkbox">
+				<input type="checkbox" id="modal-spares-check" class="checkbox__input" required />
+				<label for="modal-spares-check" class="checkbox__label">Я согласен на обработку персональных данных. <a href="#" target="_blank" class="link link--black">Политика конфиденциальности</a></label>
+			</div>
+		</div>
+	</div>
+</form>
