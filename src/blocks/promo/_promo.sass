@@ -7,27 +7,30 @@
 	padding: 228px 0 271px
 
 	&--detailed
-		padding: 334px 0 237px
+		height: 100%
+		min-height: 846px
+		padding: 125px 0 25px
 		background-repeat: no-repeat
 		background-position: center
 		background-size: cover
 
-		.promo
+		.wrapper
+			height: 100%
 
+		.promo
 			&__inner
-				// display: flex
-				// align-items: center
+				display: flex
+				align-items: center
+				height: 100%
 
 	&--plasma
 		position: relative
 
 		.promo__play
-			top: calc(50%)
+			top: 50%
 			transform: translateY(-30%)
-
-		+m-min(992px)
-			padding: 237px 0
 		
+
 	&--video
 		position: relative
 
@@ -140,7 +143,7 @@
 		padding: 250px 0 150px
 
 		&--detailed
-			padding: 280px 0 180px
+			min-height: 650px
 
 		// &--video
 		// 	height: 100vh
@@ -179,7 +182,8 @@
 		padding: 142px 0 79px 
 
 		&--detailed
-			padding: 140px 0 90px
+			min-height: 450px
+			padding: 90px 0 20px
 
 		&--video
 			background-image: url('../img/promo-bg-home-lg.jpg')
@@ -210,7 +214,8 @@
 		padding: 75px 0 50px
 
 		&--detailed
-			padding: 100px 0 80px
+			padding: 50px 0 10px
+			min-height: 350px
 			
 		&__info
 			max-width: 310px	
